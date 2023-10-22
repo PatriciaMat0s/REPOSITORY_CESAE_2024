@@ -25,17 +25,16 @@ public class EX03 {
             System.out.println("IMPOSTOS A PAGAR (20%): " + salario*0.2);
         }
 
-        if ( 15000 < salario <= 20000) {
+        if ( 15000 < salario && salario <= 20000) {
             System.out.println("IMPOSTOS A PAGAR (30%): " + salario*0.3);
         }
 
-        if ( 20000 < salario <= 25000) {
+        if ( 20000 < salario && salario <= 25000) {
             System.out.println("IMPOSTOS A PAGAR (35%): " + salario*0.35);
         }
 
         if ( salario > 25000) {
             System.out.println("IMPOSTOS A PAGAR (40%): " + salario*0.4);
         }
-
     }
 }
