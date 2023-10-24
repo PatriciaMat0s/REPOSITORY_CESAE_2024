@@ -20,7 +20,6 @@ public class EX04 {
 
 
         // vou declarar as variaveis:
-        //String lugar;
         int lugar;
 
         // vou pedir e ler o lugar:
