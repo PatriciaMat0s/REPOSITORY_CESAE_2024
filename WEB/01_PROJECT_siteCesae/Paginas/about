@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESAE: Página de teste</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    
+    <p>Deste modo, o novo CESAE Digital passa a ser um Centro Protocolar ou Centro de Formação Profissional de Gestão Participada, sendo um organismo dotado de personalidade jurídica de direito público sem fins lucrativos, e com o objetivo de:
+
+        Responder às necessidades de formação designadamente nas áreas da economia digital e (re)qualificação profissional de ativos empregados e desempregados.
+        Potenciar o desenvolvimento das competências digitais, enquanto instrumento de promoção da empregabilidade dos ativos.
+        Promover a conceção e participação em percursos formativos qualificantes de jovens desempregados, com o objetivo de melhorar a sua empregabilidade.</p>
+
+</body>
