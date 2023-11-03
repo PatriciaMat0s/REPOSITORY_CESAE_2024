@@ -19,16 +19,16 @@ public class EX08 {
         numIteracoes = 0.0;
 
         while ( num != -1 ) {
-            soma = soma + num ;
+            //soma = soma + num ;
             System.out.print("Introduza um número inteiro: ");
             num = input.nextDouble();
             // System.out.println(num);
-
+            soma = soma + num ;
             //System.out.println(soma);
             numIteracoes++;
             //System.out.println(numIteracoes);
         }
-       // soma = soma+1; nao é necessario se a linha 22 estiver na 26
+        soma = soma+1; //nao é necessario se a linha 22 estiver descomentada
         numIteracoes = numIteracoes-1;
 
         //System.out.println("Numero iteraçoes totais: " + numIteracoes);
