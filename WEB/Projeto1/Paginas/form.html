@@ -16,31 +16,29 @@
 
     <p id="topo"></p>
 
-    <header>
-        <img src="/Imagens/logo.png" alt="logotipo Cesae">
-        <br>
-        <nav>
-            
-            <a href="/Projeto1/Paginas/index.html">Home</a>
-            <a href="/Projeto1/Paginas/softdev.html">Software Development</a>
-            <a href="/Projeto1/Paginas/about.html">Sobre Nós</a>
-            <a class="active" href="/Projeto1/Paginas/form.html">Contacto</a>
-            <a href="https://www.cesae.pt" target="_blank">CESAE Digital</a>
-        </nav>
+    <div class="topnav">
+        
+        <a href="/index.html">Home</a>
+        <a href="/Paginas/softdev.html">Software Development</a>
+        <a  href="/Paginas/about.html">Sobre Nós</a>
+        <a class="active" href="/Paginas/form.html">Contacto</a>
+        <a href="https://www.cesae.pt" target="_blank">CESAE Digital</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 
-    </header>
-
-    <br>
     <hr>
-    <h1 style="text-align: center;background-color: rgb(0, 238, 255);">Formulário de Contacto</h1>
-
+    <h2 style="text-align: center;background-color: rgb(255, 255, 255);">Formulário de Contacto</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
         architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
-        Cupiditate nemo odit sint rerum velit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
+        Cupiditate nemo odit sint rerum velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
         architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
         Cupiditate nemo odit sint rerum velit.</p>
-
+<br>
 
     <!-- <form action="/action_page.php" method="post" autocomplete="on"> -->
     
@@ -53,79 +51,79 @@
         <fieldset>
             <legend>Formulário de Contacto</legend>
 
-            <div class="col-25">
+            <div>
                 <label for="form-nome">Nome:</label>
             </div>
-            <div class="col-75">
+            <div>
                 <input type="text" name="form-nome" id="form-nome" placeholder="Insira o seu nome" required>
             </div>
             <br>
-            <div class="col-25">
-                <label for="form-email">Email</label>
+            <div>
+                <label for="form-email">Email:</label>
             </div>
-            <div class="col-75">
+            <div>
                 <input type="email" name="form-email" id="form-email" value="@gmail.com">
             </div>
             <br>
             <div>
-                <label for="form-tel">Telefone</label>
-                <input type="tel" name="form-tel" id="form-tel" value="+351">
+                <label for="form-tel">Telefone:</label>
+                </div>
+                <div><input type="tel" name="form-tel" id="form-tel" value="+351">
             </div>
             <br>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id=" password">
-            </div>
             <br>
             <div>
-                <label for="form-dn">Data de Nascimento</label>
+                <label for="form-dn">Data de Nascimento:</label>
                 <input type="date" name="form-dn" id="form-dn" min="2023-10-01" max="2023-11-15"> 
             </div>
             <br>
             <div class="operadora">
-                <label for="form-operadora">Qual a sua operadora de telecom:</label>
-                <br>
+                <label for="form-operadora">Qual o seu grau de escolaridade:</label>
+                <br><br>
                 <input type="radio" name="form-operadora" id="form-operadora-meo">
-                <label for="form-operadora-meo">Meo</label>
+                <label for="form-operadora-meo">9º ano</label>
                 <br>
                 <input type="radio" name="form-operadora" id="form-operadora-nos">
-                <label for="form-operadora-nos">NOS</label>
+                <label for="form-operadora-nos">12º ano</label>
                 <br>
                 <input type="radio" name="form-operadora" id="form-operadora-vodafone">
-                <label for="form-operadora-vodafone">VOdafone</label>
+                <label for="form-operadora-vodafone">Ensino Superior</label>
             </div>
             <br>
             <div class="operadora">
-                <label for="form-equipamentos">Selecione os seus equipamentos</label>
-                <br>
+                <label for="form-equipamentos">Selecione os equipamentos que tem disponível para assistir às aulas:</label>
+                <br><br>
                 <input type="checkbox" id="equip1" name="equip1" value="TV">
-                <label for="equip1">SmartTV</label>
-
+                <label for="equip1">PC / MacBook</label>
+<br>
                 <input type="checkbox" id="equip2" name="equip2" value="PC">
-                <label for="equip2">PC</label>
+                <label for="equip2">Tablet</label>
                 <br>
                 <input type="checkbox" id="equip3" name="equip3" value="DVD">
-                <label for="equip3">Leitor DVD</label>
+                <label for="equip3">Smartphone</label>
+                <br>
                 <input type="checkbox" id="equip4" name="equip4" value="Consola Jogos">
-                <label for="equip4">Consola Jogos</label>
+                <label for="equip4">Nenhum</label>
             </div>
             <br>
             <div>
-                <label for="form-curso">Selecione o seu curso</label>
-                <br>
+                <label for="form-curso">Selecione o seu curso:</label>
+                <br>br
                 <select name="form-curso" id="form-curso">
-                    <option value="" disabled selected>Escolha um dos cursos</option>
-                    <option value="form-curso-wdm">SoftDeve</option>
-                    <option value="Culinária">Culinária</option>
-                    <option value="Barman">Barman</option>
-                    <option value="Pastelaria">Pastelaria</option>
+                    <option value="" disabled selected>Escolha o curso de maior interesse:</option>
+                    <option value="form-curso-wdm">Software Development</option>
+                    <option value="Culinária">AWS cloud computing and network administation</option>
+                    <option value="Barman">UI/UX design</option>
+                    <option value="Pastelaria">Desenvolvimento de software em Python</option>
+                    <option value="Pastelaria">Outro</option>
+
                 </select>
             </div>
             <br>
             <div>
-                <label for="form-mensagem">Deixe o seu comentário</label>
+                <label for="form-mensagem">Deixe o seu comentário:</label>
                 <br>
-                <textarea name="form-mensagem" id="form-mensagem" style="width: 70%;height: 50px;"></textarea>
+                <textarea name="form-mensagem" id="form-mensagem" style="width: 70%;height: 90px;"></textarea>
                 <!-- <textarea name="form-mensagem" id="form-mensagem" rows="5" cols="100"></textarea> -->
             </div>
 
@@ -140,8 +138,8 @@
 <br>
 
             <div>
-                <input type="reset" value="limpar">
-                <input type="submit" onclick="alert('Parabéns submeteu a sua questão')" value="Enviar">
+                <input type="reset" value="Limpar">
+                <input type="submit" onclick="alert('Submetido com sucesso!')" value="Enviar">
             </div>
 
         </fieldset>

@@ -5,43 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Projeto1/CSS/style.css">
-
-
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
+
 
 <body>
 
     <p id="topo"></p>
 
-    <header>
-        <img src="/Projeto1/Imagens/logo.png" alt="logotipo Cesae">
-        <br>
-        <nav>
-            
-            <a href="/Projeto1/index.html">Home</a>
-            <a class="active" href="/Projeto1/Paginas/softdev.html">Software Development</a>
-            <a href="/Projeto1/Paginas/about.html">Sobre Nós</a>
-            <a href="/Projeto1/Paginas/form.html">Contacto</a>
-            <a href="https://www.cesae.pt" target="_blank">CESAE Digital</a>
-        </nav>
-
-    </header>
-
-    <br>
-    <hr>
-
-    <h1 style="text-align: center;background-color: rgb(0, 238, 255);">Formadores da formação de Software Developer</h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
-        architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
-        Cupiditate nemo odit sint rerum velit.</p>
-    
+    <div class="topnav">
+        
+        <a href="/index.html">Home</a>
+        <a hclass="active" ref="/Paginas/softdev.html">Software Development</a>
+        <a href="/Paginas/about.html">Sobre Nós</a>
+        <a href="/Paginas/form.html">Contacto</a>
+        <a href="https://www.cesae.pt" target="_blank">CESAE Digital</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <br><br>
 
+    <h2 style="text-align: center;background-color: rgb(255, 255, 255);">Formadores do curso Software Developer</h2>
+<br>
+    <table class="minimalistBlack">
+        <thead>
+        <tr>
+        <th>ALGORITMIA E PROGRAMAÇÃ0</th>
+        <th>BASES DE DADOS</th>
+        <th>PROGRAMAÇÃO WEB</th>
+        <th>INGLÊS</th>
+        <th>QUALITY ASSURANCE</th>
+        </tr>
+        </thead>
 
-<table>
+        <tbody>
+        <tr>
+        <td>Vitor Santos</td><td>Alexandre ...</td><td>Miguel ...</td><td>Ana Ferraz</td><td>?</td></tr>
+        <tr>
+        <td>ALG</td><td>BD</td><td>WEB</td><td>ING</td><td>QA</td></tr>
+        <td>300 horas</td><td>50 horas</td><td>50 horas</td><td>10 horas</td><td>50 horas</td>  
+    </tbody>
+    </table>
+ <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
+        architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
+        Cupiditate nemo odit sint rerum velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nulla autem recusandae sed officiis tenetur quos molestias unde expedita beatae maxime voluptatum, qui ducimus dolor commodi, ratione quod ex? Animi, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum totam, ducimus exercitationem inventore, error vel amet nihil nisi blanditiis, corporis odio tempore ratione quidem natus a voluptatem dolores labore.</p>
+
+<br><br><br>
+    
+ <!-- <table> 
     <tr>
         <th style="width:10%;">Código</th>
         <th style="width:40%">UFCD</th>
@@ -49,9 +67,9 @@
         <th style="width:15%">Tema</th>
         <th style="width:10%">Horas</th>
     </tr>
-    <tr>
-        <!-- style exemplo de formação inline -->
-        <td colspan="4" style="font-weight: bold; color: white;background-color: grey;text-align: left;">Softskills</td>
+    <tr> -->
+        <!--style exemplo de formação inline -->
+        <!-- <td colspan="4" style="font-weight: bold; color: white;background-color: grey;text-align: left;">Softskills</td>
         <td style="font-weight: bold;">50</td>
     </tr>
     <tr>
@@ -69,7 +87,7 @@
         <td>25</td>
     </tr>
     <tr>
-        <!-- formatação com class levando o style para CSS -->
+        formatação com class levando o style para CSS
         <td colspan="4" class="colspantext">Programação</td>
         <td>50</td>
     </tr>
@@ -191,28 +209,41 @@
         <td>COM</td>
         <td>25</td>
     </tr>
-    
-   
-    
-</table>
+</table>  -->
 
 
+<!-- Código acrescentado por mim: -->
+<!-- <table>
+    <thead>
+        <tr class="1">
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>País</th>
+        </tr>
+    </thead>
+
+<tbody>
+    <tr>
+        <td>Laís</td>
+    </tr>
+
+</tbody>
+
+</table> -->
 
 
+<footer>
+    <hr>
+    <a href="https://www.facebook.com/CesaeDigital/?locale=pt_PT" target="_blank"><img src="Imagens/facebook.png"
+            alt="facebook CesaeDigital"></a>
+    <a href="https://www.linkedin.com/company/cesae-digital/?originalSubdomain=pt" target="_blank"><img src="Imagens/linkedin.png"
+            alt="linkedin CesaeDigital"></a>
+    <a href="https://www.youtube.com/c/cesaedigital" target="_blank"><img src="Imagens/youtube.png"
+            alt="youtube CesaeDigital"></a>
 
+    <h6>&copy;2021 CesaeDigital | Todos os direitos reservados | Desenvolvido por.... </h6>
 
-    <footer>
-        <hr>
-        <a href="https://www.facebook.com/CesaeDigital/?locale=pt_PT" target="_blank"><img src="/Imagens/facebook.png"
-                alt="facebook CesaeDigital"></a>
-        <a href="https://www.linkedin.com/company/cesae-digital/?originalSubdomain=pt" target="_blank"><img src="/Imagens/linkedin.png"
-                alt="linkedin CesaeDigital"></a>
-        <a href="https://www.youtube.com/c/cesaedigital" target="_blank"><img src="/Imagens/youtube.png"
-                alt="youtube CesaeDigital"></a>
-
-        <h6>&copy;2021 CesaeDigital | Todos os direitos reservados | Desenvolvido por.... </h6>
-
-    </footer>
+</footer>
 
 
 
