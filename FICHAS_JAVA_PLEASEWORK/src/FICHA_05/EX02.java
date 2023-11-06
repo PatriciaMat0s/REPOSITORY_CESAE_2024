@@ -10,21 +10,25 @@ public class EX02 {
         // Inicializar o scanner:
         Scanner input = new Scanner(System.in);
 
-        //INICIALIZAR E DECLARAR VARIÁVEIS e o vector;
-        int somatotal;
-        somatotal=0;
+        //DECLARAR VARIÁVEIS e o vector;
+        double somatotal;
+        somatotal=0; //variavel de acumulaçao
 
-        int[] vetor = new int[12];
-        //int [][] = new int[3][3]; //inicializar matrizes
+        double[] vetor = new double[12];
+        //int [][] = new int[3][3]; //para inicializar matrizes
 
-        //PEDIR VARIÁVEIS PARA CADA ÍNDICE DO ARRAY:
+        //Adicionar comissoes a cada elemento do array:
         for (int indice = 0; indice <= 11; indice++) {
             System.out.print(" Insira a comissao do mês #" + (indice+1) + ": ");
-            vetor[indice] = input.nextInt();
-            somatotal = somatotal + vetor[indice];
+            vetor[indice] = input.nextDouble();
         }
 
-            System.out.print("O total anual é "+somatotal+" Euros.");
+        //Calcular o total anual:
+        for (int indice = 0; indice <= 11; indice++) {
+            somatotal = somatotal + vetor[indice];
+        }
+        // Apresentar o total anual:
+            System.out.print("O total anual de comissões é "+somatotal+" Euros.");
         }
 
     }
