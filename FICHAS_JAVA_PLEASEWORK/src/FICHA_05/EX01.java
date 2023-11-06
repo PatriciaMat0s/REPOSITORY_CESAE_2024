@@ -14,6 +14,7 @@ public class EX01 {
         int[] vetor = new int[10];
         //int [][] = new int[3][3];
 
+        //PREENCHER O ARRAY:
         for (int indice = 0; indice <= 9; indice++) {
             System.out.print(" Insira um número no Array[" + indice + "]:");
             vetor[indice] = input.nextInt();

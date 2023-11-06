@@ -13,10 +13,11 @@ public class EX05 {
         //DECLARAR VARIÁVEIS e o vector;
        double[] vetor = new double[10];
        double soma, media;
-        soma=0;
+        soma=0; //variavel de acumulação
+
 
         //Preencher o array:
-        for (int indice = 0; indice <= 9; indice++) {
+        for (int indice = 0; indice <= vetor.length-1; indice++) {
             System.out.print(" Insira o valor do array[" + (indice) + "]: ");
             vetor[indice] = input.nextDouble();
             soma=soma+vetor[indice];
