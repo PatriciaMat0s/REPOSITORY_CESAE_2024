@@ -1,21 +1,20 @@
 //  MATRIZES ---
-//  Implemente um programa que permita adicionar 9 números inteiros (ler input do utilizador) a uma matriz 3x3 e que os imprima com o seguinte aspeto gráfico:
-// 3 8 1
-// 7 4 2
-// 5 1 9
+//  Escreva um programa que lê uma matriz de tamanho 5x5 e imprima a soma de todos os elementos
 
-        package FICHA_05;
+package FICHA_05;
 
 import java.util.Scanner;
 
-public class EX08 {
+public class EX09 {
     public static void main(String[] args) {
 
         // Inicializar o scanner:
         Scanner input = new Scanner(System.in);
 
         // Inicializar a matriz;
-        int[][] matrix = new int[3][3];
+        int[][] matrix = new int[5][5];
+        double somatorio;
+        somatorio=0;
 
         // Preencher ã matriz - lógica de inserção:
         for (int indiceRow = 0; indiceRow < matrix.length; indiceRow++) {
@@ -25,13 +24,14 @@ public class EX08 {
             }
         }
 
-        //IMPRIMIR a matriz na consola:
+        //Somatório - lógica de resolucao:
         for (int indiceRow = 0; indiceRow < matrix.length; indiceRow++) {
             for (int indiceCol = 0; indiceCol < matrix.length; indiceCol++) {
-                System.out.print(matrix[indiceRow][indiceCol] +"\t"); //tabulação
+                somatorio=somatorio+ matrix[indiceRow][indiceCol];
             }
-            System.out.println(""); //muda de linha
         }
 
+        // Apresentar o valor máximo:
+        System.out.print("O somatório dos elementos da matriz é " + somatorio + ".");
     }
 }
