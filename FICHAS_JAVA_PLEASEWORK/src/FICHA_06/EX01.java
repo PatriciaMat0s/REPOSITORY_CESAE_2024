@@ -18,7 +18,7 @@ public class EX01 {
                 System.out.println("MEOW MEOW MEOW!");
                 break;
             case "pato":
-                System.out.println("QUACK QUACK QUACK");
+                System.out.println("QUACK QUACK QUACK!!!");
                 break;
             default:
                 System.out.println("animal extraterrestre!");
