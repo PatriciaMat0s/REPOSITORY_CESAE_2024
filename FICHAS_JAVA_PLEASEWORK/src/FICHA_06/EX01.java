@@ -22,7 +22,6 @@ public class EX01 {
                 break;
             default:
                 System.out.println("animal extraterrestre!");
-
         }
     }
 

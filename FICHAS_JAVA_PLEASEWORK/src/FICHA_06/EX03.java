@@ -32,13 +32,12 @@ public class EX03 {
      * Função que determina se um número (passado por argumento) é positivo ou negativo
      * @param numero - número introduzido pelo utilizador
      */
-    public static void ImprimirNumAsteriscos(int numAsteriscos) {
-        Scanner input = new Scanner(System.in);
-
-        for (int ind=1 ; ind<=numAsteriscos ; ind++) {
-            System.out.print("*");
-        }
-        System.out.println();
+    public static boolean Positivo(int numero) {
+            if (numero>=0){
+                return true;
+            }else{
+                return false;
+            }
         }
 
     //Vou usar a funçao:
