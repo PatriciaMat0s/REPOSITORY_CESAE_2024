@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class EX01 {
     public static void fazerBarulho(String animal) {
-
+// void porque a funcao nao retorna nada - é m PROCEDIMENTO
         switch (animal) {
             case "cao":
                 System.out.println("AW AW AW!");

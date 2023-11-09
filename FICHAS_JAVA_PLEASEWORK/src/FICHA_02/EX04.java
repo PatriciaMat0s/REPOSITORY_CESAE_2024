@@ -9,7 +9,7 @@
 //        h. 8º Lugar: 1 ponto
 //        Escreva um programa que leia o lugar em que o piloto terminou e escreva quantos pontos ganhou.
 
-        package FICHA__02;
+        package FICHA_02;
 import java.util.Scanner;
 
 public class EX04 {

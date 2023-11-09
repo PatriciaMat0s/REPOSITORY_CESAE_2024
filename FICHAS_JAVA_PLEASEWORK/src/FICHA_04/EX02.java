@@ -33,7 +33,7 @@ public class EX02 {
                 case 3: System.out.println("Escolheu Eliminar");
                     break;
                 case 4:
-                    break; //nao faz nada mas tem de estar aqui para naoo entrar no default
+                    break; //nao faz nada mas tem de estar aqui para nao entrar no default
                 default:
                     System.out.println("Opção inválida!");;
             }

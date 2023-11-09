@@ -1,7 +1,7 @@
 // Escreva um programa que requisite ao utilizador o preço de 3 produtos adquiridos. Apresente o valor
 // a pagar, considerando que deverá ter um desconto de 10% sobre o total dos produtos.
 
-package FICHA__01;
+package FICHA_01;
 import java.util.Scanner;
 
 public class EX07 {

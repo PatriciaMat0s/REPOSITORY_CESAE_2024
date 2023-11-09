@@ -1,8 +1,7 @@
 //Escreva um programa que leia 3 números, seguidamente deve perguntar ao utilizador se quer ordem crescente
 //‘C’ ou decrescente ‘D’, e deve colocar os números no ecrã por ordem decrescente ou crescente de acordo com a escolha.
 
-package FICHA__02;
-import org.w3c.dom.ls.LSOutput;
+package FICHA_02;
 
 import java.util.Scanner;
 

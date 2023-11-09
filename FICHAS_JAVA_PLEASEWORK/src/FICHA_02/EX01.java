@@ -1,9 +1,9 @@
-// Escreva um programa que leia dois valores numéricos e apresente o menor e depois o maior.
+//1. Leia dois números inteiros e escreva na consola o maior deles.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
-public class EX05 {
+public class EX01 {
     public static void main(String[] args) {
 
         // vou instanciar o Scanner - sempre mandatório:
@@ -12,22 +12,23 @@ public class EX05 {
         // vou declarar as variaveis:
         int num1, num2;
 
-        // vou pedir e ler:
+        // vou pedir os dois numeros e ler ambos:
         System.out.print("INTRODUZA UM NÚMERO: ");
-        num1=input.nextInt();
+        num1 = input.nextInt();
         System.out.print("INTRODUZA OUTRO NÚMERO: ");
-        num2=input.nextInt();
+        num2 = input.nextInt();
 
+        // vou imprimir na consola o maior:
         if (num1 > num2) {
-            System.out.print( num2 + " " + num1 ); // ou string vazia ""
+            System.out.print("O MAIOR É: " + num1);
         }
 
         if (num2 > num1) {
-            System.out.print( num1 + " " + num2 );
+            System.out.print("O MAIOR É: " + num2);
         }
 
         if (num1 == num2) {
-            System.out.print("SÃO IGUAIS!");
+            System.out.print("NÃO HÁ MAIOR, SÃO IGUAIS!");
         }
     }
 }

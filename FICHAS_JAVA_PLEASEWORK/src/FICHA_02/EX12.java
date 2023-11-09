@@ -2,7 +2,7 @@
 //1, 2 ou 3 for escolhida, imprima na tela a opção selecionada, se for a 4 não deve fazer nada. Caso a opção for
 //inválida, deve informar o utilizador.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX12 {

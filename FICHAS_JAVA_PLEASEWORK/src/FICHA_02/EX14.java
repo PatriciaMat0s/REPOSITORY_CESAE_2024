@@ -1,7 +1,7 @@
 //   Escreva um programa que leia 3 números, seguidamente deve colocar os números no ecrã por ordem crescente.
 
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX14 {

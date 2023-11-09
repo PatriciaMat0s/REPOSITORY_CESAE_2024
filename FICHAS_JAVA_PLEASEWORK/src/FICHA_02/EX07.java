@@ -1,6 +1,6 @@
 // Escreva um programa que leia um número, depois apresente se é par ou ímpar.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX07 {

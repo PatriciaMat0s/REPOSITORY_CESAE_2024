@@ -1,6 +1,6 @@
 // Escreva um programa que leia dois valores numéricos e apresente o maior e depois o menor.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX06 {

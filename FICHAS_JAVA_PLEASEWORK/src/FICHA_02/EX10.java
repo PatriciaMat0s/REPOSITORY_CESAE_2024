@@ -2,7 +2,7 @@
 //realizar e apresente o resultado. O utilizador deve responder usando o símbolo da operação (exemplo: para fazer
 //a soma, o utilizador deve escrever ‘+’). Se for inválido apresente erro.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX10 {

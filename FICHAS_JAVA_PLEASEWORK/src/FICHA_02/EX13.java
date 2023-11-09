@@ -5,7 +5,7 @@
 //Valores Lidos: 10 44
 //Resultado: 10 44 AM
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX13 {

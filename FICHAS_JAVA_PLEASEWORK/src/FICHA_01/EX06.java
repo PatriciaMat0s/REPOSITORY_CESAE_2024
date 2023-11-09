@@ -2,7 +2,7 @@
 // Permute o valor das variáveis e apresente o resultado.
 // De seguida, verifique se consegue efetuar esta troca sem criar variáveis adicionais
 
-package FICHA__01;
+package FICHA_01;
 import java.util.Scanner;
 
 public class EX06 {

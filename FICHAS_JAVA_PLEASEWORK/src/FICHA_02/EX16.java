@@ -2,7 +2,7 @@
 //        de 200, 100, 50, 20, 10, 5 em que o valor pode ser decomposto.
 //        Escrever o valor lido e a relação de notas necessárias.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX16 {

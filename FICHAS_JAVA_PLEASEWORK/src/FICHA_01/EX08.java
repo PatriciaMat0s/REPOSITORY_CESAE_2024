@@ -1,4 +1,4 @@
-package FICHA__01;
+package FICHA_01;
 
 import java.util.Scanner;
 

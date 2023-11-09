@@ -2,7 +2,7 @@
 //(montante positivo ou negativo, respetivamente), apresente se a operação é válida, ou seja, se o saldo final se
 //mantém positivo depois da operação.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX11 {

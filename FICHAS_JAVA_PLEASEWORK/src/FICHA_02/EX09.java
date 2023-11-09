@@ -1,6 +1,6 @@
 // Crie um programa que mostre o menor de três números inteiros lidos.
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX09 {

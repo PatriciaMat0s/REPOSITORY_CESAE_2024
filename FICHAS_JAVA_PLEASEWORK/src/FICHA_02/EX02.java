@@ -2,7 +2,7 @@
 //a. Salário até 15.000€ inclusive paga taxa de 20%
 //b. Salário superior a 15.000€ paga taxa de 30%
 
-package FICHA__02;
+package FICHA_02;
 import java.util.Scanner;
 
 public class EX02 {
