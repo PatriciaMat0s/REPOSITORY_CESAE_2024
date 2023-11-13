@@ -25,7 +25,7 @@ public class EX10 {
             }
         }
 
-        System.out.print(" Insira um valor (para encintrar na matriz): ");
+        System.out.print(" Insira um valor (para encontrar na matriz): ");
         valor_a_encontrar = input.nextInt();
 
         //Somatório - lógica de resolucao:

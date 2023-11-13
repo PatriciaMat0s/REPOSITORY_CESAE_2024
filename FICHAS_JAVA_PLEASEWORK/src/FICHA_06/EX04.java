@@ -9,35 +9,34 @@
 //6. Trocar de Número
 
 package FICHA_06;
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import static FICHA_06.EX03.*;
+import static FICHA_06.EX03a.*;
 public class EX04 {
     public static void main(String[] args) {
 
         // Inicializar o scanner:
         Scanner input = new Scanner(System.in);
 //
-        int num, num2;
+        int num;
         int analise;
 
         do {
-            System.out.print("INTRODUZA UM NÚMERO: ");
+            System.out.println("INTRODUZA UM NÚMERO: ");
             num = input.nextInt();
 
-            System.out.print("SELECCIONE O NÚMERO DA OPÇAO DE ANÁLISE DESEJADA:");
+            System.out.println("SELECCIONE O NÚMERO DA OPÇAO DE ANÁLISE DESEJADA:");
             System.out.println("1. Par ou Ímpar");
             System.out.println("2. Positivo ou Negativo");
             System.out.println("3. Primo ou Não Primo");
             System.out.println("4. Perfeito ou Não Perfeito");
             System.out.println("5. Triangular ou Não Triangular");
             System.out.println("6. Introduzir outro número)");
-            System.out.println("7. Sair)");
+            System.out.println("0. Sair)");
             analise = input.nextInt();
 
             switch (analise) {
                 case 1:
-                    if (Par(num)){
+                    if (par(num)){
                     System.out.print("Par");
                 }else{
                     System.out.print("Impar");
@@ -45,7 +44,7 @@ public class EX04 {
                 break;
 
                 case 2:
-                    if (Positivo(num)){
+                    if (positivo(num)){
                         System.out.print("Positivo");
                     }else{
                         System.out.print("Negativo");
@@ -53,7 +52,7 @@ public class EX04 {
                     break;
 
                 case 3:
-                    if (Primo(num)){
+                    if (primo(num)){
                         System.out.print("Primo");
                     }else{
                         System.out.print("Não primo");
@@ -61,7 +60,7 @@ public class EX04 {
                     break;
 
                 case 4:
-                    if (Perfeito(num)){
+                    if (perfeito(num)){
                         System.out.print("Perfeito");
                     }else{
                         System.out.print("Não perfeito");
@@ -69,7 +68,7 @@ public class EX04 {
                     break;
 
                 case 5:
-                    if (Triangular(num)){
+                    if (triangular(num)){
                         System.out.print("Triangular");
                     }else{
                         System.out.print("Não triangular");
@@ -77,8 +76,8 @@ public class EX04 {
                     break;
 
                 case 6:
-                    System.out.print("Introduza um novo numero: ");
-                    num2 = input.nextInt();
+                    System.out.println("Introduza um novo numero: ");
+                    num = input.nextInt();
                     break;
 
                 case 0: //

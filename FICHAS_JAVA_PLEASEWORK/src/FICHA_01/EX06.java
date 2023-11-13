@@ -13,32 +13,45 @@ public class EX06 {
         Scanner input = new Scanner(System.in);
 
 // vou declarar variaveis:
-        double val1, val2;
-
-
+        double valor1, valor2;
 
 // vou pedir os numeros e lê-los:
         System.out.print("INTRODUZA UM NÚMERO: ");
-        val1=input.nextDouble();
+        valor1=input.nextDouble();
 
         System.out.print("INTRODUZA O SEGUNDO NÚMERO: ");
-        val2=input.nextDouble();
+        valor2=input.nextDouble();
+
+        // Apresentar valor1 e valor2
+        System.out.println("\nValor1: " + valor1);
+        System.out.println("Valor2: " + valor2);
 
         //FORMA FÁCIL:
-//        double aux;
-//        aux = val1;
-//        val1=val2;
-//        val2=aux;
+        double aux;
+        aux = valor1;
+        valor1=valor2;
+        valor2=aux;
 
         // vou retornar os valores com a ordem trocada:
-        System.out.println( "\nval1: " + val1 );
-        System.out.println( "val2: " + val2 );
+        System.out.println("\nValor1: " + valor1);
+        System.out.println("Valor2: " + valor2);
+
+        ////////////////////////////////////////////////////////////
+        System.out.println("FORMA CRIATIVA DE TROCAR AS VARIAVEIS:");
+        System.out.println( "\nVal1: " + valor1 );
+        System.out.println( "Val2: " + valor2 );
+
+        // Trocar as variáveis
+        System.out.println("\nA trocar as variáveis...");
+
+        valor1 = valor1 + valor2;
+        valor2 = valor1 - valor2;
+        valor1 = valor1 - valor2;
 
 
-        //FORMA CRIATIVA, VAMOS TROCAR AS VARIAVEIS
-        val1=val1+val2;
-        val2=val1-val2;
-        val1 = val1 - val2;
+        // Apresentar valor1 e valor2
+        System.out.println("\nValor1: " + valor1);
+        System.out.println("Valor2: " + valor2);
 
 
 

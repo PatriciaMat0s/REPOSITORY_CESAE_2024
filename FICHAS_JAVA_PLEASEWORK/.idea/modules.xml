@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK.iml" filepath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FICHAS_JAVA.iml" filepath="$PROJECT_DIR$/FICHAS_JAVA.iml" />
     </modules>
   </component>
 </project>
