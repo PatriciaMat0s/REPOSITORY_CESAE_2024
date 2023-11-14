@@ -21,5 +21,13 @@ public static void main(String[] args) throws FileNotFoundException {
                 linha = sc.nextLine();
                 System.out.println(linha);
                 }
-        }
+
+        //Para fazer com uma função:
+//        import static FICHA_07.BibliotecaFicheirosJava.imprimirFicheiro;
+//        imprimirFicheiro("Ficheiros/exercicio_01.txt");
+//        imprimirFicheiro("Ficheiros/exercicio_01_Alternativa01.txt");
+//        imprimirFicheiro("Ficheiros/exercicio_01_Alternativa02.txt");
+
+
+}
 }

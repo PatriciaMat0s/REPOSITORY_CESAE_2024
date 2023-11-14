@@ -9,7 +9,7 @@ Juliana Brás,23
 Anabela Martins,45
 Carolina Machado,67
 João Silva,54
-Tânia Gonçalves,23
+Tânia Gonçalves,123
 Sérgio Pontes,19
 Cristiana Matos,65
 Ana Ramos,65

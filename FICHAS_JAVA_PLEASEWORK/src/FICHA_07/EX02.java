@@ -21,8 +21,9 @@ public class EX02 {
 
         maquinaEscrever.println(conteudoNovo);
         maquinaEscrever.println("Escreve qualquer coisa!");
+        maquinaEscrever.println("Mais qualquer coisa!");
 
-        maquinaEscrever.close();
+        maquinaEscrever.close();  //ESSENCIAL para gravar o conteudo no ficheiro; na leitura é redundante
 
     }
 }
