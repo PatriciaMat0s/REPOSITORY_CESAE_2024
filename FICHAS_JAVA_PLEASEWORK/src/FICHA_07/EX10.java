@@ -22,16 +22,18 @@ public class EX10 {
 
         //Vou instanciar e inicializar as variaveis
         String linha;
-        double precoUnit=0, total=0;
+        double precoTotal=0;
+        linha = maquinaLer.nextLine(); //para saltar o cabeçalho, vistoq ue me interessa fazer cãlculos e letras nao podem ser convertidas a numeros
 
         while (maquinaLer.hasNextLine()) {  //Usei ciclo while (e nao o for) porque nao sei o numero de linhas que existem no ficheiro
             linha = maquinaLer.nextLine();
-            String[ ] itensLinha = linha.split(" ");
-            itensLinha[]
-
+            String[ ] itensLinha = linha.split(",");
+//            if (itensLinha[0]=="tipo_produto") {
+//                precoTotal=0;} // visto que a condiçao sera sempre V, nao estorva
+            precoTotal = precoTotal + Double.parseDouble(itensLinha[2])*Double.parseDouble(itensLinha[3]);
         }
 
-        System.out.println("O total de compras no ficheiro de texto '" + ficheiro + " soma " + total + " Euros.");
+        System.out.println("O total de compras no ficheiro de texto '" + ficheiro + " soma " + precoTotal + " Euros.");
 
     }
 }
