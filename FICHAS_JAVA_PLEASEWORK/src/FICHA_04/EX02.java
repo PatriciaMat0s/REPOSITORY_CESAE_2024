@@ -21,7 +21,7 @@ public class EX02 {
             System.out.println("1 - CRIAR");
             System.out.println("2 - ATUALIZAR");
             System.out.println("3 - ELIMINAR");
-            System.out.println("4 - SAIR");
+            System.out.println("0 - SAIR");
             System.out.print("Insira o número da opção desejada: ");
             menu = input.nextInt();
 
@@ -32,7 +32,7 @@ public class EX02 {
                     break;
                 case 3: System.out.println("Escolheu Eliminar");
                     break;
-                case 4:
+                case 0:
                     break; //nao faz nada mas tem de estar aqui para nao entrar no default
                 default:
                     System.out.println("Opção inválida!");;
