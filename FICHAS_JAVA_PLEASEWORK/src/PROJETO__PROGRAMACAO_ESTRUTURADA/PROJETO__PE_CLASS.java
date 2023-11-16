@@ -185,7 +185,7 @@ public class PROJETO__PE_CLASS {
                 //System.out.println("6 - Imprimir qual o cliente (nome, contacto, email), que mais dinheiro gastou na loja, e respetivos jogos adquiridos");
                 System.out.println("0 - Sair");
 
-                System.out.print(" --- Indique o número da operação pretendida: ");
+                System.out.print("--- Indique o número da operação pretendida: ");
                 opcaoMenuAdmin = input.nextInt();
 
                 switch (opcaoMenuAdmin) {
@@ -202,7 +202,7 @@ public class PROJETO__PE_CLASS {
 
                         break;
 
-                    case 2:
+                    case 2: //Imprima quantas vendas foram executadas e o seu valor total
                         // O número de vendas corresponde ao número de linhas da matriz criada a partir dos dados do ficheiro
                         //Note-se que as funções de criar a dita matriz já excluem a linha do cabeçalho
                         System.out.println("Foram efectuadas " + matrixFile.length + " vendas.");
@@ -212,11 +212,11 @@ public class PROJETO__PE_CLASS {
                         System.out.println("Valor total das vendas: " + somatorioUltimaColunaMatrix(matrixFile) + " Euros.");
                         break;
 
-                    case 3:
+                    case 3: //Sabendo que a GameStart tem 20% de lucro em cada jogo, calcule o total de lucro
                         System.out.println("Lucro do total das vendas: " + (0.2 * somatorioUltimaColunaMatrix(matrixFile)) + " Euros.");
                         break;
 
-                    case 4: //Imprimir dados através do IdCliente (coluna de índice 1 na matrixIndice):
+                    case 4: //Imprimir dados através do IdCliente (coluna de índice 1 na matrixIndice)
                         int idCliente;
                         System.out.print("INTRODUZA IdCliente (NÚMERO ENTRE 1 E 60): ");
                         idCliente = input.nextInt();
@@ -232,14 +232,14 @@ public class PROJETO__PE_CLASS {
                         break;
 
                     case 5: //Imprima qual o jogo mais caro e os clientes que o compraram
-                        //Neste caso interessa determinar o valor máximo (depois de convertido para double) da coluna mais à direita da matrixFile
-                        //Tratar a coluna [] mais à direita como um array:
 
                         //Assumir um elemento qualquer da coluna referida para termo de comparação, neste caso o primeiro a contar do topo:
                         double valorMaisCaro = Double.parseDouble(matrixFile[0][matrixFile[0].length - 1]);
-                        String jogoMaisCaro = "";
-                        String clientesMaisCaros = "";
 
+                        String jogoMaisCaro = "";
+                        String clienteMaisCaro = "";
+
+                        //Encontrar o valor máximo (depois de convertido para double) da coluna mais à direita da matrixFile:
                         for (int indice = 0; indice < matrixFile.length; indice++) {
                             if (Double.parseDouble(matrixFile[indice][matrixFile[0].length - 1]) > valorMaisCaro) {
                                 valorMaisCaro = Double.parseDouble(matrixFile[indice][matrixFile[0].length - 1]);
@@ -249,9 +249,14 @@ public class PROJETO__PE_CLASS {
                         }
 
                         System.out.println("O jogo mais caro é '" + jogoMaisCaro + "', e tem um custo de " + valorMaisCaro + "Euros.");
-                        System.out.println("Foi adquirido pelos clientes: "++".");
+                        System.out.println("Foi adquirido pelos seguintes clientes:");
 
-
+                        for (int indice = 0; indice < matrixFile.length; indice++) {
+                            if ((matrixFile[indice][matrixFile[0].length - 2]).equals(jogoMaisCaro)){
+                                clienteMaisCaro=matrixFile[indice][2];
+                                System.out.println("» "+clienteMaisCaro);
+                            }
+                        }
                         break;
 
 
@@ -295,7 +300,7 @@ public class PROJETO__PE_CLASS {
                 System.out.println("4 - Pesquisa por Editora");
                 System.out.println("0 - Sair");
 
-                System.out.print(" --- Indique o número da operação pretendida: ");
+                System.out.print("--- Indique o número da operação pretendida: ");
                 opcaoMenuCliente = input.nextInt();
 
                 switch (opcaoMenuCliente) {
