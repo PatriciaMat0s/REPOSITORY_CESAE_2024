@@ -171,7 +171,7 @@ public class PROJETO__PE_CLASS {
                 System.out.print("PASSWORD ERRADA! REINTRODUZA A SUA PASSWORD: ");
                 passAdminInput = input.next();
             } else {
-                System.out.println("- BEM-VINDO, SR/A. ADMINISTRADOR/A!");
+                System.out.println("- LOGIN EFECTUADO COM SUCESSO. BEM-VINDO, SR/A. ADMINISTRADOR/A!");
             }
 
             do {
@@ -274,7 +274,6 @@ public class PROJETO__PE_CLASS {
         } //chaveta a fechar o if do menu do Administrador
 
         ///////////// Caso o utilizador escolha o menu CLIENTE:
-
         if (userType.equals("C") || userType.equals("c")) { //Abre o menu ADMIN a despistar o "case sensitive" do input do utilizador
 
             int opcaoMenuCliente;
@@ -288,13 +287,13 @@ public class PROJETO__PE_CLASS {
                 System.out.print("PASSWORD ERRADA! REINTRODUZA A SUA PASSWORD: ");
                 passClienteInput = input.next();
             } else {
-                System.out.println("- BEM-VINDO, SR/A. CLIENTE!");
+                System.out.println("- LOGIN EFECTUADO COM SUCESSO. BEM-VINDO, SR/A. CLIENTE!");
             }
 
             do {
                 System.out.println("\n*** OPÇÕES A IMPLEMENTAR: ");
 
-                System.out.println("1 - Registo na loja online");
+                System.out.println("1 - Entrada na loja online");
                 System.out.println("2 - Reserva de lugar de estacionamento");
                 System.out.println("3 - Lista dos videojogos disponíveis");
                 System.out.println("4 - Pesquisa por Editora");
@@ -305,9 +304,20 @@ public class PROJETO__PE_CLASS {
 
                 switch (opcaoMenuCliente) {
                     case 1:
-                       break;
+                        String nome, telefone, mail;
+                        System.out.print("INSIRA O SEU NOME: ");
+                        nome = input.next();
+                        System.out.print("INSIRA O SEU TELEFONE: ");
+                        telefone = input.next();
+                        System.out.print("INSIRA O SEU E-MAIL: ");
+                        mail = input.next();
+                        System.out.println("CLIENTE: "+nome+" ||| TELEFONE: "+telefone+" | E-MAIL: "+mail);
+                        break;
 
-                    case 2:
+                    case 2: //
+                        System.out.println("LUGARES DE ESTACIONAMENTO DISPONÍVEIS:");
+
+
                         break;
 
                     case 3:
