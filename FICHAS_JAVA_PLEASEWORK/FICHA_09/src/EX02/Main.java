@@ -1,6 +1,12 @@
-//        1. Escreva um programa onde cria uma classe chamada
-//        "Pessoa" com um atributo de nome, idade e altura.
-//        Crie duas instâncias da classe "Pessoa", defina os seus atributos               usando o construtor e imprima seu nome, idade e altura
+//        Escreva um programa onde cria uma classe chamada "Cao" com um nome (String), um atributo de raça
+//(String) e um atributo latido (String) que por defeito deve ser “Au au au”.
+//a. Deve conter um método de ladrar (imprime na consola um latido).
+//b. Crie três instâncias da classe "Cão", defina os seus atributos (nome e raça) usando o construtor.
+//c. Modifique o latido usando os métodos setter e invoque o método latir.
+
+//Lembrete: Por boa prática, todos os atributos devem estar incluídos no construtor de forma a serem
+//        inicializados, mas nem todos os atributos precisam de ser recebidos como argumentos do método
+//        construtor (Podem ser inicializados com valores padrão da nossa escolha).
 
 package EX02;
 
@@ -8,27 +14,26 @@ public class Main {
 
         public static void main(String[] args) {
 
-            //Vou instanciar duas pessoas:
-            Pessoa pato = new Pessoa("Patrick", 48, 1.8);
-            Pessoa pata = new Pessoa("Patrícia", 38, 1.6);
-            // pato, pata são instâncias OU objectos
-            // começam sempre com letra minuscula
+            //Vou instanciar dois caes e definir os seus atributos usando o construtor
+            Cao luna = new Cao("Luna", "canishe");
+            Cao pluto = new Cao("Mauzao", "doberman");
+            Cao pantufa = new Cao("Zigzag", "rafeiro");
 
-            // Imprimir dados da Pessoa (classe) pato;
-            System.out.println("Pato: "+pato.getNome()); //nao é pato.idade  !!!
-            System.out.println("Pato: "+pato.getIdade());
-            System.out.println("Pato: "+pato.getAltura());
 
-            // Imprimir dados da Pessoa (classe) pata;
-            System.out.println("Pato: "+pata.getNome());
-            System.out.println("Pato - idade: "+pata.getIdade());
-            System.out.println("Pato - altura: "+pata.getAltura());
+            luna.Ladrar();
+            pluto.Ladrar();
+            pantufa.Ladrar();
+
 
             // Mudar o conteudo dos atributos das instâncias da classe:
-            //Primeiro fazer o set do novo atributo
-            pata.setIdade(300);
-            System.out.println("Pato nova idade: "+pata.getIdade());
 
+            luna.setLadrar("BHEU BHEU BHEU");
+            pluto.setLadrar("plu plu plu");
+            pantufa.setLadrar("pant pant pant");
+
+            luna.Ladrar();
+            pluto.Ladrar();
+            pantufa.Ladrar();
 
 
         }
