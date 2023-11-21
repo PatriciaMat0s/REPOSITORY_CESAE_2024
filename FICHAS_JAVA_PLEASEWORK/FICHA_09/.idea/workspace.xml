@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52bf12e6-5386-46fa-a343-9dce7b9dfec4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EX02/Cao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX04/Circulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX04/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX05/Carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX05/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX06/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX06/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX07/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX07/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX08/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX08/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX09/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX09/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX10/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX10/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX11/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX11/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EX01/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX01/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EX01/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX01/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EX02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX02/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EX02/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EX04/Circulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX04/Circulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EX06/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX06/Calculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/softdev/Desktop/CESAE_SOFTDEV_2023/FICHAS_JAVA_PLEASEWORK/FICHA_09"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/softdev/Desktop/CESAE_SOFTDEV_2023/FICHAS_JAVA_PLEASEWORK/FICHA_09&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\softdev\Desktop\CESAE_SOFTDEV_2023\FICHAS_JAVA_PLEASEWORK\FICHA_09\src\EX02" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="EX01" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="EX07" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,5 +82,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/EX09/Produto.java</url>
+          <line>21</line>
+          <properties class="EX09.Produto" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

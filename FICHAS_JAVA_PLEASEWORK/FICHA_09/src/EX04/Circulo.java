@@ -8,10 +8,12 @@ package EX04;
 public class Circulo {
 
     private Double raio;
+    private double pi=3.1415;
 
     public Circulo(Double raio) {
         this.raio = raio;
     }
+
 
     public Double calcularArea(){
         return (this.raio)*(this.raio)*3.1415;
