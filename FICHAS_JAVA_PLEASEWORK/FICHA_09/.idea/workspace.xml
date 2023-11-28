@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf12e6-5386-46fa-a343-9dce7b9dfec4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/FICHA_10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01/Carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01/TipoCombustivel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX02/Conta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX02/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX03/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX03/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX04/Acabamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX04/Imovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX04/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX04/Tipologia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX05/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX05/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX01/.idea/EX01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01_redo/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01_redo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01_redo/TipoCombustivel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX02_redo/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_10/src/EX02_redo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/FICHA__11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX01/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX01/MusicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX01/Musica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX02/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX02/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX02/Sorteio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX02_redo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX02_redo/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_11/src/EX02_redo/Sorteio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/FICHA_12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/src/EX02/Camiao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/src/EX02/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/src/EX02/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/src/EX02/Mota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/src/EX02/TipodeCombustivel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FICHA_12/src/EX02/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EX01/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX01/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EX05/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EX05/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FICHA_10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FICHA_10/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FICHA_10/src/EX01/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FICHA_10/src/EX01/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FICHA_10/src/EX04/Imovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FICHA_10/src/EX04/Imovel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FICHA_10/src/EX04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FICHA_10/src/EX04/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FICHA_10/src/EX05/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FICHA_10/src/EX05/Pessoa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +60,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2YIjHAMmuNEKl88CYbnkj3MFiz0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,7 +74,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/softdev/Desktop/CESAE_SOFTDEV_2023/FICHAS_JAVA_PLEASEWORK/FICHA_09"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/apatc/OneDrive/Desktop/CESAE_SOFTDEV_2023/FICHAS_JAVA_PLEASEWORK/src/FICHA_07"
   }
 }]]></component>
   <component name="RecentsManager">
