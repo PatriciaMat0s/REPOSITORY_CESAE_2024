@@ -4,8 +4,8 @@ public class Carro extends Veiculo {
 
     private int quantidadePassageiros;
 
-    public Carro(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipodeCombustivel tipoCombustivel, double consumo, int quantidadePassageiros) {
-        super(marca, modelo, anoFabrico, potencia, cilindrada, tipoCombustivel, consumo);
+    public Carro(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipodeCombustivel tipodeCombustivel, double consumo, int quantidadePassageiros) {
+        super(marca, modelo, anoFabrico, potencia, cilindrada, tipodeCombustivel, consumo);
         this.quantidadePassageiros = quantidadePassageiros;
     }
 

@@ -13,14 +13,17 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        Carro joana = new Carro("Dacia", "sandero", 2022, 110, 1200, TipodeCombustivel.GPL, 8, 5);
+        Carro joana = new Carro("Dacia", "Sandero", 2022, 110, 1200, TipodeCombustivel.GPL, 8, 5);
 
-        Carro patricia = new Carro("Peugeot", "206", 2014, 150, 900, TipodeCombustivel.DIESEL, 5, 2);
+        Carro patricia = new Carro("Peugeot", "206", 2022, 110, 1200, TipodeCombustivel.DIESEL, 5, 2);
 
         Veiculo vencedor = joana.corrida(patricia);
-        System.out.println("Vencdedor da corrida:");
-        vencedor.exibirDetalhes();
-
+        System.out.println("Vencedor da corrida:");
+        if (vencedor != null){
+            vencedor.exibirDetalhes();
+        }else{
+            System.out.println("EMPATE!");
+        }
 
         Mota zepedro = new Mota("zundapp", "M50", 1980,500, 555, TipodeCombustivel.GASOLINA, 10);
 
@@ -36,6 +39,16 @@ public class Main {
         }else{
             System.out.println("EMPATE!");
         }
+
+        //imprimir o txt da mota:
+        zepedro.imprimirMota("Mota.txt");
+        System.out.println("Custo da viagem de "+joana.getMarca()+ "-"+joana.getModelo()+": " +joana.calcularCusto(150)+"Euros.");
+
+        //viagem valida do camiao:
+        scania.viagem(200, 1000);
+
+        //viagem invalida do camiao:
+        scania.viagem(200, 3000);
 
     }
 }

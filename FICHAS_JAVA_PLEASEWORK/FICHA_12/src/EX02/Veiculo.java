@@ -1,8 +1,8 @@
 package EX02;
 
     public class Veiculo {
-        private String marca;
-        private String modelo;
+        protected String marca;
+        protected String modelo;
         private int anoFabrico;
         private int potencia;
         private int cilindrada;
@@ -10,7 +10,7 @@ package EX02;
         private double consumo;
 
 
-        public Veiculo(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipodeCombustivel tipoCombustivel, double consumo) {
+        public Veiculo(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipodeCombustivel tipodeCombustivel, double consumo) {
             this.marca = marca;
             this.modelo = modelo;
             this.anoFabrico = anoFabrico;
@@ -26,6 +26,14 @@ package EX02;
 
         public double getConsumo() {
             return consumo;
+        }
+
+        public String getMarca() {
+            return marca;
+        }
+
+        public String getModelo() {
+            return modelo;
         }
 
         public void ligar() {
