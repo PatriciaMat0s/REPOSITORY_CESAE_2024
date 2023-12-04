@@ -28,10 +28,19 @@ public class Catalogo {
     }
 
     public void imprimirCatalogo(){
+        //instanceof --- checks whether an object is an instance of a specific class:
+//                public class Main {
+//                    public static void main(String[] args) {
+//                        Main myObj = new Main();
+//                        System.out.println(myObj instanceof Main); // returns true
+//                    }
+//                }
+
         System.out.println("************ Catálogo Aviões ************\n");
         for(Aviao aviaoAtual: this.catalogoAvioes){
 
             if(aviaoAtual instanceof JatoPrivado){ // Sei que aviaoAtual é Avião e JatoPrivado
+
                 JatoPrivado jatoPrivadoAtual = (JatoPrivado) aviaoAtual;
                 jatoPrivadoAtual.exibirDetalhesJatoPrivado();
             }
