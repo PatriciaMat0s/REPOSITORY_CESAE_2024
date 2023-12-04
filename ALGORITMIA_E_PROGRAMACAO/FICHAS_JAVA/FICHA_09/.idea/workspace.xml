@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52bf12e6-5386-46fa-a343-9dce7b9dfec4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/BD_aula01.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL00_AULA01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01E02_MODELO_DADOS.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01EX03.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01EX03.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01EX03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01EX04.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E01_MODELO_DADOS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E01_MODELO_DADOS_a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E02.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E02_MD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E03.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E03_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E04.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E04_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E05.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_E05_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL01_PL01E02_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL01_E01_MODELO_DADOS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL01_E01_MODELO_DADOS_a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL01_E02_MD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL01_E03_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL01_E04_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL01_E05_MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/PL03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/PL02-03/Untitled Diagram.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASES_DE_DADOS/f01e02.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHAS_JAVA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHAS_JAVA_PLEASEWORK1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/FICHA_09.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/.idea/EX01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX01/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX02/Cao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX02/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX04/Circulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX04/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX05/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX05/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX06/Calculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX06/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX07/Livro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX07/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX08/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX08/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX09/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX09/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX10/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX10/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX11/Conta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_09/src/EX11/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/FICHA_10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX01/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX01/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX01/TipoCombustivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX01_redo/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX01_redo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX01_redo/TipoCombustivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX02/Conta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX02/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX02_redo/Conta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX02_redo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX03/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX04/Acabamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX04/Imovel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX04/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX04/Tipologia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX05/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_10/src/EX05/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/FICHA__11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX01/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX01/MusicPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX01/Musica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX02/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX02/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX02/Sorteio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX02_redo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX02_redo/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_11/src/EX02_redo/Sorteio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/FICHA_12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/Mota.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/EX02/Camiao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/EX02/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/EX02/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/EX02/Mota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/EX02/TipodeCombustivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/EX02/Veiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/PIZZARIA/Enums/Tamanho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/PIZZARIA/Enums/UnidadeMedida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/PIZZARIA/Ingrediente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FICHA_12/src/PIZZARIA/Pizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_01_Alternativa01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_01_Alternativa02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_03_Alternativa01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_03_copiado.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_05_1999.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_05_31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_07.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_08.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_08_vitor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_10.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_12.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/FILES/exercicio_13.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHAS_JAVA_PLEASEWORK.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX06a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_01/EX09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_02/EX17.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03/EX14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03_EXTRA/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03_EXTRA/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03_EXTRA/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_03_EXTRA/EX_04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_04/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_04/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_04/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_04/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_05/EX13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/BibliotecaMatrizes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX03a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_06/EX08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/BibliotecaFicheirosJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/EX11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/FICHA_07/FICHA_07.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/GameStart_V2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/PROJETO__PE_CLASS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/PROJETO__PROGRAMACAO_ESTRUTURADA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FICHAS_JAVA_PLEASEWORK/src/PROJETO__PROGRAMACAO_ESTRUTURADA/teste.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2YIjHAMmuNEKl88CYbnkj3MFiz0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/apatc/OneDrive/Desktop/CESAE_SOFTDEV_2023/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/FICHA_10",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\softdev\Desktop\CESAE_SOFTDEV_2023\FICHAS_JAVA_PLEASEWORK\FICHA_09\src\EX02" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="EX01" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="EX07" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52bf12e6-5386-46fa-a343-9dce7b9dfec4" name="Changes" comment="" />
+      <created>1700219911923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700219911923</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/EX09/Produto.java</url>
+          <line>21</line>
+          <properties class="EX09.Produto" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
