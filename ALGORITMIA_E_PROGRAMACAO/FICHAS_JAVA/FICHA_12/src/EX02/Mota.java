@@ -3,7 +3,6 @@ package EX02;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.io.PrintWriter;
 
 public class Mota extends Veiculo{
 
