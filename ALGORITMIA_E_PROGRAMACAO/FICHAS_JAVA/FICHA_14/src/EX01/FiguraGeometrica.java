@@ -1,6 +1,6 @@
 package EX01;
 
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
     private String cor;
 
     public FiguraGeometrica(String cor) {
