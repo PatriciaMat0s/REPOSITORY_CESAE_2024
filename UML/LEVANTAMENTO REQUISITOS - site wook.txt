@@ -1,0 +1,68 @@
+CESAE DIGITAL | UML (unified modeling language)
+
+LEVANTAMENTO DE REQUISITOS - SITE WOOK
+
+
+
+FUNCIONAIS
+
+Ter uma homepage/landpage
+Ter área do cliente
+	Ter uma pagina de dados pessoais do cliente
+	Ter página das encomendas do cliente
+	Ter página de gestão de subscriçoes do cliente
+	Efectuar Log-in
+	Efectuar novo registo de cliente
+	Recuperar Password
+	Ter Apoio ao cliente
+
+Ter um campo de pesquisa
+
+Ter uma lista de desejos por cliente
+
+Ter links para as redes sociais
+Ter um menu de categorias de livros
+Ter um header de campanhas promocionais
+	Ter uma página de campanhas
+Ter um top de livros
+Ter um cesto de compras
+	Ter pagamento por MB Way
+	Ter pagamento por Cartao Credito
+	Ter pagamento por transferencia bancaria
+Ter uma página para cada produto
+	Ter uma página para cada livro
+	Ter uma página para cada evento (bilheteira)
+Devolver livros
+
+
+
+NÃO FUNCIONAIS
+
+Mostrar a janela pop up da gestão de cookies
+Enviar email de recuperação de password
+Encriptar dados
+Ter uma base de dados - SQL Server
+Ter capacidade de animação (JSS)
+CSS (responsividade do site)
+Framework
+Filtros 
+Segurança
+SEO - search engine optimization
+Windows server 2020
+Requisitos mínimos (hardware) - ESPECIFICAR SEMPRE - 1GB ram placa gráfica (GPU)
+Performance (hardware)
+Tempo de sinal offline (indisponibilidade): 3min/ano - QOS (QUALITY OF SERVICE)	
+DOS - denial of service (DDOS - distributed denial of service) - quando há multiplos users a aceder ao site) - 10k acessos por minuto (especificar sempre)
+
+
+
+++++++++
+
+DIAGRAMAS USE-CASE: visao helicopetro, AS funçoes principais seriam:	:
+
+	pesquisa
+	consulta pagina livros
+	log-in
+	compra
+	gestao carrinho compras
+
