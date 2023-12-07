@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="31f1bb6f-3327-4499-9672-0b8553c37e18" name="Changes" comment="" />
+    <list default="true" id="31f1bb6f-3327-4499-9672-0b8553c37e18" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/DP_STRATEGY/src/EX01/AttackStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/DP_STRATEGY/src/EX01/MagicAttackStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/DP_STRATEGY/src/EX01/MeleeAttackStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/DP_STRATEGY/src/EX01/RangedAttackStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/DP_STRATEGY/src/EX01/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/DP_STRATEGY/src/EX02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/SINGLETON/src/EX01/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/SINGLETON/src/EX01/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/SINGLETON/src/EX03/UserSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/FICHA_09/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/FICHA_09/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/FICHA_09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/FICHA_09/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BASES_DE_DADOS/PL03 - GRUPO/TRABALHO_FINAL_V3.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/BASES_DE_DADOS/PL03 - GRUPO/TRABALHO_FINAL_V3.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_09/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/FICHA_14.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/src/EX01/Circulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/src/EX01/FiguraGeometrica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/src/EX01/Rectangulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/src/EX01/Triangulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FICHAS_JAVA_PLEASEWORK/FICHA_14/src/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +43,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2XqVzFqeWlZE5qaLLO3ZbfnRIkm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,7 +55,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/softdev/Desktop/CESAE_SOFTDEV_2023/FICHAS_JAVA_PLEASEWORK"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/apatc/OneDrive/Desktop/CESAE_SOFTDEV_2023/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/FICHA_11"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

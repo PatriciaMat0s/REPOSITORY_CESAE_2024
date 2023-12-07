@@ -1,11 +1,11 @@
 package EX01;
 
-public class Rectangulo extends FiguraGeometrica{
+public class Retangulo extends FiguraGeometrica{
 
     private double comprimento;
     private double largura;
 
-    public Rectangulo(String cor, double comprimento, double largura) {
+    public Retangulo(String cor, double comprimento, double largura) {
         super(cor);
         this.comprimento = comprimento;
         this.largura = largura;
