@@ -2,7 +2,9 @@ package EX01;
     public class Main {
         public static void main(String[] args) {
 
-            DatabaseConnection databaseConnection3306  = DatabaseConnection.getInstance("jdbc:mysql://localhost:3306/mydatabase");
+             //DatabaseConnection databaseConnection3306 = new DatabaseConnection("jdbc:mysql://localhost:3306/mydatabase");
+
+            DatabaseConnection databaseConnection3306 = DatabaseConnection.getInstance("jdbc:mysql://localhost:3306/mydatabase");
             DatabaseConnection databaseConnection8000 = DatabaseConnection.getInstance("jdbc:mysql://localhost:8000/mydatabase");
             DatabaseConnection databaseConnection9600 = DatabaseConnection.getInstance("jdbc:mysql://localhost:9600/mysqldatabase");
 

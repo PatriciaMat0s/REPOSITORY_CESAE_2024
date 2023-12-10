@@ -4,15 +4,14 @@ public class DatabaseConnection {
         private String connectionString;
         private static DatabaseConnection instance;
 
-        private DatabaseConnection(String connectionString) {
-            this.connectionString = connectionString;
-        }
+    public DatabaseConnection(String connectionString) {
+        this.connectionString = connectionString;
+    }
 
-        public static DatabaseConnection getInstance(String connectionString){
+    public static DatabaseConnection getInstance(String connectionString){
             if(instance == null){
                 instance = new DatabaseConnection(connectionString);
             }
-
             return instance;
         }
 
