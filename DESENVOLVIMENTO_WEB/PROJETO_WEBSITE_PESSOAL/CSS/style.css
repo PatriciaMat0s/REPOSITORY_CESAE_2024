@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
 * {
     font-family: 'Anaheim', sans-serif;
-    background-color: var(--electric-blue);
+    /* background-color: var(--electric-blue); */
 }
 
 
@@ -53,6 +53,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  width: 100%;
+  border: 1px solid red;
 }
 
 /* Navbar links */
