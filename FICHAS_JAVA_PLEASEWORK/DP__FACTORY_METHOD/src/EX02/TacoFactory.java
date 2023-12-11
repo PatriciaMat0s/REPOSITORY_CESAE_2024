@@ -10,6 +10,10 @@ public class TacoFactory {
                     return new TacoFrango();
                 case "taco vegetariano":
                     return new TacoVegetariano();
+
+//                case "feijao":
+//                    return TacoFeijao(); //CRIAR OBJECTOS SEM
+
                 default:
                     throw new IllegalArgumentException("Não temos esse taco: " + type);
             }
