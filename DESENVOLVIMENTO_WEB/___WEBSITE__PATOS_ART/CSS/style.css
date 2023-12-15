@@ -95,31 +95,33 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     animation: slider 20s infinite;
    }
     
    .slider .slide:nth-child(1) {
-      background-image: url('https://payload.cargocollective.com/1/24/781101/13661641/47x37_670.jpg');
+      background-image: url('/Imagens/\'\'achas\'\'.jpg');
       animation-delay: 0s;
    }
    
    .slider .slide:nth-child(2) {
-      background-image: url('https://payload.cargocollective.com/1/24/781101/13661641/Patrcia-Matos-----Onde-Sou-Mais-Verdadeira--_1494.jpg');
+      background-image: url('/Imagens/LUZDENTRO2.JPG');
       animation-delay: -4s;
    }
    
    .slider .slide:nth-child(3) {
-      background-image: url('https://payload.cargocollective.com/1/24/781101/13661641/IMG_6524a_1000.jpg');
+      background-image: url('/Imagens/ATEFICOVESGA.JPG');
       animation-delay: -8s;
    }
    
    .slider .slide:nth-child(4) {
-      background-image: url('https://payload.cargocollective.com/1/24/781101/13661641/62229337_10217535366008654_5196141225287090176_n_960.jpg');
+      background-image: url('/Imagens/\'\'Monkey\ mind\'\'____Patos__2021.jpg');
       animation-delay: -12s;
    }
    
    .slider .slide:nth-child(5) {
-      background-image: url('https://payload.cargocollective.com/1/24/781101/13661641/IMG_7939-2_973.jpg');
+      background-image: url('/Imagens/\'\'Dualidade\ I.0\'\'.jpg');
       animation-delay: -16s;
    }
    
