@@ -1,4 +1,0 @@
-interface Fabrica {
-    Produto criarProduto();
-}
-

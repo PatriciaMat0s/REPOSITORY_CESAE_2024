@@ -1,9 +1,24 @@
-acção:		sintaxe:
-		ArrayList<tipodadosAL> nomeAL = new ArrayList<>(); 
-print on the console window		System.out.println( );  System.out.print( );
-instantiation of the user input Scanner		import java.util.Scanner;   Scanner nomeScanner = new Scanner(System.in);
-read user input		tipodados nomeVariavel = input.nextTipodados();  
-		next(); nextBoolean(); nextInt(); nextDouble(); nextLine()
+declarar um array como atributo de classe:	
+	ArrayList<tipodadosAL> nomeAL = new ArrayList<>(); 
+
+inicializar um arraylist no metodo construtor da classe:
+	this.nomeAL = new ArrayList<>();
+
+exemplo:
+    private ArrayList<Marisco> mariscoPescado;
+    this.mariscoPescado = new ArrayList<>();
+
+
+
+print on the console window		
+	System.out.println( );  System.out.print( );
+
+instantiation of the user input Scanner		
+	import java.util.Scanner;   Scanner nomeScanner = new Scanner(System.in);
+
+read user input		
+	tipodados nomeVariavel = input.nextTipodados();  
+	next(); nextBoolean(); nextInt(); nextDouble(); nextLine()
 		
 		
 		

@@ -1,4 +1,0 @@
-interface Produto {
-    void exibirInfo();
-}
-
