@@ -16,7 +16,7 @@ public class Mota extends Veiculo {
 
     @Override
     public void mostrarDetalhes() {
-
+        super.mostrarDetalhes();
     }
 }
 

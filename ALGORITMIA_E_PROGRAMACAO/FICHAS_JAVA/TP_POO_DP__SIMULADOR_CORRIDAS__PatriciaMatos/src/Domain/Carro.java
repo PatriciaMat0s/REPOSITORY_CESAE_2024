@@ -20,9 +20,7 @@ public class Carro extends Veiculo {
 
     @Override
     public void mostrarDetalhes() {
-        super.exibirDetalhes();
-        System.out.println("Nº Passageiros: " + this.quantidadePassageiros);
-
-
+        super.mostrarDetalhes();
+        System.out.println("Tipo de Carro: " + this.tipoCarro);
     }
 }

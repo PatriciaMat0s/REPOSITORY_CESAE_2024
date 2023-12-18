@@ -31,8 +31,9 @@ public static class Jogo {
             System.out.println("YOU CURRENTLY HAVE "+fichasCorrida+" COINS!");}
         if (grauDificuldade.equalsIgnoreCase("P") || grauDificuldade.equalsIgnoreCase("p")) { //Despistar o "case sensitive" com uma função das Bibliotecas
             fichasCorrida = 5000;
-            System.out.println("YOU CURRENTLY HAVE "+fichasCorrida+" COINS!");}
-    }
+            System.out.println("YOU CURRENTLY HAVE "+fichasCorrida+" COINS!");
+        }
+
 
         System.out.print("\nWHAT'S YOUR KIND OF MACHINE?  [ C : CAR  ||  M : MOTORBIKE ]");
         String tipoVeiculo = input.next();
@@ -48,6 +49,7 @@ public static class Jogo {
 //            else if (inputTipoCarro.equalsIgnoreCase("C")){tipoCarro = TipoCarro.CARROCA;}
 //        }
 
+        if (tipoVeiculo.equalsIgnoreCase("C")){
             // Instanciar carros para apresentar ao jogador:
             // Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro) {
             Carro carroInicial1 = new Carro("Renault", "Megáne",  200, 1300, 30,50000, TipoCarro.GT);
@@ -55,17 +57,35 @@ public static class Jogo {
             Carro carroInicial3 = new Carro("Cadillac", "LYRIQ",  500, 1000, 80, 180000, TipoCarro.GT);
             Carro carroInicial4 = new Carro("Ferrari", "296 GTB",  800, 900, 100, 300000, TipoCarro.GT);
 
+            System.out.println("CAR #1:");
+            carroInicial1.mostrarDetalhes();
+            System.out.println("*****");
+
+            System.out.println("CAR #2:");
+            carroInicial2.mostrarDetalhes();
+            System.out.println("*****");
+
+            System.out.println("CAR #3:");
+            carroInicial3.mostrarDetalhes();
+            System.out.println("*****");
+
+            System.out.println("CAR #4:");
+            carroInicial4.mostrarDetalhes();
+            System.out.println("*****");
+            System.out.println("");
+            System.out.println("WHICH ONE IS YOURS? [1] [2] [3] [4]");
+            
+
+        }
+
+
 
 
 
 //        Piloto piloto = new Piloto(nome, fichasCorrida, veiculoAtual, 0); // Como estamos prestes a jogar, o atributo número de vitórias foi inicializado a 0.
+    Piloto piloto = new Piloto(nome, fichasCorrida, veiculoAtual, 0); // Como estamos prestes a jogar, o atributo número de vitórias foi inicializado a 0.
 
 
-
-        Piloto piloto = new Piloto(nome, fichasCorrida, veiculoAtual, 0); // Como estamos prestes a jogar, o atributo número de vitórias foi inicializado a 0.
-
-            Piloto piloto = new Piloto(nome, fichasCorrida, veiculoAtual, 0); // Como estamos prestes a jogar, o atributo número de vitórias foi inicializado a 0.
-        return piloto;
 
         String userType;
         System.out.print("\nYOUR VEHICLE OF CHOICE? ( C - CAR || M - MOTORBIKE ): ");
