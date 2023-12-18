@@ -1,5 +1,4 @@
 public abstract class ItemCorrida {
-
     protected String nome;
     protected int precoFichasCorrida;
 

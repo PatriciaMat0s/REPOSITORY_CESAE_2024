@@ -22,17 +22,20 @@ public class Oficina {
     public void imprimirGaragem(){}
 
     /**
-     * Deve conter o método venderItem( ) que recebe o Piloto como parâmetro, e verifica se a compra pode ser efetuada, caso tal compra seja possível, deve acrescentar ao inventário do VeiculoAtual do Piloto o item, e decrementar as suas fichas de corrida.
-     * @param Piloto - número que o utilizador introduz
+     * Deve conter o método venderItem( ) que recebe o Piloto como parâmetro, e faz uma verificação de a compra poder ser efetuada. Caso afirmativo, acrescenta o item ao inventário do VeiculoAtual do Piloto, além de decrementar as fichas de corrida deste.
+     * @param piloto - número que o utilizador introduz
      */
-    public boolean venderItem(Piloto){}
+    public boolean venderItem(Piloto piloto){}
 
     /**
-     * Deve conter o método venderVeiculo( ) que recebe o Piloto como parâmetro, e verifica se a compra
-     * pode ser efetuada, caso tal compra seja possível, deve alterar o Veiculo do Piloto, e decrementar as suas
+     * Deve conter o método venderVeiculo( ) que recebe o Piloto como parâmetro, faz a verificação de a compra
+     * poder ser efetuada. Caso afirmativo, deve alterar o Veiculo do Piloto, bem como decrementar as suas
      * fichas de corrida.
-     * @param num - número que o utilizador introduz
+     * @param piloto
      */
-    public boolean venderVeiculo(Piloto){}
+    public boolean venderVeiculo(Piloto piloto){
+        return true;
+        return false;
+    }
 
 }

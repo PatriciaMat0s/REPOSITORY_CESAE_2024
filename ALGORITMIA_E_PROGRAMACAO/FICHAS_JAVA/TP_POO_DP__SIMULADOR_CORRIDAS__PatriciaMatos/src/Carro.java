@@ -1,3 +1,5 @@
+import Enums.TipoCarro;
+
 import java.util.ArrayList;
 
 public class Carro extends Veiculo {
@@ -13,7 +15,6 @@ public class Carro extends Veiculo {
         this.tipoCarro = tipoCarro;
         this.kitCorrida = new ArrayList<>();
     }
-
 
     @Override
     public void mostrarDetalhes() {

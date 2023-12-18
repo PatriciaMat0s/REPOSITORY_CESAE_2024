@@ -15,7 +15,7 @@ public class Modificacao extends ItemCorrida {
         this.carrosPermitidos = new ArrayList<>();
     }
 
-
+    @Override
     public void mostrarDetalhes() {
 
     }
