@@ -144,13 +144,13 @@ public class PROJETO__PE_CLASS {
 
 
         // Começar o menu!
-        // Imprimir na consola a introdução ao menu:
-//        System.out.println("");
-//        System.out.println("--- **  * -------------*------------- *  ** ---");
-//        System.out.println("************ --  * GAMESTART *  -- ************");
-//        System.out.println("--- **  * -------------*------------- *  ** ---");
-//        System.out.println("____ Os videojogos da sua vida estão aqui! ____");
-//        System.out.println("");
+        //Imprimir na consola a introdução ao menu:
+        System.out.println("");
+        System.out.println("--- **  * -------------*------------- *  ** ---");
+        System.out.println("************ --  * GAMESTART *  -- ************");
+        System.out.println("--- **  * -------------*------------- *  ** ---");
+        System.out.println("____ Os videojogos da sua vida estão aqui! ____");
+        System.out.println("");
 
         String userType;
         System.out.print("\nINTRODUZA O TIPO DE UTILIZADOR ( A - ADMIN || C - CLIENTE ): ");
