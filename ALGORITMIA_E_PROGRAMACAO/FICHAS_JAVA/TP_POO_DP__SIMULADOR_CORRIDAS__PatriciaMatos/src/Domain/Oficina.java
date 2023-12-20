@@ -3,7 +3,6 @@ package Domain;
 import java.util.ArrayList;
 
 public class Oficina {
-
     protected ArrayList<Veiculo> garagem; //representa os veículos que o Piloto poderá comprar durante o seu jogo. Sejam carros ou motas.
     protected ArrayList<ItemCorrida> stock; //representa os itens que o Piloto poderá comprar durante o seu jogo. Sejam Modificações ou Habilidades
 

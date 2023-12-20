@@ -4,13 +4,13 @@ public class Piloto {
     protected String nome;
     protected int fichasCorrida;
     protected Veiculo veiculoAtual;
-    protected int vitorias;
+    protected int numVitorias;
 
     public Piloto(String nome, int fichasCorrida, Veiculo veiculoAtual, int vitorias) {
         this.nome = nome;
         this.fichasCorrida = fichasCorrida;
         this.veiculoAtual = veiculoAtual;
-        this.vitorias = vitorias;
+        this.numVitorias = vitorias;
     }
 
     /**
