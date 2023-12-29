@@ -24,4 +24,5 @@ public class ItemsCorrida_Inventario {
         public ArrayList<ItemsCorrida> getStock() {
             return stock;
         }
+
     }

@@ -20,13 +20,16 @@ public class Modificacao extends ItemsCorrida {
     }
 
     /**
-     * FUNÇÃO QUE imprime aleatoriamente 6 itens em stock, assim como as suas especificações. Mesmo que a oficina tenha um stock maior, apenas 6 devem ser mostrados de forma aleatória
+     * FUNÇÃO AUXILIAR QUE VAI SER USADA NA CLASSE CSVtoAL_Stock, fazendo um CAST
      */
     public void addTipoCarroPermitido(TipoCarro tipoCarroNovo){
         this.carrosPermitidos.add(tipoCarroNovo);
     }
-    public void mostrarDetalhes() {
-
+    @Override
+    public void exibirDetalhes() {
+        super.mostrarDetalhes();
+//        System.out.println("Especificações técnicas: ");
+            System.out.println("WEAR REDUCTION: " + this.diminuicaoDesgaste + "\t| "+"WEIGHT REDUCTION: "+this.diminuicaoPeso+"Kg"+ "\t| "+"ELECTIBLE TYPES OF CAR: "+this.carrosPermitidos);
     }
 
 

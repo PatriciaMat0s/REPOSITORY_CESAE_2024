@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 
-//O intuito desta classe é aceder e extrair os dados contidos no arraylist stock, correspondente ao ficheiro ItemsCorrida.csv
+//O intuito desta classe é aceder e extrair os dados contidos no arraylist garagem, correspondente ao ficheiro VeiculosCorrida.csv
 
 public class Veiculos_Inventario {
     private ArrayList<Veiculo> garagem;

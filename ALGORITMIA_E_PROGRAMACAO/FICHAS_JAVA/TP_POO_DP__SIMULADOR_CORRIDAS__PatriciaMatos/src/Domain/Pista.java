@@ -8,16 +8,42 @@ public class Pista {
   protected double tempoRecordeSegundos;
   protected double distanciaVoltaMetros;
   protected int quantidadeVoltas;
-  protected ArrayList<Atrasos> momentosPista;
+  protected ArrayList<Atrasos> atrasosPista;
 
+  //método construtor:
     public Pista(String nome, double tempo, double tempoRecordeSegundos, double distanciaVoltaMetros, int quantidadeVoltas) {
         this.nome = nome;
         this.tempo = tempo;
         this.tempoRecordeSegundos = tempoRecordeSegundos;
         this.distanciaVoltaMetros = distanciaVoltaMetros;
         this.quantidadeVoltas = quantidadeVoltas;
-        this.momentosPista = new ArrayList<>();
+        this.atrasosPista = new ArrayList<>();
     }
 
+    //Getters para usar nos métodos da classe Piloto:
 
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getTempo() {
+        return tempo;
+    }
+
+    public double getTempoRecordeSegundos() {
+        return tempoRecordeSegundos;
+    }
+
+    public double getDistanciaVoltaMetros() {
+        return distanciaVoltaMetros;
+    }
+
+    public int getQuantidadeVoltas() {
+        return quantidadeVoltas;
+    }
+
+    public ArrayList<Atrasos> getAtrasosPista() {
+        return atrasosPista;
+    }
 }

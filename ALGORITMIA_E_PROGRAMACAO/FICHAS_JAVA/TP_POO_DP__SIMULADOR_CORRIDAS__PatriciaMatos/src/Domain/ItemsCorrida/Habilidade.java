@@ -1,7 +1,5 @@
 package Domain.ItemsCorrida;
 
-import Domain.ItemsCorrida.ItemsCorrida;
-
 public class Habilidade extends ItemsCorrida {
     protected double aumentoPotencia;
 
@@ -11,8 +9,11 @@ public class Habilidade extends ItemsCorrida {
     }
 
 
-    public void mostrarDetalhes() {
-
+    @Override
+    public void exibirDetalhes() {
+        super.mostrarDetalhes();
+//        System.out.println("Especificações técnicas: ");
+        System.out.println("HORSEPOWER AUGMENTATION: "+ this.aumentoPotencia);
     }
 
 }
