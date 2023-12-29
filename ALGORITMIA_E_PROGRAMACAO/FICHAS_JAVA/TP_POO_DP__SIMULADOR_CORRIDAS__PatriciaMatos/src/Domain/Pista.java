@@ -8,7 +8,7 @@ public class Pista {
   protected double tempoRecordeSegundos;
   protected double distanciaVoltaMetros;
   protected int quantidadeVoltas;
-  protected ArrayList<Momento> momentosPista;
+  protected ArrayList<Atrasos> momentosPista;
 
     public Pista(String nome, double tempo, double tempoRecordeSegundos, double distanciaVoltaMetros, int quantidadeVoltas) {
         this.nome = nome;

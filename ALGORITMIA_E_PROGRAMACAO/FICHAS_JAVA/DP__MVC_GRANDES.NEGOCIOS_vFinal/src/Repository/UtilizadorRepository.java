@@ -16,6 +16,7 @@ public class UtilizadorRepository {
     }
 
     public ArrayList<Utilizador> getUtilizadorsSistema() {
+
         return utilizadorsSistema;
     }
 }

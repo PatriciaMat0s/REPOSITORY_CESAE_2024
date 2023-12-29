@@ -6,14 +6,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import Domain.Enums.TipoCarro;
-import Domain.ItemCorrida;
-import Domain.Veiculo;
-import Domain.Carro;
-import Domain.Mota;
+
+import Domain.ItemsCorrida.ItemsCorrida;
+import Domain.Veiculo.Veiculo;
+import Domain.Veiculo.Carro;
+import Domain.Veiculo.Mota;
 
 public class CSVtoAL_Garagem {
         private String filePath;
-        ItemCorrida itemCorrida;
+        private ItemsCorrida stock;
 
 
         //método construtor da classe:
@@ -21,7 +22,7 @@ public class CSVtoAL_Garagem {
             this.filePath = filePath;
         }
 
-        //Funçao para ler o Ficheiro ItensCorrida, sendo cada linha convertida para parâmetros da classe ItemCorrida, criando um objeto por linha:
+        //Funçao para ler o Ficheiro veiculosCorrida, sendo cada linha convertida para parâmetros da classe ItemCorrida, criando um objeto por linha:
 
 
     public ArrayList<Veiculo> readCSVtoAL_Garagem() throws FileNotFoundException {
@@ -31,7 +32,7 @@ public class CSVtoAL_Garagem {
 
             String linha = myScanner.nextLine();
 
-            ArrayList<ItemCorrida> garagem = new ArrayList<>();
+            ArrayList<Veiculo> garagem = new ArrayList<>();
 
             while (myScanner.hasNextLine()) {
                 linha = myScanner.nextLine();
@@ -48,7 +49,9 @@ public class CSVtoAL_Garagem {
                 //Veiculo(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco)
                 //"'Veiculo' is abstract; cannot be instantiated" - por isso é necessário
 
-                if (tipoVeiculo =="Carro"){
+                Veiculo veiculoAtual = null; /////
+
+                if (tipoVeiculo.equals("Carro")){
                     String tipoCarroStr = linhaDividida[6];
                     TipoCarro tipoCarro = null; // A enumeração precisou nao só de ser declarada, mas tambem inicializada a null!
 
@@ -68,12 +71,13 @@ public class CSVtoAL_Garagem {
                     }
 
 //                     Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro) {
-                       Veiculo veiculoAtual = new Carro(marca, modelo, potencia, peso, 0, preco, tipoCarro);
+                       veiculoAtual = new Carro(marca, modelo, potencia, peso, 0, preco, tipoCarro);
                 }
 
-                if (tipoVeiculo =="Mota"){
+
+                if (tipoVeiculo.equals("Mota")){
 //                    Mota(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco)
-                      Veiculo veiculoAtual = new Mota(marca, modelo, potencia, peso, 0, preco);
+                      veiculoAtual = new Mota(marca, modelo, potencia, peso, 0, preco);
                 }
 
                 garagem.add(veiculoAtual);

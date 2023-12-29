@@ -1,6 +1,7 @@
-package Domain;
+package Domain.Veiculo;
 
 import Domain.Enums.TipoCarro;
+import Domain.ItemsCorrida.Modificacao;
 
 import java.util.ArrayList;
 

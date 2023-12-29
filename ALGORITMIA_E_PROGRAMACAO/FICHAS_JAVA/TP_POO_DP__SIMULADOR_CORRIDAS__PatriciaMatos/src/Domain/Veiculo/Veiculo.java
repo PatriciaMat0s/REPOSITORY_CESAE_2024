@@ -1,4 +1,4 @@
-package Domain;
+package Domain.Veiculo;
 
 public abstract class Veiculo {
     protected String marca;

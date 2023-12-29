@@ -1,4 +1,6 @@
-package Domain;
+package Domain.Veiculo;
+
+import Domain.ItemsCorrida.Habilidade;
 
 import java.util.ArrayList;
 

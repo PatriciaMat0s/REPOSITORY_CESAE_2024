@@ -1,10 +1,13 @@
 package Domain;
 
+import Domain.ItemsCorrida.ItemsCorrida;
+import Domain.Veiculo.Veiculo;
+
 import java.util.ArrayList;
 
 public class Oficina {
     protected ArrayList<Veiculo> garagem; //representa os veículos que o Piloto poderá comprar durante o seu jogo. Sejam carros ou motas.
-    protected ArrayList<ItemCorrida> stock; //representa os itens que o Piloto poderá comprar durante o seu jogo. Sejam Modificações ou Habilidades
+    protected ArrayList<ItemsCorrida> stock; //representa os itens que o Piloto poderá comprar durante o seu jogo. Sejam Modificações ou Habilidades
 
     public Oficina() {
         this.garagem = new ArrayList<>();
@@ -14,7 +17,12 @@ public class Oficina {
     /**
      * FUNÇÃO QUE imprime aleatoriamente 6 itens em stock, assim como as suas especificações. Mesmo que a oficina tenha um stock maior, apenas 6 devem ser mostrados de forma aleatória
      */
-    public void imprimirStock(){}
+    public void imprimirStock(){
+
+
+    }
+
+
 
 
     /**

@@ -1,16 +1,15 @@
 package Viewer;
-import Domain.Carro;
-import Domain.Mota;
+import Carro;
+import Mota;
 import Domain.Piloto;
-import Domain.Veiculo;
+import Domain.Veiculo.Veiculo;
 import Domain.Enums.TipoCarro;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public static class Jogo {
 
-    public Jogo() {} //construtor vazio
+    public Jogo() {} //método construtor vazio
 
     /**
      * Método que permite criar um piloto através de feedback da consola (pode criar métodos auxiliares nas respetivas classes).
@@ -25,7 +24,7 @@ public static class Jogo {
         System.out.print("\nHOW HARD YOU WANT TO RACE?  [ B : BEGINNER  ||  P : PRO ]");
         String grauDificuldade = input.next();
 
-        Veiculo veiculoAtual; //Declaro oesta variavel pois vai ser usada adiante, independentemente de o jogador escolher carro ou mota:
+        Veiculo veiculoAtual; //Declaro esta variavel objecto pois vai ser usada adiante, independentemente de o jogador escolher carro ou mota:
 
         int fichasCorrida;
         if (grauDificuldade.equals("B") || grauDificuldade.equals("b")) { //Despistar o "case sensitive" do input do utilizador
@@ -52,13 +51,14 @@ public static class Jogo {
 //            else if (inputTipoCarro.equalsIgnoreCase("C")){tipoCarro = TipoCarro.CARROCA;}
 //        }
 
+        Piloto piloto;
         if (tipoVeiculo.equalsIgnoreCase("C")) {
             // Criar uma instância da classe Carro de acordo com a escolha do jogador:
 
             Carro carroInicial1 = new Carro("Renault", "Megáne Totil", 200, 1300, 40, 50000, TipoCarro.GT);
             Carro carroInicial2 = new Carro("Nissan", "Qashqai Quase Lá", 300, 1500, 60, 60000, TipoCarro.GT);
             Carro carroInicial3 = new Carro("Cadillac", "LYRIQ LALALA", 500, 1000, 80, 180000, TipoCarro.GT);
-            Carro carroInicial4 = new Carro("Ferrari", "296 GT Z DB", 800, 900, 100, 300000, TipoCarro.GT);
+            Carro carroInicial4 = new Carro("Ferrari", "269 GT Z DB", 800, 900, 100, 300000, TipoCarro.GT);
 
             int carroEscolhido;
             do {
@@ -107,10 +107,10 @@ public static class Jogo {
             if (tipoVeiculo.equalsIgnoreCase("M")) {
                 // Criar uma instância da classe Mota de acordo com a escolha do jogador:
                 //Mota(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco);
-                Carro motaInicial1 = new Carro("Zundapp", "Veneza Ruivo XP", 300, 350, 40, 20000);
-                Carro motaInicial2 = new Carro("Honda", "PC MAC LOL", 400, 400, 60, 35000);
-                Carro motaInicial3 = new Carro("BMW", "R GS GPT", 900, 500, 80, 60000);
-                Carro motaInicial4 = new Carro("Ducatti", "Superlegerra V8 CO-PYLOT", 1200, 600, 100, 100000);
+                Mota motaInicial1 = new Mota("Zundapp", "Veneza Ruivo XP", 300, 350, 40, 20000);
+                Mota motaInicial2 = new Mota("Honda", "PC MAC LOL", 400, 400, 60, 35000);
+                Mota motaInicial3 = new Mota("BMW", "R GS GPT", 900, 500, 80, 60000);
+                Mota motaInicial4 = new Mota("Ducatti", "Superlegerra V8 CO-PYLOT", 1200, 600, 100, 100000);
 
                 int motaEscolhida;
                 do {
@@ -122,11 +122,11 @@ public static class Jogo {
                     motaInicial2.mostrarDetalhes();
                     System.out.println("*****");
 
-                    System.out.println("CAR #3:");
+                    System.out.println("MOTORBIKE #3:");
                     motaInicial3.mostrarDetalhes();
                     System.out.println("*****");
 
-                    System.out.println("CAR #4:");
+                    System.out.println("MOTORBIKE #4:");
                     motaInicial4.mostrarDetalhes();
                     System.out.println("*****");
 
@@ -160,21 +160,94 @@ public static class Jogo {
 
                 int numVitorias = 0;  // Como estamos prestes a jogar, o atributo número de vitórias foi inicializado a 0.
 
-                Piloto piloto = new Piloto(nomePiloto, fichasCorrida, veiculoAtual, numVitorias);
+                piloto = new Piloto(nomePiloto, fichasCorrida, veiculoAtual, numVitorias);
                 return piloto;
             }
         }
+    } //chaveta de fecho do método prepararPiloto
 
 
+        /**
+         * Método de “jogo”, ou seja, o percurso a percorrer pelo piloto.
+         * @param piloto criado através de feedback da consola
+         */
+        public static void readyRaceGo (Piloto piloto){
+            Scanner input = new Scanner(System.in);}
 
-    /**
-     * Método que permite método de “jogo”, ou seja, o percurso a percorrer pelo piloto.
-     * @param piloto criado através de feedback da consola
-     */
-    public static void rottenEgg(Piloto piloto){
+
+    //Vou abrir o método main, no qual vou invocar e executar as funções desenvolvidas na classe Jogo na consola:
+//    public static void main (String[]Args){
+            Scanner input = new Scanner(System.in);
+
+            // Número total de vezes que a pista vai ser percorrida com a volta seguinte
+            // É inicializada a 1 pois ao iniciar o jogo o piloto vai percorrer a pista uma primeira vez:
+            int numPista = 1;
+            int opcaoEscolhida;
+            do {
+                System.out.println("*****");
+                System.out.print("\nWHAT DO YOU WANT TO DO? ");
+                System.out.println("-----");
+                System.out.println("1 > GO RACING!");
+                System.out.println("2 > AQCUIRE A NEW VEHICLE");
+                System.out.println("3 > SEE MY INVENTORY");
+                System.out.println("0 > EXIT, CIAO");
+                System.out.println("*****");
+
+                System.out.println("SELECT AN OPTION: [1] [2] [3] [0]");
+                opcaoEscolhida = input.nextInt();
+
+                switch (opcaoEscolhida) {
+                    case 1:
+                        do {
+                            switch (numPista) {
+                                case 1:
+                                    piloto.readyRaceGo();
+                                    numPista++;
+                                    break;
+
+                                case 2:
+                                    piloto.readyRaceGo();
+                                    numPista++;
+                                    break;
+
+                                case 3:
+                                    piloto.readyRaceGo();
+                                    numPista++;
+                                    break;
+
+                                case 4:
+                                    piloto.readyRaceGo();
+                                    numPista++;
+                                    break;
+
+                                default:
+                                    break;
+                            }
+                        } while (numPista<=4); //fecho do switch aninhado
+
+                        break; // do case 1 do switch exterior
 
 
+                    case 2: //Aquire new vehicle
+                        break;
 
-}
-}
+                    case 3: //Print inventory
+                        break;
+
+                    case 0:
+                        break;
+
+                    default:
+                        System.out.println("SELECT A VALID OPTION: [1] [2] [3] [0]");
+                        System.out.println("1 > GO TO THE NEXT RACE");
+                        System.out.println("2 > AQCUIRE A NEW VEHICLE");
+                        System.out.println("3 > PRINT YOUR INVENTARY");
+                        System.out.println("0 > EXIT");
+
+                } while (opcaoEscolhida != 0);
+
+            }}
+
+//    //Vou abrir o método main, no qual vou invocar e executar as funções desenvolvidas na classe Jogo na consola:
+//                public static void main (String[]Args){
 

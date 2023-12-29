@@ -1,16 +1,15 @@
-tipo,nome,precoFichasCorrida,diminuicaoDesgaste,diminuicaoPeso,tipoCarro
-tipo,nome,precoFichasCorrida,aumentoPotencia,0,0
-Modificaçao,Ride On Water,2000,10,diminuicaoPeso
-Modificaçao,Horsepower Boost,5000,diminuicaoDesgaste,diminuicaoPeso
-Modificaçao,Mega Horsepower Boost,7500,diminuicaoDesgaste,diminuicaoPeso
-Modificaçao,Anti-Rivals Toxic Exhaust Gas,1000,diminuicaoDesgaste,diminuicaoPeso
-Modidicacao,Ride On Two Wheels,1500,diminuicaoDesgaste,diminuicaoPeso
-Modidicacao,Wear Reducer,precoFichasCorrida,diminuicaoDesgaste,diminuicaoPeso
-Modidicacao,Weight Reducer,precoFichasCorrida,diminuicaoDesgaste,diminuicaoPeso
-Habilidade,Jump,precoFichasCorrida,aumentoPotencia,0,0
-Habilidade,Ride Backwards,precoFichasCorrida,aumentoPotencia,0,0
-Habilidade,Fly,precoFichasCorrida,aumentoPotencia,0,0
-Habilidade,Horsepower Boost,precoFichasCorrida,aumentoPotencia,0,0
-Habilidade,Mega Horsepower Boost,precoFichasCorrida,aumentoPotencia,0,0
-Habilidade,Anti-Rivals Toxic Exhaust Gas,precoFichasCorrida,aumentoPotencia,0,0
-Habilidade,Ride On One Wheel,precoFichasCorrida,aumentoPotencia,0,0
+tipo,nome,precoFichasCorrida,diminuicaoDesgaste,diminuicaoPeso,aumentoPotencia,tipoCarroPermitido
+Modificacao,Ride On Water,2000,50,1000,0,[RALLY,CARROCA]
+Modificacao,Horsepower Boost,8000,20,500,0,[RALLY,GT,CARROCA]
+Modificacao,Mega Horsepower Boost,15000,30,750,0,[CARROCA]
+Modificacao,Anti-Rivals Exhaust Gas,20000,25,100,0,[F1,RALLY,GT,CARROCA]
+Modidicacao,Ride On Two Wheels,10000,50,150,0,[RALLY,GT,CARROCA]
+Modidicacao,Wear Reducer,15000,80,100,0,[RALLY,GT,CARROCA]
+Modidicacao,Weight Reducer,10000,10,600,0,[RALLY,GT,CARROCA]
+Habilidade,Jump,10000,0,0,100,0
+Habilidade,Ride Backwards,4000,0,0,50,0
+Habilidade,Fly,20000,0,0,150,0
+Habilidade,Horsepower Boost,15000,0,0,200,0
+Habilidade,Mega Horsepower Boost,25000,0,0,300,0
+Habilidade,Anti-Rivals Exhaust Gas,19000,0,45,0
+Habilidade,Ride On One Wheel,10000,0,0,180,0

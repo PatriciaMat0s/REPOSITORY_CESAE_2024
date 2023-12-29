@@ -28,15 +28,14 @@ public class EX01 {
 
     //Vou usar  a funçao:
 
-        public static void main(String[] Args){
-            Scanner input = new Scanner(System.in);
+    public static void main(String[] Args) {
+        Scanner input = new Scanner(System.in);
 
-            String animalEscolhido;
-            System.out.println("Insira um animal: ");
-            animalEscolhido = input.next();
+        String animalEscolhido;
+        System.out.println("Insira um animal: ");
+        animalEscolhido = input.next();
 
-            fazerBarulho(animalEscolhido);
+        fazerBarulho(animalEscolhido);
 
-        }
-
+    }
 }

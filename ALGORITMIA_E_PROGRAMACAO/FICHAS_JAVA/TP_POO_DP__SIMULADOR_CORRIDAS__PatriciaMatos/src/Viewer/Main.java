@@ -9,9 +9,9 @@
 ////
 // System.out.println("");
 //         System.out.println("--- ******  * -------------*------------- *  ****** ---");
-//         System.out.println("************ --  * ARE YOU A ROTTEN EGG? *  -- ************");
+//         System.out.println("************ --  * READY? RACE!! GO!!! *  -- ************");
 //         System.out.println("--- ******  * -------------*------------- *  ****** ---");
-//         System.out.println("______ race it up: as if ur life depended on it ______");
+//         System.out.println("______ as if ur life depended on it ______");
 //         System.out.println("");
 //
 //

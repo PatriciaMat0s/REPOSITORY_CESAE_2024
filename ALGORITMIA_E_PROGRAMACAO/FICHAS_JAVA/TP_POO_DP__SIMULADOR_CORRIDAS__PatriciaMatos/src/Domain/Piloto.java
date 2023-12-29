@@ -1,5 +1,7 @@
 package Domain;
 
+import Domain.Veiculo.Veiculo;
+
 public class Piloto {
     protected String nome;
     protected int fichasCorrida;
@@ -16,7 +18,8 @@ public class Piloto {
     /**
      * Método que imprime o inventário de itens do VeiculoAtual e pergunta qual quer usar, sendo que seguidamente aplica os efeitos no Veiculo do Piloto.
      */
-    public void usarItem(){}
+    public void usarItemCorrida(){}
+
 
     /**
      * Método que recebe como parâmetro uma pista e retorna o tempo total que o
