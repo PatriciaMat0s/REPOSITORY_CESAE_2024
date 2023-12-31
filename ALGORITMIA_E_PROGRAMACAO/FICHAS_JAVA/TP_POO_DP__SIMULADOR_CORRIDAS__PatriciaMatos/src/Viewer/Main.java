@@ -1,32 +1,21 @@
 package Viewer;
 
-import java.util.Scanner;
+import Domain.Pista;
+
+import java.io.IOException;
+
+import static Viewer.Jogo_Viewer.prepararPiloto;
+import static Viewer.Jogo_Viewer.readyRaceGo;
+
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Scanner input = new Scanner(System.in);
-////OUPS... Símbolos desconhecidos e nao deu para imprimir na consola TT__TT
-//        System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣄⣄⣀⣀⣀");⠀⠀⠀⠀⠀⠀⠀⠀
-//        System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠊⠉⠉⠉⠉⠉⣩⡷⠋⠉⠹⡛⢽⠢⣀⣀⡀");⠀⠀
-//        System.out.println("⢀⣀⣤⣴⠶⣾⣿⡿⠯⠯⣍⣙⣒⣲⠶⠶⠶⡿⢴⠧⠷⠒⣿⣏⠡⡤⠤⠯⡆");⠀
-//        System.out.println("⣿⣶⣒⡒⠛⠽⢯⣥⣶⣯⠭⡵⢊⣩⣭⣲⡂⡗⠈⠉⠉⠉⠉⡇⣼⣷⣿⣧⡇");⠀
-//        System.out.println("⣮⣍⣛⡛⠛⠛⠛⠛⠛⠘⡾⣴⣿⣿⣿⣿⣧⡇⠀⠀⠀⢀⣰⣠⡽⣿⣿⠟");⠀⠀
-//        System.out.println("⠾⠿⣶⣦⣭⣍⣹⣷⡄⡸⣹⣿⡿⣿⣻⣿⡿⠷⠶⠟⠛⠛⠉⠉⠓⠻⠟");⠀⠀⠀
-//        System.out.println("⠀⠀⠀⠉⠉⠁⠉⠛⠛⠛⠳⠿⢿⡿⠟");⠀
+            Pista pista1 = new Pista("pista001", 300, 285,8000, 5);
+criarpiloto
+        Atrasos curvaS
 
-        System.out.println("                     [_____________]");
-        System.out.println("                  <__|__[_______]__|__>");
-        System.out.println("                 |   O0O________O0O   |");
-        System.out.println("               *|_____/__|RRG|__|_____|*");
-        System.out.println("               |{___}|____***____|{___}|");
-        System.out.println("--- ******  * -------------*------------- *  ****** ---");
-        System.out.println("************ --  * READY? RACE?! GO!!! *  -- ************");
-        System.out.println("--- ******  * -------------*------------- *  ****** ---");
-        System.out.println("___ Race as if ur life depended on it, cause it does ___");
-        System.out.println("");
+            readyRaceGo(prepararPiloto());
 
-
-
-
-    }}
+    }
+}

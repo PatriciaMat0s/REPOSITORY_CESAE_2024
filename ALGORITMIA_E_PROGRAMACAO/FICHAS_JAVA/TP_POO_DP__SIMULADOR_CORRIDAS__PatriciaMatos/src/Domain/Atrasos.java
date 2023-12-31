@@ -3,7 +3,7 @@ package Domain;
 public class Atrasos { //Momento no enunciado
 
     protected String nome;
-   protected double atrasoPeso; //atraso devido ao efeito do peso do veiculo no obstaculo
+   protected double atrasoPeso; //atraso devido ao efeito do peso do veiculo perante um obstaculo
    protected double atrasoPotencia; //atraso devido ao efeito do obstaculo na potencia do veiculo
 
     public Atrasos(String nome, double atrasoPeso, double atrasoPotencia) {
