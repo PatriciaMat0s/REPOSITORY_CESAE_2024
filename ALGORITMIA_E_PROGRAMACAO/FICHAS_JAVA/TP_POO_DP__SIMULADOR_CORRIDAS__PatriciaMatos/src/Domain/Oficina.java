@@ -39,7 +39,7 @@ public class Oficina {
 //            }
 //        }
 //
-//        // Agora que temos um arraylist com cinco numeros inteiros distintos, vamos iterar todos eles e usá-los como índices a extrair do arraylist stock, através da função get.
+//        // Agora que temos um arraylist com seis numeros inteiros DISTINTOS, vamos iterar todos eles e usá-los como índices a extrair do arraylist stock, através da função get.
 //        // Imprimimos os elementos do stock acedidos através do get com os índices de interesse:
 //
 //        ItemsCorrida itemCorridaAtual;
@@ -57,31 +57,32 @@ public class Oficina {
     /**
      * FUNÇÃO QUE imprime aleatoriamente 12 veiculos em stock, assim como as suas especificações. Mesmo que a oficina tenha uma garagem maior, apenas 12 devem ser mostrados de forma aleatória.
      */
-    public void imprimirGaragem() {
+//    public void imprimirGaragem() {
+//
+//        Random rand = new Random();
+//
+//        ArrayList<Integer> arrayIndexAleatorio = new ArrayList<>();
+//
+//        while (arrayIndexAleatorio.size() < 12) {
+//            int indexAleatorio = rand.nextInt(0, garagem.size());
+//
+//            if (!arrayIndexAleatorio.contains(indexAleatorio)) {
+//                arrayIndexAleatorio.add(indexAleatorio);
+//            }
+//        }
+//
+//        Veiculo veiculoAtual;
+//        int contador = 1;
+//        System.out.println("**-**-* LIST OF VEHICLES CURRENTLY AVAILABLE: *-**-**");
+//        for (int i = 0; i < arrayIndexAleatorio.size(); i++) {
+//            veiculoAtual = garagem.get(arrayIndexAleatorio.get(i));
+//            System.out.print("VEHICLE #" + contador++ + ": ");
+//            //Simplifiquei, nao apresentando a especificade referente às subclasses (habilidade e modificaçao):
+//            veiculoAtual.mostrarDetalhes();
+//        }
+//
+//    } //fecho metodo imprimirgaragem()
 
-        Random rand = new Random();
-
-        ArrayList<Integer> arrayIndexAleatorio = new ArrayList<>();
-
-        while (arrayIndexAleatorio.size() < 12) {
-            int indexAleatorio = rand.nextInt(0, garagem.size());
-
-            if (!arrayIndexAleatorio.contains(indexAleatorio)) {
-                arrayIndexAleatorio.add(indexAleatorio);
-            }
-        }
-
-        Veiculo veiculoAtual;
-        int contador = 1;
-        System.out.println("**-**-* LIST OF VEHICLES CURRENTLY AVAILABLE: *-**-**");
-        for (int i = 0; i < arrayIndexAleatorio.size(); i++) {
-            veiculoAtual = garagem.get(arrayIndexAleatorio.get(i));
-            System.out.print("VEHICLE #" + contador++ + ": ");
-            //Simplifiquei, nao apresentando a especificade referente às subclasses (habilidade e modificaçao):
-            veiculoAtual.mostrarDetalhes();
-        }
-
-    } //fecho metodo imprimirgaragem()
 
 
 //    /**
@@ -104,9 +105,7 @@ public class Oficina {
 //            //Ou seja, as modificaçoes ao arraylist kitcorridacarro da classe Carro e as habilidades ao habilidadesmota da classe Mota
 //            (ItemsCorrida_Inventario.stock).add(itemCorrida); ????? FTS
 //
-//
-//
-//
+
 //        }else{   //Caso o piloto nao possa comprar o item:
 //            System.out.println("BOOHOO, YOU DON'T HAVE ENOUGH COINS TO ACQUIRE THE ITEM!");
 //            System.out.println("TT__TT");
@@ -117,14 +116,13 @@ public class Oficina {
 
 
 //    /**
-//     * Deve conter o método venderVeiculo( ) que recebe o Piloto como parâmetro, faz a verificação de a compra
+//     * Método que recebe o Piloto como parâmetro, faz a verificação de a compra
 //     * poder ser efetuada. Caso afirmativo, deve alterar o Veiculo do Piloto, bem como decrementar as suas
 //     * fichas de corrida.
 //     * @param piloto
 //     */
-//    public boolean comprarVeiculo(Piloto piloto){
-//        return true;
-//        return false;
+//    public void comprarVeiculo(Piloto piloto){
+//     FEITO NA CLASSE VEICULOS-CONTROLLER!!!
 //    }
 //
-//}
+}

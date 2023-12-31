@@ -46,4 +46,7 @@ public abstract class Veiculo {
     System.out.println("HORSEPOWER: "+this.potenciaCV+ " CVs" + "\t| " +"WEIGHT: "+ this.pesoKg+ " Kg" + "\t| WEAR: "+this.desgaste);
     System.out.println("PRICE (RACE COINS): "+this.preco);
     }
+
+
+
 }

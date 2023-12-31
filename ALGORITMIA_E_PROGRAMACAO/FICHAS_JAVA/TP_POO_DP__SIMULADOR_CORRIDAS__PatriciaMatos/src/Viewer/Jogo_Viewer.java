@@ -3,7 +3,9 @@ import Domain.Veiculo.Veiculo;
 import Domain.Veiculo.Carro;
 import Domain.Veiculo.Mota;
 import Domain.Piloto;
+import Domain.Pista;
 import Domain.Enums.TipoCarro;
+import Viewer.Main_Viewer;
 
 import java.util.Scanner;
 
@@ -169,6 +171,8 @@ public class Jogo_Viewer {
         Veiculo veiculoAtual;
         Scanner input = new Scanner(System.in);
 
+        Pista pista1; Pista pista2; Pista pista3; Pista pista4; Pista pista5;
+
         // Número total de vezes que a pista vai ser percorrida com a volta seguinte
         // É inicializada a 1 pois o piloto vai percorrer a pista uma primeira vez:
         int numPista = 1;
@@ -183,7 +187,7 @@ public class Jogo_Viewer {
             System.out.println("--- ******  * -------------*------------- *  ****** ---");
             System.out.println("___ Race as if ur life depended on it ('cause it does!) ___");
             System.out.println("");
-            System.out.println("*****");
+            System.out.println("**-*-**");
             System.out.print("\nWHAT DO YOU WANT TO DO NOW? ");
             System.out.println("-----");
             System.out.println("1 > GO TO THE NEXT RACE");
@@ -191,7 +195,7 @@ public class Jogo_Viewer {
             System.out.println("3 > GO SHOPPING RACE ITEMS!");
             System.out.println("4 > SELECT ITEM FROM MY INVENTORY!");
             System.out.println("SELECT A VALID OPTION: [1] [2] [3] [4] [0]");
-            System.out.println("*****");
+            System.out.println("**-*-**");
 
             System.out.println("SELECT AN OPTION: [1] [2] [3] [0]");
             opcaoEscolhida = input.nextInt();
@@ -203,31 +207,31 @@ public class Jogo_Viewer {
                         switch (numPista) {
                             case 1: //Primeira volta
 
-                                piloto.corrida(pista);
+                                piloto.corrida(pista1);
                                 numPista++;
                                 System.out.println("*/5 STARTING RIDE #" + numPista);
                                 break;
 
                             case 2: //Segunda volta
-                                piloto.corrida(pista);
+                                piloto.corrida(pista2);
                                 numPista++;
                                 System.out.println("**/5 STARTING RIDE #" + numPista);
                                 break;
 
                             case 3:
-                                piloto.corrida();
+                                piloto.corrida(pista3);
                                 numPista++;
                                 System.out.println("***/5 STARTING RIDE #" + numPista);
                                 break;
 
                             case 4:
-                                piloto.corrida();
+                                piloto.corrida(pista4);
                                 numPista++;
                                 System.out.println("****/5 STARTING RIDE #" + numPista);
                                 break;
 
                             case 5:
-                                piloto.corrida();
+                                piloto.corrida(pista5);
                                 numPista++;
                                 System.out.println("*****/5 STARTING RIDE #" + numPista + " : THE BOSS RIDE YAAAY!");
 
@@ -254,9 +258,11 @@ public class Jogo_Viewer {
                     break;
 
                 case 3: //Comprar Item
+                    /////////////////************** FAZER
                     break;
 
-                case 4: //Print inventory Items
+                case 4: //Print inventory Items e aplicar os items ao veiculo
+                    /////////////////************** FAZER
                     break;
 
                 case 0:

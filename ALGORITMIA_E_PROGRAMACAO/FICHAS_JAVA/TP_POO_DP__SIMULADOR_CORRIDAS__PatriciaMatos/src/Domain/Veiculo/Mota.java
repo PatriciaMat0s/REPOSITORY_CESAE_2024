@@ -16,6 +16,10 @@ public class Mota extends Veiculo {
         this.habilidadesMota = new ArrayList<>();
     }
 
+    public ArrayList<Habilidade> getHabilidadesMota() {
+        return habilidadesMota;
+    }
+
     @Override
     public void mostrarDetalhes() {
         super.mostrarDetalhes();

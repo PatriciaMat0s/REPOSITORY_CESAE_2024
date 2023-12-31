@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Carro extends Veiculo {
 
     protected TipoCarro tipoCarro;
-    protected ArrayList<Modificacao> kitCorridaCarro;
+    protected ArrayList<Modificacao> modificacoesCarro; //"kitCorrida" no enunciado;
     // ArrayList<tipodadosAL> nomeAL = new ArrayList<>();
     // this.nomeAL = new ArrayList<>();
 
@@ -16,7 +16,15 @@ public class Carro extends Veiculo {
     public Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro) {
         super(marca, modelo, potenciaCV, pesoKg, desgaste, preco);
         this.tipoCarro = tipoCarro;
-        this.kitCorridaCarro = new ArrayList<>();
+        this.modificacoesCarro = new ArrayList<>();
+    }
+
+    public TipoCarro getTipoCarro() {
+        return tipoCarro;
+    }
+
+    public ArrayList<Modificacao> getModificacoesCarro() {
+        return modificacoesCarro;
     }
 
     @Override

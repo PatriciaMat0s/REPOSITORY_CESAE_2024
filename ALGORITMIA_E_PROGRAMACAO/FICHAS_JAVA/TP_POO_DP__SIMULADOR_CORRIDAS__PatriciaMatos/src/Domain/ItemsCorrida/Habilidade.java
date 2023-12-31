@@ -1,13 +1,16 @@
 package Domain.ItemsCorrida;
 
 public class Habilidade extends ItemsCorrida {
-    protected double aumentoPotencia;
+    protected int aumentoPotencia;
 
-    public Habilidade(String nome, int precoFichasCorrida, double aumentoPotencia) {
+    public Habilidade(String nome, int precoFichasCorrida, int aumentoPotencia) {
         super(nome, precoFichasCorrida);
         this.aumentoPotencia = aumentoPotencia;
     }
 
+    public double getAumentoPotencia() {
+        return aumentoPotencia;
+    }
 
     @Override
     public void exibirDetalhes() {

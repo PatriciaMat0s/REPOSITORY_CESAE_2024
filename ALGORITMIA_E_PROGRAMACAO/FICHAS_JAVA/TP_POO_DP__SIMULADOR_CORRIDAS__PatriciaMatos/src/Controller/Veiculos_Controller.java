@@ -72,7 +72,7 @@ public class Veiculos_Controller {
 
         //Caso o piloto possa comprar o item:
         if ( piloto.getFichasCorrida() >= veiculoDesejado.getPreco() ){
-            System.out.println("PROCEEDING TO ITEM ACQUISITION:");
+            System.out.println("PROCEEDING TO VEHICLE ACQUISITION:");
 
             //Descontar o preço do item ao crédito do jogador (guardado na variável fichasCorrida):
             piloto.setFichasCorrida( piloto.getFichasCorrida() - veiculoDesejado.getPreco() );
@@ -82,10 +82,9 @@ public class Veiculos_Controller {
 
 
         }else{   //Caso o piloto nao possa comprar o item:
-            System.out.println("BOOHOO, YOU DON'T HAVE ENOUGH COINS TO ACQUIRE THE ITEM!");
+            System.out.println("BOOHOO, YOU DON'T HAVE ENOUGH COINS TO ACQUIRE THE VEHICLE!");
             System.out.println("TT__TT");
         }
-
     }
 
 

@@ -53,14 +53,14 @@ public class Piloto {
     }
 
 
-    /**
-     * Método que imprime o inventário de itens do VeiculoAtual e pergunta qual quer usar, sendo que seguidamente aplica os efeitos no Veiculo do Piloto.
-     */
-    public void usarItemCorrida() {
-        //Re-instanciar a classe Veiculo e actualiza o objeto veiculoAtual com os efeitos do item de corrida - os atributos potencia, peso e desgaste sao actualizados)
-
-
-    }
+//    /**
+//     * Método que imprime o inventário de itens do VeiculoAtual e pergunta qual quer usar, sendo que seguidamente aplica os efeitos no Veiculo do Piloto.
+//     */
+//    public void usarItemCorrida() {
+//        //Re-instanciar a classe Veiculo e actualiza o objeto veiculoAtual com os efeitos do item de corrida - os atributos potencia, peso e desgaste sao actualizados)
+//
+//
+//    }
 
 
     /**
@@ -144,7 +144,8 @@ public class Piloto {
 
 
 
-
+// FUNÇÃO QUE ESCREVI A INTERPRETAR MAL O ENUNCIADO, OU SEJA, ASSUMINDO QUE O TEMPO RETORNADO ERA DO JOGO COMPLETO, IE, DAS 5 VOLTAS À PISTA.
+    //CONSERVEI AQUI, ANYWAY:
 //    public double corrida(Pista pista) {
 //        double tempoPistaAtual;
 //        double tempoTotal = 0;
