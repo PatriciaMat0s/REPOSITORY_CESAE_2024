@@ -19,6 +19,18 @@ public class Modificacao extends ItemsCorrida {
         this.carrosPermitidos = new ArrayList<>();
     }
 
+    public double getDiminuicaoDesgaste() {
+        return diminuicaoDesgaste;
+    }
+
+    public double getDiminuicaoPeso() {
+        return diminuicaoPeso;
+    }
+
+    public ArrayList<TipoCarro> getCarrosPermitidos() {
+        return carrosPermitidos;
+    }
+
     /**
      * FUNÇÃO AUXILIAR QUE VAI SER USADA NA CLASSE CSVtoAL_Stock, fazendo um CAST
      */
