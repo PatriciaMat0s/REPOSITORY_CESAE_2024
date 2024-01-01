@@ -187,96 +187,104 @@ public class ItemsCorrida_Controller {
 //                    }
 
                     System.out.println("**-**-* LIST OF THE ITEMS (CAR MODIFICATIONS) YOU BOUGHT: *-**-**");
-                    for (int i = 0; i < ((Carro) veiculoAtual).getModificacoesCarro().size(); i++) {
-                        itemCorridaAtual = (((Carro) veiculoAtual).getModificacoesCarro()).get(i);
-                        if (tipoCarro == ){
-                        System.out.print("ITEM #" + contador++ + ": ");
-                        itemCorridaAtual.mostrarDetalhes();
-                        arrayTiposCarro.add((Modificacao) itemCorridaAtual);
-                    }
+                    //for (int i = 0; i < ((Modificacao) itemCorridaAtual).getCarrosPermitidos().size(); i++) {
+                        for (TipoCarro tipoCarraoAtual: ((Modificacao) itemCorridaAtual).getCarrosPermitidos()) {
+                                                                                //[G1, RALLY, F1]
+                            if (tipoCarro == tipoCarraoAtual){
+                                System.out.print("ITEM #" + contador++ + ": "+itemCorridaAtual);
+
+                            }
+                        }
+
+                        tipoCarro = (((Modificacao) itemCorridaAtual).getCarrosPermitidos()).get(i);
+                        if (tipoCarro == ((Modificacao) itemCorridaAtual).getCarr {
+                            System.out.print("ITEM #" + contador++ + ": ");
+                            itemCorridaAtual.mostrarDetalhes();
+                            arrayTiposCarro.add((Modificacao) itemCorridaAtual);
+                        }
 
 
-                    // Perguntar qual item quer usar, ir buscá-lo, e aplicar os efeitos do item escolhido no Veiculo do Piloto:
+                        // Perguntar qual item quer usar, ir buscá-lo, e aplicar os efeitos do item escolhido no Veiculo do Piloto:
 
-                    System.out.println("WHICH #ITEM DO YOU WANT TO USE?");
-                    int numItemAUsar = input.nextInt();
+                        System.out.println("WHICH #ITEM DO YOU WANT TO USE?");
+                        int numItemAUsar = input.nextInt();
 
-                    Modificacao modificacaoAAUsar;
-                    modificacaoAAUsar = (((Carro) veiculoAtual).getModificacoesCarro()).get(numItemAUsar - 1);
-
-
-                    //Reinstanciar a classe veiculo com os upgrades derivados de aplicar o item, ou seja, reinstanciar a o Carro:
-                    // Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro)
-
-                    //1. Atributos a conservar:
-                    String marca = ((Carro) veiculoAtual).getMarca();
-                    String modelo = ((Carro) veiculoAtual).getModelo();
-                    double preco = ((Carro) veiculoAtual).getPreco();
-
-                    //2. Por outro lado, quero alterar os atributos que vao beneficiar da aplicaçao do item:
-                    // >>> o desgaste vai diminuir:
-                    double potencia = ((Carro) veiculoAtual).getDesgaste() - modificacaoAAUsar.getDiminuicaoDesgaste();
-
-                    // >>> o peso diminui:
-                    double peso = ((Carro) veiculoAtual).getPesoKg() - modificacaoAAUsar.getDiminuicaoPeso();
-
-                    // >>> o peso mantem-se, pois as habilidades nao o diminuem (as modifics, sim, vao diminuir o peso):
-                    int desgaste = ((Mota) veiculoAtual).getDesgaste();
-
-                    //Finalmente:
-                    veiculoAtual = new Carro(marca, modelo, (int) potencia, peso, desgaste, (int) preco, tipoCarro);
-                    break;
+                        Modificacao modificacaoAAUsar;
+                        modificacaoAAUsar = (((Carro) veiculoAtual).getModificacoesCarro()).get(numItemAUsar - 1);
 
 
-                case GT:
-                    System.out.println("**-**-* LIST OF THE ITEMS (CAR MODIFICATIONS) YOU BOUGHT: *-**-**");
-                    for (int i = 0; i < ((Carro) veiculoAtual).getModificacoesCarro().size(); i++) {
-                        itemCorridaAtual = (((Carro) veiculoAtual).getModificacoesCarro()).get(i);
-                        System.out.print("ITEM #" + contador++ + ": ");
-                        itemCorridaAtual.mostrarDetalhes();
-                        arrayTiposCarro.add((Modificacao) itemCorridaAtual);
-                    }
+                        //Reinstanciar a classe veiculo com os upgrades derivados de aplicar o item, ou seja, reinstanciar a o Carro:
+                        // Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro)
 
-                    // Perguntar qual item quer usar, ir buscá-lo, e aplicar os efeitos do item escolhido no Veiculo do Piloto:
+                        //1. Atributos a conservar:
+                        String marca = ((Carro) veiculoAtual).getMarca();
+                        String modelo = ((Carro) veiculoAtual).getModelo();
+                        double preco = ((Carro) veiculoAtual).getPreco();
 
-                    System.out.println("WHICH #ITEM DO YOU WANT TO USE?");
-                    int numItemAUsar = input.nextInt();
+                        //2. Por outro lado, quero alterar os atributos que vao beneficiar da aplicaçao do item:
+                        // >>> o desgaste vai diminuir:
+                        double potencia = ((Carro) veiculoAtual).getDesgaste() - modificacaoAAUsar.getDiminuicaoDesgaste();
 
-                    Modificacao modificacaoAAUsar;
-                    modificacaoAAUsar = (((Carro) veiculoAtual).getModificacoesCarro()).get(numItemAUsar - 1);
+                        // >>> o peso diminui:
+                        double peso = ((Carro) veiculoAtual).getPesoKg() - modificacaoAAUsar.getDiminuicaoPeso();
 
+                        // >>> o peso mantem-se, pois as habilidades nao o diminuem (as modifics, sim, vao diminuir o peso):
+                        int desgaste = ((Mota) veiculoAtual).getDesgaste();
 
-                    //Reinstanciar a classe veiculo com os upgrades derivados de aplicar o item, ou seja, reinstanciar a o Carro:
-                    // Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro)
-
-                    //1. Atributos a conservar:
-                    String marca = ((Carro) veiculoAtual).getMarca();
-                    String modelo = ((Carro) veiculoAtual).getModelo();
-                    double preco = ((Carro) veiculoAtual).getPreco();
-
-                    //2. Por outro lado, quero alterar os atributos que vao beneficiar da aplicaçao do item:
-                    // >>> o desgaste vai diminuir:
-                    double potencia = ((Carro) veiculoAtual).getDesgaste() - modificacaoAAUsar.getDiminuicaoDesgaste();
-
-                    // >>> o peso diminui:
-                    double peso = ((Carro) veiculoAtual).getPesoKg() - modificacaoAAUsar.getDiminuicaoPeso();
-
-                    // >>> o peso mantem-se, pois as habilidades nao o diminuem (as modifics, sim, vao diminuir o peso):
-                    int desgaste = ((Mota) veiculoAtual).getDesgaste();
-
-                    //Finalmente:
-                    veiculoAtual = new Carro(marca, modelo, (int) potencia, peso, desgaste, (int) preco, tipoCarro);
-                    break;
+                        //Finalmente:
+                        veiculoAtual = new Carro(marca, modelo, (int) potencia, peso, desgaste, (int) preco, tipoCarro);
+                        break;
 
 
-            } //fecho switch tipos carro
+                        case GT:
+                            System.out.println("**-**-* LIST OF THE ITEMS (CAR MODIFICATIONS) YOU BOUGHT: *-**-**");
+                            for (int i = 0; i < ((Carro) veiculoAtual).getModificacoesCarro().size(); i++) {
+                                itemCorridaAtual = (((Carro) veiculoAtual).getModificacoesCarro()).get(i);
+                                System.out.print("ITEM #" + contador++ + ": ");
+                                itemCorridaAtual.mostrarDetalhes();
+                                arrayTiposCarro.add((Modificacao) itemCorridaAtual);
+                            }
 
-        } //fecho da funçao usarItem()
+                            // Perguntar qual item quer usar, ir buscá-lo, e aplicar os efeitos do item escolhido no Veiculo do Piloto:
+
+                            System.out.println("WHICH #ITEM DO YOU WANT TO USE?");
+                            int numItemAUsar = input.nextInt();
+
+                            Modificacao modificacaoAAUsar;
+                            modificacaoAAUsar = (((Carro) veiculoAtual).getModificacoesCarro()).get(numItemAUsar - 1);
 
 
-        //Re-instanciar a classe Veiculo e actualiza o objeto veiculoAtual com os efeitos do item de corrida - os atributos potencia, peso e desgaste sao actualizados)
+                            //Reinstanciar a classe veiculo com os upgrades derivados de aplicar o item, ou seja, reinstanciar a o Carro:
+                            // Carro(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco, TipoCarro tipoCarro)
 
+                            //1. Atributos a conservar:
+                            String marca = ((Carro) veiculoAtual).getMarca();
+                            String modelo = ((Carro) veiculoAtual).getModelo();
+                            double preco = ((Carro) veiculoAtual).getPreco();
+
+                            //2. Por outro lado, quero alterar os atributos que vao beneficiar da aplicaçao do item:
+                            // >>> o desgaste vai diminuir:
+                            double potencia = ((Carro) veiculoAtual).getDesgaste() - modificacaoAAUsar.getDiminuicaoDesgaste();
+
+                            // >>> o peso diminui:
+                            double peso = ((Carro) veiculoAtual).getPesoKg() - modificacaoAAUsar.getDiminuicaoPeso();
+
+                            // >>> o peso mantem-se, pois as habilidades nao o diminuem (as modifics, sim, vao diminuir o peso):
+                            int desgaste = ((Mota) veiculoAtual).getDesgaste();
+
+                            //Finalmente:
+                            veiculoAtual = new Carro(marca, modelo, (int) potencia, peso, desgaste, (int) preco, tipoCarro);
+                            break;
+
+
+                    } //fecho switch tipos carro
+
+            } //fecho da funçao usarItem()
+
+
+            //Re-instanciar a classe Veiculo e actualiza o objeto veiculoAtual com os efeitos do item de corrida - os atributos potencia, peso e desgaste sao actualizados)
+
+
+        }
 
     }
-
-}
