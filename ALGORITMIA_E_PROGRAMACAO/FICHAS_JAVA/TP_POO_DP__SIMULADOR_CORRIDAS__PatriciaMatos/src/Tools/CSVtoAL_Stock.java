@@ -97,7 +97,7 @@ public class CSVtoAL_Stock {
 
                 if (tipoItemCorrida.equals("Habilidade")){
 //                    Mota(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco)
-                      itemCorridaAtual = new Habilidade(nome, precoFichasCorrida, aumentoPotencia);
+                      itemCorridaAtual = new Habilidade(nome, precoFichasCorrida, (int) aumentoPotencia);
                 }
 
 

@@ -72,76 +72,105 @@ public class Piloto {
      */
 
 //   TEMPO TOTAL POR PISTA calcula-se de acordo com:
-//   distanciaVolta/((1.6*potencia))-(0.2*peso)-(0.5*desgaste))
-//   A este tempo, somar os atrasos ("tempo que os Momentos atrasaram" - do enunciado).
-//   A cada volta, todos os momentos são repetidos de novo.
-//   Para calcular o atraso usar: ( (peso*atrasoPeso)+(potencia*atrasoPotencia) )/100
+//   1) distanciaVolta/((1.6*potencia))-(0.2*peso)-(0.5*desgaste))
+//   2) A este tempo, somar o tempo que os Momentos (atrasos)  atrasaram
+//   3) A cada volta, todos os momentos são repetidos de novo.
+//   4) Para calcular o atraso usar: ( (peso*atrasoPeso)+(potencia*atrasoPotencia) )/100
 //   A cada volta, o desgaste do veículo aumenta em 20.
-
     public double corrida(Pista pista) {
 
-        double tempoPistaAtual;
+        double tempoPistaAtual = 0;
         double atrasoPistaAtual;
-        Atrasos atraso = null;
         double desgaste = veiculoAtual.getDesgaste(); //Pois a cada volta o desgaste do veículo aumenta em 20!
+        int numvolta = pista.getQuantidadeVoltas();
 
+        // (Para nao estar a fazer um switch case com os casos a calcularem o tempo de cada volta, que deu erro pois a funçáo pede um return incondicional no corpo da função, usamos dois ciclos aninhados
 
-        switch(pista.getQuantidadeVoltas()){
-            case 1:
-                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+        for (int i = 0; i < pista.getQuantidadeVoltas(); i++) {
 
-                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+            //Dado que depois da 1a volta, a cada volta o desgaste aumenta 20 unidades, foi conveniente
+            // usar uma expressão matemática geral, ie aplicável a qualquer volta, incluindo à que nao tem o incremento de desgaste:
+            // Incremento desgaste: 1ªvolta = 20x0 | 2ªvolta = 20x1 | 3ªvolta = 20x2 | 4ªvolta = 20x3 | 5ªvolta = 20x4:
 
-                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
-                return tempoPistaAtual;
-                break;
+            desgaste = desgaste + 20*i;
+            //Aplicar à fórmula fornecida no enunciado:
+            tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
 
-            case 2:
-                desgaste = desgaste + 20;
-                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+            // Agora, adicionar os atrasos ("momentos") a cada volta, iterando o array que os guarda (atrasosPista) visto que a cada volta, todos os momentos são repetidos de novo
+            for (Atrasos atrasoAtual : pista.getAtrasosPista()) {
 
-                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
-
-                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
-                return tempoPistaAtual;
-                //break;
-
-            case 3:
-                desgaste = desgaste + 20 + 20;
-                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
-
-                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atrasoAtual.atrasoPeso + veiculoAtual.getPotenciaCV() * atrasoAtual.atrasoPeso) / 100;
 
                 tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
-                return tempoPistaAtual;
-            //break;
-
-            case 4:
-                desgaste = desgaste + 20 + 20 + 20;
-                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
-
-                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
-
-                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
-                return tempoPistaAtual;
-            //break;
-
-            case 5:
-                desgaste = desgaste + 20 + 20 + 20 + 20;
-                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
-
-                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
-
-                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
-                return tempoPistaAtual;
-            //break;
+            }
         }
-
+        return tempoPistaAtual;
 
     }
 
 
 
+    //FUNCAO PEDIA UM RETURN GERAL E SÓ TINHA RETURNS PARCIAIS POR CHAVETA, E DAVA ERRO
+//    public double corrida(Pista pista) {
+//
+//        double tempoPistaAtual;
+//        double atrasoPistaAtual;
+//        Atrasos atraso = null;
+//        double desgaste = veiculoAtual.getDesgaste(); //Pois a cada volta o desgaste do veículo aumenta em 20!
+//
+//
+//        switch(pista.getQuantidadeVoltas()){
+//            case 1:
+//                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+//
+//                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+//
+//                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
+//                return tempoPistaAtual;
+//                //Não é necessário ter um break pois o return tem a mesma fucnionalidade;
+//
+//            case 2:
+//                desgaste = desgaste + 20;
+//                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+//
+//                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+//
+//                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
+//                return tempoPistaAtual;
+//                //break;
+//
+//            case 3:
+//                desgaste = desgaste + 20 + 20;
+//                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+//
+//                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+//
+//                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
+//                return tempoPistaAtual;
+//                //break;
+//
+//            case 4:
+//                desgaste = desgaste + 20 + 20 + 20;
+//                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+//
+//                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+//
+//                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
+//                return tempoPistaAtual;
+//                //break;
+//
+//            case 5:
+//                desgaste = desgaste + 20 + 20 + 20 + 20;
+//                tempoPistaAtual = pista.getDistanciaVoltaMetros() / ((1.6 * veiculoAtual.getPotenciaCV())) - (0.2 * veiculoAtual.getPesoKg()) - (0.5 * desgaste);
+//
+//                atrasoPistaAtual = (veiculoAtual.getPesoKg() * atraso.atrasoPeso + veiculoAtual.getPotenciaCV() * atraso.atrasoPotencia) / 100;
+//
+//                tempoPistaAtual = tempoPistaAtual + atrasoPistaAtual;
+//                return tempoPistaAtual;
+//                //break;
+//        }//fecho switch
+//
+//    }
 
 
 // FUNÇÃO QUE ESCREVI A INTERPRETAR MAL O ENUNCIADO, OU SEJA, ASSUMINDO QUE O TEMPO RETORNADO ERA DO JOGO COMPLETO, IE, DAS 5 VOLTAS À PISTA.

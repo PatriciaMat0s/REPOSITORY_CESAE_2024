@@ -1,0 +1,12 @@
+1. Não consegui testar os algoritmos. Programei tudo mentalmente, confesso.
+Quando ia testar, a IDE não me deixava accionar a execução (devo ter inadvertidamente alterado alguma definição?), e não encontrei forma de reverter a situação.
+
+2. Por algum motivo não foi emitido o JavaDOC, apesar de ter dados as instruções e definido uma directoria para onde o exportar.
+
+3. Apesar de me ter aplicado ao máximo (mesmo!) que me foi de todo possível, a gestão do tempo deve ser melhorada para conseguir terminar o próximo projecto, e deixar tudo funcional. 
+
+4. Não consegui, por motivos de falta de tempo, implementar o DP "Singleton" na criação de um ojecto único da classe Piloto (visto que só queremos admitir um únicoo jogador).  
+
+5. Ainda assim, sinto que cimentei a matéria e sinto-me mais confiante, lógica e apta em POO.
+
+6. Sempre muito a aprender. Ora, pois continuemos a jornada!

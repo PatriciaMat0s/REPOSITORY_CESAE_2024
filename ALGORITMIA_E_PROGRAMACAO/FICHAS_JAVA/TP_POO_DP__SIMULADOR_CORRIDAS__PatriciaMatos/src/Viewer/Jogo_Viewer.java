@@ -1,4 +1,7 @@
 package Viewer;
+import Controller.ItemsCorrida_Controller;
+import Controller.Veiculos_Controller;
+import Domain.Atrasos;
 import Domain.Veiculo.Veiculo;
 import Domain.Veiculo.Carro;
 import Domain.Veiculo.Mota;
@@ -7,6 +10,7 @@ import Domain.Pista;
 import Domain.Enums.TipoCarro;
 import Viewer.Main_Viewer;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Jogo_Viewer {
@@ -44,7 +48,7 @@ public class Jogo_Viewer {
         String tipoVeiculo = input.next();
 
         Piloto piloto;
-
+g
         //CASO SEJA ESCOLHIDO O CARRO:
         if (tipoVeiculo.equalsIgnoreCase("C")) {
             // Criar 4 instâncias da classe Carro de acordo com a escolha do jogador:
@@ -158,7 +162,7 @@ public class Jogo_Viewer {
                 piloto = new Piloto(nomePiloto, fichasCorrida, veiculoAtual, numVitorias);
                 return piloto;
 
-    }//chaveta de fecho do método prepararPiloto
+    } //chaveta de fecho do método prepararPiloto
 
 
 
@@ -167,32 +171,69 @@ public class Jogo_Viewer {
      * Método de “jogo”, ou seja, o percurso a percorrer pelo piloto.
      * @param piloto criado através de feedback da consola
      */
-    public static void readyRaceGo(Piloto piloto) {
-        Veiculo veiculoAtual;
+    public static void readyRaceGo(Piloto piloto) throws FileNotFoundException {
+
+        ItemsCorrida_Controller itenscontrollerobj = new ItemsCorrida_Controller();
+        Veiculos_Controller veiculoscontrollerobj = new Veiculos_Controller();
+
+        
+        Veiculo veiculoAtual = piloto.getVeiculoAtual();
         Scanner input = new Scanner(System.in);
 
-        Pista pista1; Pista pista2; Pista pista3; Pista pista4; Pista pista5;
+        //INSTANCIAR AS PISTAS:
+        Pista pista1 = new Pista("pista001", 300, 285,1000, 1);
+        Pista pista2 = new Pista("pista002", 300, 285,2000, 2);
+        Pista pista3 = new Pista("pista003", 300, 285,3000, 3);
+        Pista pista4 = new Pista("pista004", 300, 285,4000, 4);
+        Pista pista5 = new Pista("pista005", 300, 285,5000, 5);
+
+        //INSTANCIAR OS MOMENTOS (OU ATRASOS, MUDEI PARA UM NOME MAIS AUTO-EXPLICATIVO):
+        Atrasos curvaU = new Atrasos("curvaU", 5, 3);
+        Atrasos curvaS = new Atrasos("curvaS", 6, 4);
+        Atrasos gravilha = new Atrasos("gravilha", 4, 2);
+        Atrasos pedras = new Atrasos("pedras", 15, 5);
+
+        //ADICIONAR OS ATRASOS AO ARRAY DE ATRASOS NA CLASSE PISTA, a atrasos a cada pista:
+        (pista1.getAtrasosPista()).add(curvaU);
+        (pista1.getAtrasosPista()).add(curvaS);
+        (pista2.getAtrasosPista()).add(gravilha);
+        (pista2.getAtrasosPista()).add(pedras);
+        (pista3.getAtrasosPista()).add(curvaS);
+        (pista3.getAtrasosPista()).add(gravilha);
+        (pista4.getAtrasosPista()).add(curvaU);
+        (pista4.getAtrasosPista()).add(gravilha);
+        (pista5.getAtrasosPista()).add(curvaS);
+        (pista5.getAtrasosPista()).add(pedras);
 
         // Número total de vezes que a pista vai ser percorrida com a volta seguinte
         // É inicializada a 1 pois o piloto vai percorrer a pista uma primeira vez:
         int numPista = 1;
         int opcaoEscolhida;
         do {
-            System.out.println("                  <__|__[______]__|__>");
-            System.out.println("                 |   O0O________O0O   |");
-            System.out.println("               *|_____/__|RRG|__|_____|*");
-            System.out.println("               |{___}|____***____|{___}|");
+            // Infelizmente deu erro, os dots não são reconhecidos...
+//            System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣄⣄⣀⣀⣀");⠀⠀⠀⠀⠀⠀⠀⠀
+//            System.out.println("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠊⠉⠉⠉⠉⠉⣩⡷⠋⠉⠹⡛⢽⠢⣀⣀⡀");⠀⠀
+//            System.out.println("⢀⣀⣤⣴⠶⣾⣿⡿⠯⠯⣍⣙⣒⣲⠶⠶⠶⡿⢴⠧⠷⠒⣿⣏⠡⡤⠤⠯⡆");⠀
+//            System.out.println("⣿⣶⣒⡒⠛⠽⢯⣥⣶⣯⠭⡵⢊⣩⣭⣲⡂⡗⠈⠉⠉⠉⠉⡇⣼⣷⣿⣧⡇");⠀
+//            System.out.println("⣮⣍⣛⡛⠛⠛⠛⠛⠛⠘⡾⣴⣿⣿⣿⣿⣧⡇⠀⠀⠀⢀⣰⣠⡽⣿⣿⠟");⠀⠀
+//            System.out.println("⠾⠿⣶⣦⣭⣍⣹⣷⡄⡸⣹⣿⡿⣿⣻⣿⡿⠷⠶⠟⠛⠛⠉⠉⠓⠻⠟");⠀⠀⠀
+//            System.out.println("⠀⠀⠀⠉⠉⠁⠉⠛⠛⠛⠳⠿⢿⡿⠟");⠀
+            // Lá ficou um carrinho mais rudimentar. mas o espírito continua bravo:
+            System.out.println("                    -|--[-----]--|-");
+            System.out.println("                <|   O0O_______O0O   |>");
+            System.out.println("              *|______|__|RRG|__|______|*");
+            System.out.println("               |{____}|         |{____}|");
             System.out.println("--- ******  * -------------*------------- *  ****** ---");
-            System.out.println("************ --  * READY? RACE, GO!!! *  -- ************");
+            System.out.println("************ --  * READY? RACE: GO!!! *  -- ************");
             System.out.println("--- ******  * -------------*------------- *  ****** ---");
-            System.out.println("___ Race as if ur life depended on it ('cause it does!) ___");
+            System.out.println("(And code it as if ur life depended on it... because it does!)");
             System.out.println("");
             System.out.println("**-*-**");
             System.out.print("\nWHAT DO YOU WANT TO DO NOW? ");
             System.out.println("-----");
-            System.out.println("1 > GO TO THE NEXT RACE");
-            System.out.println("2 > GO SHOPPING VEHICLES!");
-            System.out.println("3 > GO SHOPPING RACE ITEMS!");
+            System.out.println("1 > GO TO THE NEXT RACE!");
+            System.out.println("2 > GO SHOPPING: VEHICLES!");
+            System.out.println("3 > GO SHOPPING: RACE ITEMS!");
             System.out.println("4 > SELECT ITEM FROM MY INVENTORY!");
             System.out.println("SELECT A VALID OPTION: [1] [2] [3] [4] [0]");
             System.out.println("**-*-**");
@@ -206,36 +247,80 @@ public class Jogo_Viewer {
                     do {
                         switch (numPista) {
                             case 1: //Primeira volta
-
                                 piloto.corrida(pista1);
+                                double tempoP1 = piloto.corrida(pista1);
                                 numPista++;
                                 System.out.println("*/5 STARTING RIDE #" + numPista);
+
+                                //Atribuir fichas ao piloto no final de cada pista
+                                double tempoRecorde = 180; //na 1a volta vamos supor que o tempo recorde é 180segundos
+                                if (tempoP1 > tempoRecorde){
+                                    piloto.setFichasCorrida(2000); //mini bonus de 1a volta
+                                } else{
+                                    piloto.setFichasCorrida(1000); //mini meio bonus
+                                }
+
                                 break;
+
 
                             case 2: //Segunda volta
                                 piloto.corrida(pista2);
+                                double tempoP2 = piloto.corrida(pista2);
                                 numPista++;
                                 System.out.println("**/5 STARTING RIDE #" + numPista);
+
+                                if (tempoP2 < tempoP1){ //Ou seja, o piloto bateu o recorde pessoal
+                                    piloto.setFichasCorrida(20000);
+                                } else{
+                                    piloto.setFichasCorrida(10000);
+                                }
+
                                 break;
 
                             case 3:
                                 piloto.corrida(pista3);
+                                double P3 = piloto.corrida(pista3);
                                 numPista++;
                                 System.out.println("***/5 STARTING RIDE #" + numPista);
+
+                                if ((tempoP3 < tempoP2) && (tempoP3 < tempoP1)){ //Ou seja, o piloto bateu o recorde pessoal
+                                    piloto.setFichasCorrida(30000);
+                                } else{
+                                    piloto.setFichasCorrida(15000);
+                                }
+
                                 break;
 
                             case 4:
                                 piloto.corrida(pista4);
+                                double tempoP4 = piloto.corrida(pista4);
                                 numPista++;
                                 System.out.println("****/5 STARTING RIDE #" + numPista);
+
+                                if ((tempoP4 < tempoP3) && (tempoP4 < tempoP2) && (tempoP4 < tempoP1)){ //Ou seja, o piloto bateu o recorde pessoal
+                                    piloto.setFichasCorrida(30000);
+                                } else{
+                                    piloto.setFichasCorrida(15000);
+                                }
+
                                 break;
 
                             case 5:
                                 piloto.corrida(pista5);
+                                double tempoP5 = piloto.corrida(pista5);
                                 numPista++;
                                 System.out.println("*****/5 STARTING RIDE #" + numPista + " : THE BOSS RIDE YAAAY!");
 
+                                if ((tempoP5 < tempoP4) && (tempoP5 < tempoP3) && (tempoP5 > tempoP2) && (tempoP5 < tempoP1)){
+                                    //Ou seja, o piloto bateu o recorde pessoal derradeiro, logo, ganhou o jogo!
+                                System.out.println("!!!RECORD BEATEN!!! ***** !!!YOU WON!!! ***** !!!CONGRATULATIONS!!!");
+                                piloto.setFichasCorrida(60000); //bõnus de vencedor!
+                            } else{
+                                piloto.setFichasCorrida(15000);
+                            }
+
                                 break;
+
 
                             default:
                                 break;
@@ -246,23 +331,28 @@ public class Jogo_Viewer {
                     break; // do case 1 do switch exterior
 
 
-                case 2: //Aquire new vehicle
+                case 2: //Acquire new vehicle
                     int numVeiculoEscolhido;
-                    //imprimirGaragem();
+                    imprimirGaragem();
                     System.out.println("SELECT NUMBER OF DESIRED VEHICLE:");
                     numVeiculoEscolhido = input.nextInt();
 
-                    //comprarVeiculo(piloto, numVeiculoEscolhido)
-
-                    System.out.println(veiculoAtual.mostrarDetalhes+" IS NOW YOURS, YAY!");
+                    comprarVeiculo(piloto, numVeiculoEscolhido)
+                    System.out.println("NICE, THIS ONE IS NOW YOURS:");
+                    veiculoAtual.mostrarDetalhes();
                     break;
 
                 case 3: //Comprar Item
-                    /////////////////************** FAZER
+                    int numItemEscolhido;
+                    imprimirStockItems();
+                    System.out.println("SELECT NUMBER OF DESIRED ITEM:");
+                    numItemEscolhido = input.nextInt();
+
+                    comprarItemCorrida(piloto,numItemEscolhido);
                     break;
 
                 case 4: //Print inventory Items e aplicar os items ao veiculo
-                    /////////////////************** FAZER
+                    usarItemCorrida(piloto);
                     break;
 
                 case 0:
