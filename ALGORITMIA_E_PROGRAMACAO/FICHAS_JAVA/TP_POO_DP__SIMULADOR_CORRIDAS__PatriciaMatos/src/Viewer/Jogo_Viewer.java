@@ -48,7 +48,7 @@ public class Jogo_Viewer {
         String tipoVeiculo = input.next();
 
         Piloto piloto;
-g
+
         //CASO SEJA ESCOLHIDO O CARRO:
         if (tipoVeiculo.equalsIgnoreCase("C")) {
             // Criar 4 instâncias da classe Carro de acordo com a escolha do jogador:
@@ -279,7 +279,7 @@ g
 
                             case 3:
                                 piloto.corrida(pista3);
-                                double P3 = piloto.corrida(pista3);
+                                double tempoP3 = piloto.corrida(pista3);
                                 numPista++;
                                 System.out.println("***/5 STARTING RIDE #" + numPista);
 
@@ -337,7 +337,7 @@ g
                     System.out.println("SELECT NUMBER OF DESIRED VEHICLE:");
                     numVeiculoEscolhido = input.nextInt();
 
-                    comprarVeiculo(piloto, numVeiculoEscolhido)
+                    comprarVeiculo(piloto, numVeiculoEscolhido);
                     System.out.println("NICE, THIS ONE IS NOW YOURS:");
                     veiculoAtual.mostrarDetalhes();
                     break;
