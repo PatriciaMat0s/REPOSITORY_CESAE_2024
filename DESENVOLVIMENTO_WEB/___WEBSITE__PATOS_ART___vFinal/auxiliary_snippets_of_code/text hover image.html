@@ -102,6 +102,10 @@ div.desc {
   opacity: .9;
 }
 
+.container:hover .text {
+  opacity: 1;
+}
+
 .text {
   color: grey;
   font-size: 20px;
@@ -112,6 +116,8 @@ div.desc {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  opacity : 0;
+  transition: opacity 0.5s ease;
 }
 </style>
 </head>
