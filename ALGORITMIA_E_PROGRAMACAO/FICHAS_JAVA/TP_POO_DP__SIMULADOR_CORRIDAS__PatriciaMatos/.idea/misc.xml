@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../../../../../CESAE_SOFTDEV_2023/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/TP_POO_DP__SIMULADOR_CORRIDAS__PatriciaMatos/JAVADOC_PatriciaMatos" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/src/__JavaDoc" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

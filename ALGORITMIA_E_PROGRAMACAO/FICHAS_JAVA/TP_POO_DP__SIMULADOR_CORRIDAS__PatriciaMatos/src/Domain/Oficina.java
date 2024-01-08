@@ -17,7 +17,23 @@ public class Oficina {
         this.stock = new ArrayList<>();
     }
 
-//    /**
+    public ArrayList<Veiculo> getGaragem() {
+        return garagem;
+    }
+
+    public void setGaragem(ArrayList<Veiculo> garagem) {
+        this.garagem = garagem;
+    }
+
+    public void setStock(ArrayList<ItemsCorrida> stock) {
+        this.stock = stock;
+    }
+
+    public ArrayList<ItemsCorrida> getStock() {
+        return stock;
+    }
+
+    //    /**
 //     * Método que imprime aleatoriamente 6 itens em stock e as suas especificaçoes.
 //     */
 //    public void imprimirStock() {

@@ -2,6 +2,7 @@ package Viewer;
 import Controller.ItemsCorrida_Controller;
 import Controller.Veiculos_Controller;
 import Domain.Atrasos;
+import Domain.ItemsCorrida.ItemsCorrida;
 import Domain.Veiculo.Veiculo;
 import Domain.Veiculo.Carro;
 import Domain.Veiculo.Mota;
@@ -9,8 +10,10 @@ import Domain.Piloto;
 import Domain.Pista;
 import Domain.Enums.TipoCarro;
 import Viewer.Main_Viewer;
+import Domain.Oficina;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Jogo_Viewer {
@@ -28,7 +31,7 @@ public class Jogo_Viewer {
         System.out.print("\nHEY, WHAT'S YOUR NAME? ");
         String nomePiloto = input.next();
 
-        System.out.print("\nHOW HARD YOU WANT TO RACE?  [ B : BEGINNER  ||  P : PRO ]");
+        System.out.print("\nHOW HARD YOU WANT TO RACE?  [ B : BEGINNER  ||  P : PRO ] ");
         String grauDificuldade = input.next();
 
         Veiculo veiculoAtual = null; //Declaro esta variavel objecto pois vai ser usada adiante, independentemente de o jogador escolher carro ou mota
@@ -40,11 +43,11 @@ public class Jogo_Viewer {
         }
 
         if (grauDificuldade.equalsIgnoreCase("P") || grauDificuldade.equalsIgnoreCase("p")) { //Despistar o "case sensitive" com uma função das Bibliotecas
-            fichasCorrida = 50000;
+            fichasCorrida = 150000;
             System.out.println("PRO: YOU CURRENTLY HAVE " + fichasCorrida + " COINS!");
         }
 
-        System.out.print("\nWHAT'S YOUR KIND OF MACHINE?  [ C : CAR  ||  M : MOTORBIKE ]");
+        System.out.print("\nWHAT'S YOUR KIND OF MACHINE?  [ C : CAR  ||  M : MOTORBIKE ] ");
         String tipoVeiculo = input.next();
 
         Piloto piloto;
@@ -55,8 +58,8 @@ public class Jogo_Viewer {
 
             Carro carroInicial1 = new Carro("Renault", "Megáne Totil", 200, 1300, 40, 50000, TipoCarro.GT);
             Carro carroInicial2 = new Carro("Nissan", "Qashqai Quase Lá", 300, 1500, 60, 60000, TipoCarro.GT);
-            Carro carroInicial3 = new Carro("Cadillac", "LYRIQ LALALA", 500, 1000, 80, 180000, TipoCarro.GT);
-            Carro carroInicial4 = new Carro("Ferrari", "269 GT Z DB", 800, 900, 100, 300000, TipoCarro.GT);
+            Carro carroInicial3 = new Carro("Cadillac", "LYRIQ LALALA", 500, 1000, 80, 100000, TipoCarro.GT);
+            Carro carroInicial4 = new Carro("Ferrari", "269 GT Z DB", 800, 900, 100, 150000, TipoCarro.GT);
 
             int carroEscolhido;
             do {
@@ -84,15 +87,19 @@ public class Jogo_Viewer {
                 switch (carroEscolhido) {
                     case 1:
                         veiculoAtual = carroInicial1;
+                        fichasCorrida = fichasCorrida - 50000;
                         break;
                     case 2:
                         veiculoAtual = carroInicial2;
+                        fichasCorrida = fichasCorrida - 60000;
                         break;
                     case 3:
                         veiculoAtual = carroInicial3;
+                        fichasCorrida = fichasCorrida - 100000;
                         break;
                     case 4:
                         veiculoAtual = carroInicial4;
+                        fichasCorrida = fichasCorrida - 150000;
                         break;
                     case 0:
                         break;
@@ -108,8 +115,8 @@ public class Jogo_Viewer {
                 //Mota(String marca, String modelo, int potenciaCV, double pesoKg, int desgaste, int preco);
                 Mota motaInicial1 = new Mota("Zundapp", "Veneza Ruivo XP", 300, 350, 40, 20000);
                 Mota motaInicial2 = new Mota("Honda", "PC MAC LOL", 400, 400, 60, 35000);
-                Mota motaInicial3 = new Mota("BMW", "R GS GPT", 900, 500, 80, 60000);
-                Mota motaInicial4 = new Mota("Ducatti", "Super Reloaded CO-PILOT", 1200, 600, 100, 100000);
+                Mota motaInicial3 = new Mota("BMW", "R GS GPT", 900, 500, 80, 90000);
+                Mota motaInicial4 = new Mota("Ducatti", "Super Reloaded CO-PILOT", 1200, 600, 100, 140000);
 
                 int motaEscolhida;
                 do {
@@ -137,15 +144,19 @@ public class Jogo_Viewer {
                     switch (motaEscolhida) {
                         case 1:
                             veiculoAtual = motaInicial1;
+                            fichasCorrida = fichasCorrida - 20000;
                             break;
                         case 2:
                             veiculoAtual = motaInicial2;
+                            fichasCorrida = fichasCorrida - 35000;
                             break;
                         case 3:
                             veiculoAtual = motaInicial3;
+                            fichasCorrida = fichasCorrida - 90000;
                             break;
                         case 4:
                             veiculoAtual = motaInicial4;
+                            fichasCorrida = fichasCorrida - 140000;
                             break;
                         case 0:
                             break;
@@ -173,12 +184,52 @@ public class Jogo_Viewer {
      */
     public static void readyRaceGo(Piloto piloto) throws FileNotFoundException {
 
-        ItemsCorrida_Controller itenscontrollerobj = new ItemsCorrida_Controller();
-        Veiculos_Controller veiculoscontrollerobj = new Veiculos_Controller();
+        ItemsCorrida_Controller itenscontrollerObj = new ItemsCorrida_Controller();
+        //ArrayList<ItemsCorrida> arrayItems = itenscontrollerObj.getListaItems();
+        //Tenho o array de items (lidos do ficheiro)
 
-        
+        Veiculos_Controller veiculoscontrollerObj = new Veiculos_Controller();
+        //ArrayList<Veiculo> arrayVeiculos = veiculoscontrollerObj.getListaVeiculos();
+        //Tenho o array de veiculos (lidos do ficheiro)
+
+        // Declarar e inicializar o veiculo actual do piloto!
         Veiculo veiculoAtual = piloto.getVeiculoAtual();
         Scanner input = new Scanner(System.in);
+
+
+        //Instanciar os 12 veiculos adversarios:
+
+        Carro adversaryCar1 = new Carro("Renaulto", "Mago,ne Vais Perder", 200, 1300, 40, 50000, TipoCarro.GT);
+        Carro adversaryCar2 = new Carro("Citronello", "Vais Pó-C", 100, 1900, 40, 50000, TipoCarro.GT);
+        Carro adversaryCar3 = new Carro("BMW", "XYZ", 170, 1900, 140, 50000, TipoCarro.GT);
+        Carro adversaryCar4 = new Carro("Jeep", "Tirenme Daki", 170, 1900, 140, 50000, TipoCarro.GT);
+        Carro adversaryCar5 = new Carro("Chevrolet", "ilikeChevre 250", 250, 1900, 20, 80000, TipoCarro.GT);
+        Carro adversaryCar6 = new Carro("Peugeot", "Super Comercial", 270, 1900, 50, 80000, TipoCarro.GT);
+
+        Mota adversaryMoto1 = new Mota("Zundappum", "Vaiste-F", 300, 350, 40, 20000);
+        Mota adversaryMoto2 = new Mota("Yamaha", "hahahah", 300, 150, 40, 28000);
+        Mota adversaryMoto3 = new Mota("MotaPT", "Feita em Portugal", 200, 350, 40, 70000);
+        Mota adversaryMoto4 = new Mota("MotaPT-CH", "Fabricada na China", 300, 350, 40, 40000);
+        Mota adversaryMoto5 = new Mota("Hyundai", "Ganhessamerd*", 300, 500, 40, 90000);
+        Mota adversaryMoto6 = new Mota("Fastrax", "Carbono Red", 420, 390, 40, 200000);
+
+        //Adicionar os veiculos a uma instancia da classe Oficina:
+        Oficina oficinax = new Oficina();
+        oficinax.getGaragem().add(adversaryCar1);
+        oficinax.getGaragem().add(adversaryCar2);
+        oficinax.getGaragem().add(adversaryCar3);
+        oficinax.getGaragem().add(adversaryCar4);
+        oficinax.getGaragem().add(adversaryCar5);
+        oficinax.getGaragem().add(adversaryCar6);
+        oficinax.getGaragem().add(adversaryMoto1);
+        oficinax.getGaragem().add(adversaryMoto2);
+        oficinax.getGaragem().add(adversaryMoto3);
+        oficinax.getGaragem().add(adversaryMoto4);
+        oficinax.getGaragem().add(adversaryMoto5);
+        oficinax.getGaragem().add(adversaryMoto6);
+
+        //Falta fazer o mesmo para os items
+
 
         //INSTANCIAR AS PISTAS:
         Pista pista1 = new Pista("pista001", 300, 285,1000, 1);
@@ -218,7 +269,8 @@ public class Jogo_Viewer {
 //            System.out.println("⣮⣍⣛⡛⠛⠛⠛⠛⠛⠘⡾⣴⣿⣿⣿⣿⣧⡇⠀⠀⠀⢀⣰⣠⡽⣿⣿⠟");⠀⠀
 //            System.out.println("⠾⠿⣶⣦⣭⣍⣹⣷⡄⡸⣹⣿⡿⣿⣻⣿⡿⠷⠶⠟⠛⠛⠉⠉⠓⠻⠟");⠀⠀⠀
 //            System.out.println("⠀⠀⠀⠉⠉⠁⠉⠛⠛⠛⠳⠿⢿⡿⠟");⠀
-            // Lá ficou um carrinho mais rudimentar. mas o espírito continua bravo:
+
+            // Lá ficou um carrinho mais rudimentar:
             System.out.println("                    -|--[-----]--|-");
             System.out.println("                <|   O0O_______O0O   |>");
             System.out.println("              *|______|__|RRG|__|______|*");
@@ -266,10 +318,11 @@ public class Jogo_Viewer {
                             case 2: //Segunda volta
                                 piloto.corrida(pista2);
                                 double tempoP2 = piloto.corrida(pista2);
+                                double tempoP1x = piloto.corrida(pista2);
                                 numPista++;
                                 System.out.println("**/5 STARTING RIDE #" + numPista);
 
-                                if (tempoP2 < tempoP1){ //Ou seja, o piloto bateu o recorde pessoal
+                                if (tempoP2 < tempoP1x){ //Ou seja, o piloto bateu o recorde pessoal
                                     piloto.setFichasCorrida(20000);
                                 } else{
                                     piloto.setFichasCorrida(10000);
@@ -280,10 +333,12 @@ public class Jogo_Viewer {
                             case 3:
                                 piloto.corrida(pista3);
                                 double tempoP3 = piloto.corrida(pista3);
+                                double tempoP2z = piloto.corrida(pista2);
+                                double tempoP1z = piloto.corrida(pista1);
                                 numPista++;
                                 System.out.println("***/5 STARTING RIDE #" + numPista);
 
-                                if ((tempoP3 < tempoP2) && (tempoP3 < tempoP1)){ //Ou seja, o piloto bateu o recorde pessoal
+                                if ((tempoP3 < tempoP2z) && (tempoP3 < tempoP1z)){ //Ou seja, o piloto bateu o recorde pessoal
                                     piloto.setFichasCorrida(30000);
                                 } else{
                                     piloto.setFichasCorrida(15000);
@@ -294,24 +349,32 @@ public class Jogo_Viewer {
                             case 4:
                                 piloto.corrida(pista4);
                                 double tempoP4 = piloto.corrida(pista4);
+                                double tempoP3a = piloto.corrida(pista3);
+                                double tempoP2a = piloto.corrida(pista2);
+                                double tempoP1a = piloto.corrida(pista1);
+
                                 numPista++;
                                 System.out.println("****/5 STARTING RIDE #" + numPista);
 
-                                if ((tempoP4 < tempoP3) && (tempoP4 < tempoP2) && (tempoP4 < tempoP1)){ //Ou seja, o piloto bateu o recorde pessoal
+                                if ((tempoP4 < tempoP3a) && (tempoP4 < tempoP2a) && (tempoP4 < tempoP1a)){ //Ou seja, o piloto bateu o recorde pessoal
                                     piloto.setFichasCorrida(30000);
                                 } else{
                                     piloto.setFichasCorrida(15000);
                                 }
-
                                 break;
 
                             case 5:
                                 piloto.corrida(pista5);
                                 double tempoP5 = piloto.corrida(pista5);
+                                double tempoP4b = piloto.corrida(pista4);
+                                double tempoP3b = piloto.corrida(pista3);
+                                double tempoP2b = piloto.corrida(pista2);
+                                double tempoP1b = piloto.corrida(pista1);
+
                                 numPista++;
                                 System.out.println("*****/5 STARTING RIDE #" + numPista + " : THE BOSS RIDE YAAAY!");
 
-                                if ((tempoP5 < tempoP4) && (tempoP5 < tempoP3) && (tempoP5 > tempoP2) && (tempoP5 < tempoP1)){
+                                if ((tempoP5 < tempoP4b) && (tempoP5 < tempoP3b) && (tempoP5 > tempoP2b) && (tempoP5 < tempoP1b)){
                                     //Ou seja, o piloto bateu o recorde pessoal derradeiro, logo, ganhou o jogo!
                                 System.out.println("!!!RECORD BEATEN!!! ***** !!!YOU WON!!! ***** !!!CONGRATULATIONS!!!");
                                 piloto.setFichasCorrida(60000); //bõnus de vencedor!
@@ -319,6 +382,9 @@ public class Jogo_Viewer {
                                 piloto.setFichasCorrida(15000);
                             }
 
+                                //NOTA!!!!!!
+                                // Para determinar o vencedor teria de ter calculado os tempos de corrida (com a funçao corrida) para cada um dos veiculos adversarios ao longo das pistas e da eventual applicaçao de items de corrida a estes. Seriam estes tempos que compararia com o do piloto/jogador
+                                //Por motivos de simplificaçao, baseei a métrica para apurar um vencedor no bater do recorde pessoal na última pista
                                 break;
 
 
@@ -333,26 +399,26 @@ public class Jogo_Viewer {
 
                 case 2: //Acquire new vehicle
                     int numVeiculoEscolhido;
-                    imprimirGaragem();
+                    veiculoscontrollerObj.imprimirGaragem();
                     System.out.println("SELECT NUMBER OF DESIRED VEHICLE:");
                     numVeiculoEscolhido = input.nextInt();
 
-                    comprarVeiculo(piloto, numVeiculoEscolhido);
+                    veiculoscontrollerObj.comprarVeiculo(piloto, numVeiculoEscolhido);
                     System.out.println("NICE, THIS ONE IS NOW YOURS:");
                     veiculoAtual.mostrarDetalhes();
                     break;
 
                 case 3: //Comprar Item
                     int numItemEscolhido;
-                    imprimirStockItems();
+                    itenscontrollerObj.imprimirStockItems();
                     System.out.println("SELECT NUMBER OF DESIRED ITEM:");
                     numItemEscolhido = input.nextInt();
 
-                    comprarItemCorrida(piloto,numItemEscolhido);
+                    itenscontrollerObj.comprarItemCorrida(piloto,numItemEscolhido);
                     break;
 
                 case 4: //Print inventory Items e aplicar os items ao veiculo
-                    usarItemCorrida(piloto);
+                    itenscontrollerObj.usarItemCorrida(piloto);
                     break;
 
                 case 0:

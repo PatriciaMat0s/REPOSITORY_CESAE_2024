@@ -22,13 +22,17 @@ public class Veiculos_Controller {
             this.listaVeiculos = inventarioVeiculos.getGaragem();
         }
 
-// MÉTODOS QUE TRABALHAM COM VEICULOS, VAO SER REUNIDOS NESTA CLASSE:
+    public ArrayList<Veiculo> getListaVeiculos() {
+        return listaVeiculos;
+    }
+
+    // MÉTODOS QUE TRABALHAM COM VEICULOS, VAO SER REUNIDOS NESTA CLASSE:
 
     /**
      * FUNÇÃO QUE imprime aleatoriamente 12 veiculos em stock, assim como as suas especificações. Mesmo que a oficina tenha uma garagem maior, apenas 12 devem ser mostrados de forma aleatória.
      */
     public void imprimirGaragem() {
-
+    //As notas explicativas do método analogo a este (ImprimirItems()) estao na Classe  ItemsCorrida_Controller
         Random rand = new Random();
 
         ArrayList<Integer> arrayIndexAleatorio = new ArrayList<>();
@@ -49,6 +53,7 @@ public class Veiculos_Controller {
             System.out.print("VEHICLE #" + contador++ + ": ");
             //Simplifiquei, nao apresentando a especificade referente às subclasses (habilidade e modificaçao):
             veiculoAtual.mostrarDetalhes();
+            System.out.println("");
         }
 
     } //fecho metodo imprimirgaragem()

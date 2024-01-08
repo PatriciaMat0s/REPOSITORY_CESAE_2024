@@ -30,6 +30,9 @@ public class ItemsCorrida_Controller {
         this.listaItems = inventarioItems.getStock();
     }
 
+    public ArrayList<ItemsCorrida> getListaItems() {
+        return listaItems;
+    }
 
     //Vamos escrever os métodos relativos ao array dos ItemsCorrida aqui:
 
@@ -67,6 +70,7 @@ public class ItemsCorrida_Controller {
             System.out.print("ITEM #" + contador++ + ": ");
             //Simplifiquei, nao apresentando a especificade referente às subclasses (habilidade e modificaçao):
             itemCorridaAtual.mostrarDetalhes();
+            System.out.println("");
         }
     } //fecho funçao imprimirStockItens
 
