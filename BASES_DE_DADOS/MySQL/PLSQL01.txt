@@ -1,0 +1,98 @@
+CRAIR BASE DE DADOS:::
+create database loja_seunome;
+
+
+NOTAS:
+So se pode usar o auto-incremento nas PK simples, nunca nas compostas!
+
+
+INSERIR TABELAS:::
+1. MANEIRA A:
+Sem as alter tables, as foreign keys sao apresentadas em cada tabela
+A ordem de apresentaçao das tabelas tem em conta a sua utilizacao, ou seja, ligam se com FOREIGN KEYS as tabelas ja criadas
+
+
+CREATE TABLE Cliente (
+    id_cliente INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    cidade VARCHAR(40) NOT NULL,
+    data_inscricao DATE DEFAULT CURDATE(),
+    pontos INT,
+    PRIMARY KEY (id_cliente)
+    );
+    
+CREATE TABLE Venda (
+    id_venda INT AUTO_INCREMENT,
+    data_venda DATE,
+    desconto FLOAT,
+    PRIMARY KEY (id_venda),
+    FOREIGN KEY (cliente)
+    );
+
+CREATE TABLE Produto (
+    id_produto INT AUTO_INCREMENT,
+    descricao VARCHAR(50),
+    preco FLOAT,
+    stock INT,
+    PRIMARY KEY (id_produto)
+    );
+    
+CREATE TABLE Venda_Produto (
+    id_venda_produto INT,
+    quantidade INT,
+    PRIMARY KEY (id_venda_produto),
+    FOREIGN KEY (id_venda),
+    FOREIGN KEY (id_produto)
+	);
+    
+
+     
+    ------------------
+
+
+
+2. MANEIRA B:
+
+A ordem das tabelas nao importa, as foreign keys nao aparecem nas tabelas e sim no fim, com o alter tables
+
+
+CREATE TABLE Cliente (
+    id_cliente INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    cidade VARCHAR(40) NOT NULL,
+    data_inscricao DATE DEFAULT CURDATE(),
+    pontos INT,
+    PRIMARY KEY (id_cliente)
+    );
+    
+CREATE TABLE Venda (
+    id_venda INT AUTO_INCREMENT,
+    data_venda DATE,
+    desconto FLOAT,
+    id_cliente INT,
+    PRIMARY KEY (id_venda)
+    );
+
+CREATE TABLE Produto (
+    id_produto INT AUTO_INCREMENT,
+    descricao VARCHAR(50),
+    preco FLOAT,
+    stock INT,
+    PRIMARY KEY (id_produto)
+    );
+    
+CREATE TABLE Venda_Produto (
+    id_venda_produto INT,
+    id_venda INT,
+    id_produto INT,  
+    quantidade INT,
+    PRIMARY KEY (id_venda_produto)
+    );
+
+
+ALTER TABLE Venda
+ADD FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente);
+ 
+ALTER TABLE Venda_Produto
+ADD FOREIGN KEY (id_venda) REFERENCES Venda(id_venda),
+ADD FOREIGN KEY (id_produto) REFERENCES Produto(id_produto);
