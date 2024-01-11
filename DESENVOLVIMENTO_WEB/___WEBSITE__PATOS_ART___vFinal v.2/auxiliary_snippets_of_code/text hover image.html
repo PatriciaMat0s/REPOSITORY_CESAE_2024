@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+body {
+  background-color: #fff;
+  /* width: 80%;
+  margin: auto; */
+}
+
+.outergallery{
+  /* width: 100%; */
+  width: 60%;
+  margin: auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  /* width: 24.99999%; */
+  width: 33.22222%;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+.container:hover .overlay {
+  opacity: .9;
+}
+
+.container:hover .text {
+  opacity: 1;
+}
+
+.text {
+  color: grey;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity : 0;
+  transition: opacity 0.5s ease;
+}
+</style>
+</head>
+<body>
+ 
+  <div class="outergallery responsive"> 
+
+    <div class="container">
+      <div class="gallery">
+        <a target="_blank" href="/Imagens/OLDER WORKS/ventoardeu.jpg"><div class="overlay"></div>
+          <img src="/Imagens/OLDER WORKS/ventoardeu_thu.png" alt="" class="image" width="600" height="400"> 
+            <div class="text">Achas que tenho uma alma?</div>
+        </a>
+      </div>
+
+    
+
+      
+  </div>
+
+
+
+</body>
+</html>
