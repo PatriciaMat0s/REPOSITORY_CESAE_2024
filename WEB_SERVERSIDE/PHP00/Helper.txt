@@ -13,7 +13,9 @@
 php artisan make:migration add_user_type_to_users_table --table=users
 
 COMANDOS LARAVEL
+-> composer create-project Laravel/Laravel Web_ServerSide
 -> php artisan serve (iniciar o Servidor)
+-> php artisan (mostra todos os ficheiros)
 
 -> php artisan make:controller DashboardController (criar um controller)
 -> php artisan make:controller UserController -r (controller com recursos)

@@ -96,3 +96,8 @@ ADD FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente);
 ALTER TABLE Venda_Produto
 ADD FOREIGN KEY (id_venda) REFERENCES Venda(id_venda),
 ADD FOREIGN KEY (id_produto) REFERENCES Produto(id_produto);
+
+
+
+
+

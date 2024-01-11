@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Jan-2024 às 18:40
--- Versão do servidor: 10.4.25-MariaDB
--- versão do PHP: 7.4.30
+-- Tempo de geração: 11-Jan-2024 às 18:34
+-- Versão do servidor: 10.4.32-MariaDB
+-- versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `cliente` (
   `cidade` varchar(40) NOT NULL,
   `data_inscricao` date DEFAULT curdate(),
   `pontos` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `cliente`
@@ -42,7 +42,7 @@ CREATE TABLE `cliente` (
 INSERT INTO `cliente` (`id_cliente`, `nome`, `cidade`, `data_inscricao`, `pontos`) VALUES
 (1, 'Ana', 'Maia', '2018-03-11', 123),
 (2, 'Bruno', 'Porto', '2006-06-22', 5347),
-(3, 'Miguel', 'Porto', '2010-07-26', 1789),
+(3, 'Miguel', 'Porto', '2010-07-26', 2789),
 (4, 'Maria', 'Valbom', '2006-05-21', 3234),
 (5, 'Joana', 'Maia', '2011-08-07', 678),
 (6, 'Anabela', 'Ermesinde', '2012-03-21', 864),
@@ -53,7 +53,8 @@ INSERT INTO `cliente` (`id_cliente`, `nome`, `cidade`, `data_inscricao`, `pontos
 (11, 'Vitor', 'Gaia', '2020-09-29', 127),
 (12, 'Tobias', 'Botulho', '2023-03-11', 193),
 (13, 'Mizé', 'Mizarela', '2019-01-21', 2),
-(14, 'Vitorino', 'Leça Balio', '2022-09-29', 180);
+(14, 'Vitorino', 'Leça Balio', '2022-09-29', 180),
+(15, 'Miguel', 'Porto', '2010-07-26', 2789);
 
 -- --------------------------------------------------------
 
@@ -66,7 +67,7 @@ CREATE TABLE `produto` (
   `descricao` varchar(50) DEFAULT NULL,
   `preco` float DEFAULT NULL,
   `stock` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `produto`
@@ -77,14 +78,13 @@ INSERT INTO `produto` (`id_produto`, `descricao`, `preco`, `stock`) VALUES
 (2, 'Parafuso', 0.99, 241),
 (3, 'Prego', 0.2, 147),
 (4, 'Rosca', 0.3, 0),
-(5, 'Berbequim', 35.99, 15),
+(5, 'Berbequim', 35.99, 13),
 (6, 'Torneira', 20.99, 11),
 (7, 'Lampada', 1.5, 0),
 (8, 'Broca', 2.6, 60),
 (9, 'Extensão', 10.5, 0),
 (10, 'Tripla', 5.5, 16),
 (11, 'Pincel', 3.99, 34),
-(12, 'Calha', 2.99, 0),
 (13, 'Martelo magnético', 25, 1),
 (14, 'calhau hidráulico', 50, 1),
 (15, 'enxofre cáusticp', 45, 2),
@@ -102,7 +102,7 @@ CREATE TABLE `venda` (
   `data_venda` date DEFAULT NULL,
   `desconto` float DEFAULT NULL,
   `id_cliente` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `venda`
@@ -132,7 +132,7 @@ CREATE TABLE `venda_produto` (
   `id_venda` int(11) DEFAULT NULL,
   `id_produto` int(11) DEFAULT NULL,
   `quantidade` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `venda_produto`
@@ -199,7 +199,7 @@ ALTER TABLE `venda_produto`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `produto`
