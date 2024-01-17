@@ -1,0 +1,15 @@
+tipo;marca;modelo;potenciaCV;pesoKg;preco;tipoCarro
+Carro;Mercedes;AMG A45 S 4Matic;421;1455;125000;GT
+Carro;BMW;M5 CS;625;1825;156500;GT
+Carro;Red Bull;RB15;900;743;1000000;F1
+Carro;Mercedes;AMG F1 W10 EQ Power;1000;743;1250000;F1
+Mota;Yamaha;YZR-M1;240;158;56750;0
+Mota;Honda;RC213V;230;155;45900;0
+Carro;Hyundai;I30N;289;1611;32700;RALLY
+Carro;Fiat;500;105;1440;7200;RALLY
+Carro;Peugeot;206;95;1100;8000;CARROCA
+Mota;Zundapp;ZUM-ZUM-ZUM;200;198;50750;0
+Mota;Suzuki;MDF-400;500;185;100900;0
+Carro;Porsche;IRON MAN 3;259;1011;45700;RALLY
+Carro;Fiat;LUX;105;1600;7200;GT
+Mota;Ducatti;Royal Plus N100;730;155;18900;0

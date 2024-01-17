@@ -1,0 +1,36 @@
+CREATE TABLE aluno (
+    id_aluno INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    morada VARCHAR(70) NOT NULL,
+    localidade VARCHAR(25),
+    datainscricao DATE DEFAULT CURDATE(),
+    idade INT,
+    id_curso INT,
+    PRIMARY KEY (id_aluno)
+    );
+    
+CREATE TABLE curso (
+    id_curso INT AUTO_INCREMENT,
+    descricao VARCHAR(70) NOT NULL,
+    datacriacao DATE,
+    PRIMARY KEY (id_curso)
+    );
+    
+CREATE TABLE aluno_disciplina (
+    id_aluno INT,
+    id_disciplina INT,
+    PRIMARY KEY (id_aluno, id_disciplina)
+    );
+    
+CREATE TABLE disciplina (
+    id_disciplina INT AUTO_INCREMENT,
+    descricao VARCHAR(50),
+    PRIMARY KEY (id_disciplina)
+    );
+     
+ALTER TABLE aluno
+ADD FOREIGN KEY (id_curso) REFERENCES curso(id_curso);
+ 
+ALTER TABLE aluno_disciplina
+ADD FOREIGN KEY (id_aluno) REFERENCES aluno(id_aluno),
+ADD FOREIGN KEY (id_disciplina) REFERENCES disciplina(id_disciplina)

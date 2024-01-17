@@ -1,0 +1,29 @@
+CREATE TABLE disciplina ( /*isto é um comentário yay*/
+    id_disciplina INT AUTO_INCREMENT, 
+    DESCRICAO varchar(50) NOT NULL,
+    PRIMARY KEY (id_disciplina)
+);
+    
+CREATE TABLE aluno_disciplina ( /* tabela intermedia - nao aplicar a restriçao do auto-incremento numa tabela intermedia  /// auto-incremet so faz sentido usar numa chave primaria*/
+    id_aluno INT,
+    id_disciplina INT NOT NULL,
+    PRIMARY KEY (id_aluno, id_disciplina)
+);
+    
+CREATE TABLE aluno (
+    id_aluno INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    morada VARCHAR(70) NOT NULL,
+    localidade varchar(25),
+    datainscricao DATE DEFAULT CURDATE(), /*retorna a data de hoje no formato AAAA-MM-DD*/
+    idade INT,
+    id_curso INT, /* nao por NOT NULL pois posso querer inscrever um aluno na BD sem estar afecto a um curso - atençao a flexibilidade*/ 
+    PRIMARY KEY(id_aluno) /*nao colocar ja a FK pois a tablea parent aibda nao esta criada, será ja a seguir*/
+);
+
+CREATE TABLE curso (
+    id_curso INT AUTO_INCREMENT,
+    descricao VARCHAR(70) NOT NULL,
+    datainscricao DATE DEFAULT CURDATE(), /*retorna a data de hoje no formato AAAA-MM-DD*/
+    PRIMARY KEY(id_curso) /*nao colocar ja a FK pois a tablea parent aibda nao esta criada, será ja a seguir*/
+); /* o ponto e virgula da ultima tabela nao é necessario*/

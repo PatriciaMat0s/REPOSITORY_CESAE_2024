@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44af986d-1e27-4f47-84d8-15c724f9fc85" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DP__SINGLETON/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/SINGLETON.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/src/EX01/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DP__SINGLETON/src/EX01/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/src/EX01/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DP__SINGLETON/src/EX01/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/src/EX03/UserSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DP__SINGLETON/src/EX03/UserSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DP__SINGLETON/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/Ficheiros/login_grandesNegocios.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/Ficheiros/minimercado.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/GrandesNegocios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Controllers/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Controllers/FuncionarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Domain/Utilizador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Domain/Venda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Repository/UtilizadorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Repository/VendasRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Tools/CSVLoginReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/Tools/CSVVendasReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/View/AdministradorView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/View/ClienteView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/View/EntryView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../GrandesNegocios/src/View/FuncionarioView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX01/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX01/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX01_redo/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX01_redo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX03/UserSessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SINGLETON/src/EX03_redo/UserSessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/GameStart_V2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/PROJETO__PE_CLASS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/PROJETO__PROGRAMACAO_ESTRUTURADA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../src/PROJETO__PROGRAMACAO_ESTRUTURADA/teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JAVA CHEAT SHEET.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JAVA CHEAT SHEET.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../JAVA CHEAT SHEET.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/1_homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/3_olderworks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/CSS/COLORCODES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/CSS/palette v1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/CSS/palette v2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/CSS/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Captura de ecrã 2023-12-11 160900.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Favicons/favicon (1).ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Favicons/favicon (2).ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Favicons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/''achas''.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sig-transp2websmall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sigBlue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sigBlue2 - Cópia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sigBlue2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sigBlue21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sigBlue24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/Imagens/sigBlue24bl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/STATEMENT.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/TEXTO.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/pdfs/PATRICIAmatos_website_draft.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/pdfs/SoftDev_TrabalhoPraticoFinal.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/00WORKS!index.bootstrapmixed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/00teste_index.bootstrapmixed copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/CSS Box Model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/navbar on image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/slideshow as background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/sticky transparet bar copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DESENVOLVIMENTO_WEB/PROJETO_WEBSITE_PESSOAL/snippets_of_code/sticky transparet bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/GrandesNegocios/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/GrandesNegocios/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/GrandesNegocios/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/GrandesNegocios/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/GrandesNegocios/GrandesNegocios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/GrandesNegocios/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/Fabrica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/FabricaProdutoA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/FabricaProdutoB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/ProdutoA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/out/production/test/ProdutoB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/Fabrica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/FabricaProdutoA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/FabricaProdutoB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/ProdutoA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/src/ProdutoB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../FICHAS_JAVA_PLEASEWORK/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UML/UML Wook Registo-Login.drawio.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="2ZZmVQJdALGLI3Zg934GSFuIIkY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/softdev/Desktop/CESAE_SOFTDEV_2023/ALGORITMIA_E_PROGRAMACAO/FICHAS_JAVA/DP__MVC_GRANDES.NEGOCIOS_vFinal"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44af986d-1e27-4f47-84d8-15c724f9fc85" name="Changes" comment="" />
+      <created>1702637999595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702637999595</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

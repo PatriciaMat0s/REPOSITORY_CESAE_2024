@@ -1,5 +1,0 @@
-package AIRPLANE_STORE.Enums;
-
-public enum Arma {
-    METRALHADORAS,MISSEIS,FOGUETES,TORPEDOS,BOMBAS
-}

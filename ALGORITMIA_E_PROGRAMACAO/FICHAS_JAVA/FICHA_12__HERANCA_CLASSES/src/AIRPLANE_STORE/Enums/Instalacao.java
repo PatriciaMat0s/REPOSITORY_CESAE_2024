@@ -1,5 +1,0 @@
-package AIRPLANE_STORE.Enums;
-
-public enum Instalacao {
-    WC,CINEMA,SUITE,CHUVEIRO,TOMADAS,COZINHA,ESCRITORIO,WIFI
-}
