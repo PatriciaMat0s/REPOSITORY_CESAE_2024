@@ -1,3 +1,11 @@
+https://www.mysql.com/products/workbench/
+MySQL :: MySQL Workbench
+
+https://dev.mysql.com/downloads/mysql/
+MySQL :: Download MySQL Community Server
+
+
+
 #extensões laravel para VC
 
 - PHP IntelliSense

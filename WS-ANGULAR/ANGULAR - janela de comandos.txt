@@ -1,0 +1,13 @@
+ANGULAR - janela de comandos
+
+npm install -g @angular/cli ------ para atualizar o angular
+npm install -g @angular/cli@17.1.0 --- instalar a versao especifica do angular
+ng v -------- ver a versão
+cd “caminho da pasta angular”
+ng new “nome projeto”  ou  ng n “nome projeto”
+scss
+n ---------não server side
+cd tab “pasta do projeto”
+ng serve -o --------- abrir na pagina web
+
+

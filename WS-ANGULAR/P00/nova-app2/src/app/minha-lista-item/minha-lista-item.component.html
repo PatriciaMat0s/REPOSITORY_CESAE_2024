@@ -1,0 +1,18 @@
+
+
+<!-- <p>minha-lista-item works yay!</p> -->
+<li>
+    <b>{{cidade.nome}}</b>, 
+    {{ cidade.pais }} 
+    <small><i>
+        (Pop.:
+        @if (cidade!.populacao && cidade.populacao >= 200000) {
+            <b>{{cidade.populacao}}</b>
+        }
+        @else {
+            {{cidade.populacao}}
+        }
+        )
+        </i></small>
+    </li>
+

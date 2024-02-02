@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="apatc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-01 02:59:17 "/>
+        <attribute name="created" value="YXBhdGM7UEFUQVNVUzsyMDI0LTAyLTAxOyIwMjoyNDo1MiAiOzIyNDc="/>
+        <attribute name="edited" value="YXBhdGM7UEFUQVNVUzsyMDI0LTAyLTAxOyIwMjo1OToxNyAiOzM7MjM2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="funcao" type="Integer" variable="soma">
+        <parameters/>
+        <body>
+            <declare name="a, b, soma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduza o primero valor&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Introduza o segundo valor&quot;" newline="True"/>
+            <input variable="b"/>
+            <call expression="somar(a,b)"/>
+        </body>
+    </function>
+    <function name="soma" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>

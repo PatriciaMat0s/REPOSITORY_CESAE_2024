@@ -1,0 +1,20 @@
+<p>primeira-pagina works!</p>
+
+
+<h1>OLA IDIOTAS COMO ESTAO</h1> 
+
+<app-my-component meu-nome = "Paulo" />
+
+<app-my-component [meu-nome] = "meuNomePai"></app-my-component>
+
+<app-my-component></app-my-component>
+<!-- ^aqui n tou a enviar nada -->
+
+<app-my-component (mudancaContador)="atualizar($event)" [meu-nome]="meuNomePai"></app-my-component>
+<div style ="background-color: rgb(255, 255, 129);">
+<p>Contador: {{ contadorPAI }}</p>
+
+</div>
+
+
+<button (click)="changeMeuNomePai()">Sou o MIguel</button>

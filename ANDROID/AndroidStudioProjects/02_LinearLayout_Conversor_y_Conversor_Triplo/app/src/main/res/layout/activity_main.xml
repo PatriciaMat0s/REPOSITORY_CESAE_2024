@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--04 LINEAR LAYOUT /// EXERCICIO 2-->
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--<EditText-->
+<!--    android:id="@+id/edit_valor_euros"-->
+<!--    android:hint="Insira o valor emEuros"-->
+<!--    android:gravity="center"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:layout_marginStart="5dp"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    android:layout_marginBottom="20dp"-->
+<!--    />-->
+
+<!--<Button-->
+<!--    android:id="@+id/button_converter"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center"-->
+<!--    android:text="Converter"-->
+<!--    android:layout_marginTop="50dp"-->
+<!--    android:layout_marginStart="50dp"-->
+<!--    android:layout_marginEnd="50dp"-->
+<!--    android:layout_marginBottom="50dp"-->
+<!--    />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/text_valor_dollars"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="center"-->
+<!--    android:textSize="30sp" />-->
+<!--    android:text="Isto é uma TextView, yay!"-->
+<!--/>-->
+
+<!--    &lt;!&ndash; sp - scalable pixels - relativos e adaptaveis as dimensoes do ecran&ndash;&gt;-->
+<!--    &lt;!&ndash; dp - density independent pixels - absolutos e nao-adaptaveis as dimensoes do ecran&ndash;&gt;-->
+
+<!--</LinearLayout>-->
+
+
+
+<!--04 LINEAR LAYOUT /// EXERCICIO 3-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/text_conversor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Conversor de moeda, yay"
+    android:gravity="center"
+    android:textSize="30sp" />
+
+<EditText
+    android:id="@+id/edit_valor_euros"
+    android:hint="Insira o valor em Euros"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/button_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Real"
+        />
+
+    <Button
+        android:id="@+id/button_dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5sp"
+        android:text="Dolar"
+        />
+
+    <Button
+        android:id="@+id/button_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="*****"
+    />
+
+    <TextView
+        android:id="@+id/text_by"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Desenvolvido by Patos"
+        />
+
+</LinearLayout>

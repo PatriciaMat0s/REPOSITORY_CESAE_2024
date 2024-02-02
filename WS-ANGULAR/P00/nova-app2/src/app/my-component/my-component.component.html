@@ -1,1 +1,33 @@
-<p>my-component works!</p>
+<h1>HEY MY NAME IS {{ meuNome }}</h1>
+<p>{{ mensagem }}</p>
+<img src="{{ imagem }}" alt="">
+
+<hr>
+
+<h1>HEY MY NAME IS {{ meuNome }}</h1>
+<p>{{ mensagem }}</p>
+<img [src]="imagem" alt="">
+
+<button (click)="alterarImagem()">Alterar imagem</button>
+<button (click)="alterarImagem2()">Alterar imagem</button>
+<button (click)="meuNome = 'Já nao me chamo Tito, chamo-me Goya!'">Alterar nome</button> //fazer func diretas
+
+<hr>
+<!-- criar estilos sem ir ao css -->
+
+<p [style.color]="pCorTexto" 
+[style.backgroundColor]="pCorFundo"> 
+E tambem gosto de caes!
+</p>
+
+<button 
+    (click)="alterarCores()"
+    [disabled]="!pAlterarCores">Alterar cor do texto/fundo</button>
+<button (click)="alterarAtivo()">Desactivar</button>
+
+
+<hr>
+<hr>
+
+<h3>{{ contador  }}</h3>
+<button (click)="incrementar()">incrementar</button>

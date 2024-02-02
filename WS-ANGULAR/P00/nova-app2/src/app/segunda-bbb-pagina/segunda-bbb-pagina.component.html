@@ -1,0 +1,72 @@
+<p>segunda-bbb-pagina works! já nao vamos precisar, but still</p>
+
+{{arr}}
+
+
+<ul>
+    <!-- ver se um obj esta vazio: -->
+<li *ngIf="!arr"> </li>
+<li *ngIf="arr.length == 0"> </li>
+
+    <li *ngFor="let item of arr">
+    {{ item }}
+    </li>
+    <!-- este for each vai percorrer o array de nomes definido em segundaaaa.ts-->
+</ul>
+
+<div>
+    <article *ngFor="let item of arr">
+    {{ item }}
+    </article>
+</div>
+
+<!-- ng-template usa-se qdo nao queremos renderizar -->
+<ul>
+    <ng-template ngFor let-item [ngForOff]="arr">
+        <li>
+            {{item}}
+        </li>
+</ng-template>
+</ul>
+
+<ul>
+        <li *ngFor="let item of arr; index as i">
+            {{item}} ({{i}})
+        </li>
+</ul>
+
+<ul>
+<ng-template ngFor let-item [ngForOf]="arr" let-i="index">
+    <li>{{item}} ({{i}})</li>
+</ng-template>
+</ul>
+
+<ul>
+<ng-template ngFor let-item [ngForOf]="arr" let-i="index">
+    <li>{{item}} ({{i}})</li>
+</ng-template>
+</ul>
+
+<ul>
+    <li *ngFor="let item of arr; index as i; first as ePrimeiro">
+        {{item}} ({{i}})
+        <b>*ngIf="ePrimeiro">PRIMEIRO</b>
+    </li>
+    </ul>
+
+
+    <!-- versao 17.5 e acima: -->
+    <h3><small><i>a</i>for</small></h3>
+    <!-- temos de te rum ul antes de executar um for, cada vez que o for for iterado temos um li: -->
+    <ul>
+        @for (item of arr; track $index){
+            <li>
+            {{item}} ({{$index}})
+            </li>
+        }
+    @empty {
+        <li>Crap, a lista está vazia</li>
+    }
+    </ul>
+    <!-- caso o array esteja vazio, exibir o @emptu sempre depois do @for, nem um comment deve estar entre eles! -->
+
