@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRIMO OU NÃO PRIMO?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#9D02A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_primo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduza um número:"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/button_go_to_primo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        android:backgroundTint="#13E3E5"
+        android:gravity="center"
+        android:text="VERIFICAR"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button_01"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="80dp"-->
+<!--        android:backgroundTint="#96F3F4"-->
+<!--        android:gravity="center"-->
+<!--        android:text="BOTAO 01"-->
+<!--        tools:layout_editor_absoluteX="160dp"-->
+<!--        tools:layout_editor_absoluteY="434dp" />-->
+
+</LinearLayout>
