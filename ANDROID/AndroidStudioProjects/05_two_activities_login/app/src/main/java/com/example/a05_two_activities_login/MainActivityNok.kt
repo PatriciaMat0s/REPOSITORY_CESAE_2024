@@ -14,7 +14,7 @@ class MainActivityNok : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_nok)
+        setContentView(binding.root)
 
 
     Toast.makeText(applicationContext, "OUPSIE, INVALID LOGIN!", Toast.LENGTH_SHORT).show()

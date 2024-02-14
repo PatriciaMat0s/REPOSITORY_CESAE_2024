@@ -14,7 +14,7 @@ class MainActivityOk : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_ok)
+        setContentView(binding.root)
 
         binding.buttonVoltarOk.setOnClickListener {
             startActivity(Intent(this,  MainActivity::class.java))

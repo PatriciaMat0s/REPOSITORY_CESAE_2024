@@ -20,6 +20,10 @@ MySQL :: Download MySQL Community Server
 
 php artisan make:migration add_user_type_to_users_table --table=users
 
+
+VER AS ROTAS:
+-> php artisan route:list
+
 COMANDOS LARAVEL
 -> composer create-project Laravel/Laravel Web_ServerSide
 -> php artisan serve (iniciar o Servidor)
@@ -52,6 +56,12 @@ Facade Query Builder
 
 AUTENTICAÇÂO
 use Illuminate\Support\Facades\Auth;
+
+-> composer require laravel/fortify
+-> php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
+-> php artisan migrate
+
+
 
 OUTRAS UTILIDADES
 

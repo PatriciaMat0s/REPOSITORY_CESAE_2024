@@ -1,0 +1,129 @@
+- Ver toda a informação de todos os clientes;
+SELECT *
+FROM clientes
+
+- Ver todas as cidades dos clientes (sem duplicados);
+SELECT DISTINCT cidade
+FROM clientes
+
+- Ver a descrição, preço, preço com iva (23%) de todos os produtos e chame ao último atributo ‘Preço + IVA’;
+SELECT descricao, preco, preco*1.23 AS 'Preco + IVA'
+FROM produto
+
+- Ver todos os clientes que se inscreveram entre ‘2000-01-01’ e ‘2009-01-01’ e com mais de 1000 pontos;
+SELECT *
+FROM cliente
+WHERE dataInscricao BETWEEN '2000-01-01' AND '2009-01-01' AND pontos>1000
+
+- Ver produtos com stock igual a 0, 15 e 60;
+SELECT *
+FROM produto
+WHERE stock IN ('0','15','60') ou WHERE stock=0 OR stock=15 OR stock=60
+
+- Ver todos os clientes cujo nome contenha ‘ana’, ordenado por ordem descendente pelo idCliente;
+SELECT *
+FROM cliente
+WHERE nome LIKE '%ana%'
+ORDER BY idcliente DESC
+
+- Ver todos os clientes cujo nome seja composto no total por 5 caracteres sendo o último um ‘a’;
+SELECT * 
+FROM cliente 
+WHERE nome LIKE '____a'
+
+- Ver todos os produtos cuja descrição comece por ‘P’ ou ‘T’ ou termine em ‘CA’;
+SELECT *
+FROM produto
+WHERE descricao LIKE 'a%' OR descricao LIKE 't%' OR descricao LIKE '%ca'
+ou
+WHERE descricao REGEXP '^a|^t|ca$'
+
+- Ver apenas o 6º,7º,8º cliente com mais pontos;
+SELECT *
+FROM cliente
+ORDER BY pontos DESC
+LIMITE 5,3
+
+- Ver as cidades que tenham mais de 1 cliente;
+SELECT cidade, count(idcliente)
+FROM cliente
+GROUP BY cidade
+HAVING count(idcliente)>1
+
+- Ver quais as vendas que não foi aplicado nenhum desconto;
+SELECT * 
+FROM venda
+WHERE desconto=0
+
+- Ver o top 3 produtos mais caros;
+SELECT *
+FROM produto
+ORDER BY preco 
+LIMIT 3
+
+- Ver todas as vendas que tiveram um desconto superior a 10%;
+SELECT *
+FROM venda
+WHERE desconto>0.1
+
+- Ver todos os idVendas, Nomes de cliente e Localidade de cliente;
+SELECT v.idvenda, c.nome, c.cidade
+FROM venda v
+JOIN cliente c
+ON c.idcliente=v.idcliente
+
+- Ver todos as descrições e preço unitário de produtos da venda nr 9;
+SELECT p.descricao, p.preco
+FROM venda v
+JOIN linhavenda lv
+ON v.idvenda=lv.idvenda
+JOIN produto p
+ON lv.idproduto=p.idproduto
+WHERE v.idvenda=9
+
+- Ver todas as descrições, preço unitário e quantidade da venda nr 10;
+SELECT p.descricao, p.preco, lv.quant
+FROM venda v
+JOIN linhavenda lv
+ON v.idvenda=lv.idvenda
+JOIN produto p
+ON lv.idproduto=p.idproduto
+WHERE v.idvenda=10
+
+- Ver exatamente os mesmos atributos que o ponto anterior, acrescentando uma coluna chamada ‘Total por Produto’ que multiplica o preço unitário e quantidade;
+SELECT p.descricao, p.preco, lv.quant, p.preco*lv.quant AS 'Total por Produto'
+FROM venda v
+JOIN linhavenda lv
+ON v.idvenda=lv.idvenda
+JOIN produto p
+ON lv.idproduto=p.idproduto
+WHERE v.idvenda=10
+
+- Ver todos os produtos vendidos entre '2021-05-01' e '2021-08-01';
+SELECT p.descricao
+FROM venda v
+JOIN linhavenda lv
+ON v.idvenda=lv.idvenda
+JOIN produto p
+ON lv.idproduto=p.idproduto
+WHERE datavenda BETWEEN '2021-05-01' AND '2021-08-01'
+
+- Ver o total faturado em cada venda, sem desconto aplicado (ter atenção ao group by);
+SELECT v.idVenda, SUM(p.preco*lv.quant) AS 'Total Faturado', v.desconto,  SUM(ROUND(p.preco*lv.quant-((p.preco*lv.quant)*v.desconto),2)) AS 'Total com Desconto'
+FROM venda v
+JOIN linhavenda lv
+ON v.idvenda=lv.idvenda
+JOIN produto p
+ON lv.idproduto=p.idproduto
+GROUP BY v.idVenda
+
+- Ver quais os produtos vendidos a clientes de ‘Gaia’;
+SELECT p.descricao
+FROM venda v
+JOIN linhavenda lv
+ON v.idvenda=lv.idvenda
+JOIN produto p
+ON lv.idproduto=p.idproduto
+JOIN cliente c
+ON c.idCliente=v.idCliente
+WHERE c.cidade='Gaia'

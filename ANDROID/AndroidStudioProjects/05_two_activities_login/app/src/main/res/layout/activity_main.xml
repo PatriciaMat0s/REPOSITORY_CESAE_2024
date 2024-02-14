@@ -18,20 +18,18 @@
         android:text="WELCOME!"
         android:textColor="#11bccd"
         android:textSize="60sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
+        android:gravity="center"
         android:text="Please fill in the blanks:"
         android:textColor="#808080"
         android:textSize="20sp"
-        android:gravity="center"
-        android:textStyle="italic"
-        />
+        android:textStyle="italic" />
 
     <LinearLayout
         android:layout_width="match_parent"

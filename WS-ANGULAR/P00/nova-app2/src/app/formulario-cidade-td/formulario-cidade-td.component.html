@@ -1,0 +1,36 @@
+<p>FORMULÁRIO DE CIDADE</p>
+
+<!-- usamos um campo que altera o conteudo da variavel -->
+<!-- ngModel e uma diretiva do angular, aqui sincroniza os dados da variavel para o input -->
+
+<div>
+    <label for="nome">Nome de cidade:</label>
+    <input type="text" id="nome" [(ngModel)]="minhaCidade.nome" name="nome" /> 
+    <!-- o name="nome" envia os dados se for para outra pagina -->
+</div>
+<br>
+<div>
+    <label for="pais">Nome do país:</label>
+    <input type="text" id="pais" [(ngModel)]="minhaCidade.pais" name="pais" /> 
+</div>
+<br>
+<div>
+    <label for="populacao">População:</label>
+    <input type="text" id="populacao" [(ngModel)]="minhaCidade.populacao" name="populacao" /> 
+</div>
+<br>
+
+
+<!-- forma rapida de avaliar a sincronizacao:  -->
+<div>
+    O nome escrito foi: {{ minhaCidade.nome }}
+</div>
+<br>
+<div>
+    <button tyoe="submit" (click)="formSubmit()">SUBMIT</button>
+</div>
+
+
+
+
+

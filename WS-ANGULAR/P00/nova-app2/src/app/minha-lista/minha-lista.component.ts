@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { MinhaListaItemComponent } from '../minha-lista-item/minha-lista-item.component';
-import { CidadesService } from '../services/cidades.service';
+import { CidadesService } from '../services/cidades-ls.service';
 import { ICidade } from '../models/cidade.model';
+import { Router, RouterLink } from '@angular/router';
  
 @Component({
   selector: 'app-minha-lista',
   standalone: true,
-  imports: [MinhaListaItemComponent],
+  imports: [MinhaListaItemComponent, RouterLink],
   templateUrl: './minha-lista.component.html',
   styleUrl: './minha-lista.component.scss'
 })
@@ -25,7 +26,10 @@ export class MinhaListaComponent {
 //GUARDAR LOGS E REGISTOS DA NAVEGAÇAO DO USER, TB DEFS DA APP
 //OS SERVIÇSO SAO SINGLETONS, PARA POUPAR MEMORIA
 
-constructor(private cidadesService: CidadesService){
+constructor
+  (private cidadesService: CidadesService, private router: Router){
+
+  //router é uma injecao de dependencias e é injetado no construtor
 console.log('MinhaListaComponent.constructor()');
 
 //trazer os dados das cities p dentro desta lista:
@@ -49,6 +53,7 @@ ngOnChange(){
 }
 //nOC executado qdo o angular deteta 
 
+
 ngOnInit(){
   /*É executado uma vez depois que o Angular
   termina de inicializar as propriedades de entrada. É usado
@@ -60,15 +65,23 @@ ngOnInit(){
 
   console.log('MinhaListaComponent.ngOnInit()');
 
+  this.cidadesService = readAll();
   this.cidades = this.cidadesService.cidades;
-
 }
 
+//o create instancia um obejcto
 adicionarCidade(){
-  this.cidadesService.create({nome: 'Lisboa', pais: 'Portugal', populacao: 878787});
-
-  // { } abrir um objeto
+  this.cidadesService.create({id:0, nome: 'Lisboa', pais: 'Portugal', populacao: 878787});
 }
+
+irAdicionarCidade(){
+  this.router.navigate(['/formulario-cidade-td'])
+}
+
+  limparDados(): void{
+    this.cidadesService.limparDados();
+    this.cidades = this.cidadesService.cidades; 
+  }
 
 ngDoCheck(){
   /* É executado a cada ciclo de deteção de
@@ -118,3 +131,9 @@ recursos, remover event listeners, etc… */
 }
 
 }
+
+
+// function readAll(): CidadesService {
+//   throw new Error('Function not implemented.');
+// }
+
